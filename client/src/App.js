@@ -1,11 +1,13 @@
 
+import About from "./Pages/About/About"
+
 
 
 function App() {
   return (
-    
-    <h1>GOLDIE MOHR</h1>
-
+    <>
+       <About/>
+    </>
   );
 }
 
