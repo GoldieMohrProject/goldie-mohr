@@ -1,0 +1,38 @@
+{
+  "name": "goldie-mohr",
+  "version": "1.0.0",
+  "description": "Project 3 in bootcamp",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldieMohrProject/goldie-mohr.git"
+  },
+  "author": "Faisal Nour,Fatih Ay,Mischa Dabrowski,Said Mghabghab,Shiva Sabokdast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoldieMohrProject/goldie-mohr/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "homepage": "https://github.com/GoldieMohrProject/goldie-mohr#readme",
+  "dependencies": {
+    "eslint": "^7.23.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5"
+  }
+}
