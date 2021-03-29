@@ -1,8 +1,7 @@
 
-import "./About.css"
-
 import React from 'react';
-import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import './style.css';
+import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -203,7 +202,7 @@ function About() {
 
             <h2>Our Team</h2>
             <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-            
+
           </div>
           <div className="row team_row">
             <div className="col-md-3 col-sm-6 wow fadeInUp">
