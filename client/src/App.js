@@ -1,10 +1,14 @@
-
+import React from 'react'
+import Wrapper from './Components/Wrapper'
 
 
 function App() {
   return (
-    
-    <h1>GOLDIE MOHR</h1>
+
+    <Wrapper>
+      <h1>GOLDIE MOHR</h1>
+    </Wrapper>
+
 
   );
 }
