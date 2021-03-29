@@ -7,6 +7,14 @@ import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import placeholder from '../../assets/placeholder.png'
+import CAFE from '../../assets/CAFE.png'
+import Dig from '../../assets/Dig.png'
+import ISHA from '../../assets/ISHA.png'
+import NCHCA from '../../assets/NCHCA.png'
+import OCA from '../../assets/OCA.png'
+import OSWCA from '../../assets/OSWCA.png'
+import OTA from '../../assets/OTA.png'
+import WSIB from '../../assets/WSIB.png'
 
 
 
@@ -18,8 +26,6 @@ function About() {
 
       <section className="about_us_area about_us_2 row">
         <div className="container">
-
-
           <div className="row about_row about_us2_pages">
             <div className="col-md-7">
               <div className="subtittle">
@@ -154,81 +160,27 @@ function About() {
         </div>
       </section>
 
-      <section className="our_feature_area">
-        <div className="container">
-          <div className="tittle wow fadeInUp">
-            <h2>Our Features</h2>
-            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-          </div>
-
-          <div className="feature_row row">
-            <div className="col-md-6 feature_img">
-              <img src="https://user-images.githubusercontent.com/77207167/112711390-5c554080-8e9e-11eb-952d-2f96f7c573ef.jpg" alt />
-            </div>
-            <div className="col-md-6 feature_content">
-              <div className="subtittle">
-                <h2>WHY CHOOSE US</h2>
-                <h5>There are many variations of passages of Lorem Ipsum available.</h5>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-wrench" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">60+ YEARS OF EXPERIENCE</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-rocket" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">QUALIFIED EXPERTS</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-users" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">Best Customer Services</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Partners Area */}
+      {/* Community Area */}
+      <br></br>
       <section className="our_partners_area">
         <div className="book_now_aera">
           <div className="container">
-            <div className="row book_now">
-              <div className="col-md-10 booking_text">
-                <h4>Booking now if you need professional hand.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.</p>
-              </div>
-              <div className="col-md-2 book_bottun">
-                <a href="contact.html" className="button_all">book now</a>
-              </div>
+            <div className="col-md-10 booking_text">
+              <h4>Our community is important to us.</h4>
+              <br></br>
+              <p>
+                As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.
+                </p>
+                <br></br>
+              <p>
+                Over the years GOLDIE MOHR LTD. has supported many local charity groups, charity events, sports teams, service clubs and organizations. As a team, we believe a place should be left better than found and we strive to make this possible through our community involvement.
+                </p>
             </div>
           </div>
         </div>
       </section>
-      {/* End Our Partners Area */}
+      <br></br>
+      {/* End Community Area */}
 
       {/* Our Team Area */}
       <section className="our_team_area">
@@ -238,9 +190,9 @@ function About() {
             <div className="centering">
               <h2>Our Team</h2>
               <hr className="short"></hr>
-              </div>
-              <div className="teamstuff">
-                <p>At Goldie Mohr Limited, we believe that our people are our greatest asset!</p>
+            </div>
+            <div className="teamstuff">
+              <p>At Goldie Mohr Limited, we believe that our people are our greatest asset!</p>
             </div>
 
           </div>
@@ -321,6 +273,81 @@ function About() {
         </div>
       </section>
       {/* End Our Team Area */}
+
+
+      <section className="our_feature_area">
+        <div className="container">
+          <div className="tittle wow fadeInUp">
+            <div className="subtittle">
+              <h2>Memberships</h2>
+            </div>
+            <div className="memberships">
+              <p>-- insert small blerb about what the memberships are here --</p>
+            </div>
+          </div>
+
+          <div className="membershiparea">
+        <img src={CAFE} className="imgmemb"/>
+        <img src={Dig} className="imgmemb"/>
+        <img src={ISHA} className="imgmemb"/>
+        <img src={NCHCA} className="imgmemb"/>
+         </div>
+         <div className="membershiparea">
+        <img src={OCA} className="imgmemb"/>
+        <img src={OSWCA} className="imgmemb"/>
+        <img src={OTA} className="imgmemb"/>
+        <img src={WSIB} className="imgmemb"/>
+         </div>
+
+          {/* <div className="feature_row row">
+            <div className="col-md-6 feature_img">
+              <img src="https://user-images.githubusercontent.com/77207167/112711390-5c554080-8e9e-11eb-952d-2f96f7c573ef.jpg" alt />
+            </div>
+            <div className="col-md-6 feature_content">
+              <div className="subtittle">
+                <h2>WHY CHOOSE US</h2>
+                <h5>There are many variations of passages of Lorem Ipsum available.</h5>
+              </div>
+              <div className="media">
+                <div className="media-left">
+                  <a href="#">
+                    <i className="fa fa-wrench" aria-hidden="true" />
+                  </a>
+                </div>
+                <div className="media-body">
+                  <a href="#">60+ YEARS OF EXPERIENCE</a>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+              <div className="media">
+                <div className="media-left">
+                  <a href="#">
+                    <i className="fa fa-rocket" aria-hidden="true" />
+                  </a>
+                </div>
+                <div className="media-body">
+                  <a href="#">QUALIFIED EXPERTS</a>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+              <div className="media">
+                <div className="media-left">
+                  <a href="#">
+                    <i className="fa fa-users" aria-hidden="true" />
+                  </a>
+                </div>
+                <div className="media-body">
+                  <a href="#">Best Customer Services</a>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div> */}
+        </div>
+      </section>
 
     </>
 
