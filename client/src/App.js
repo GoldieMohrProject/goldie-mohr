@@ -1,6 +1,7 @@
 
-import About from "./Pages/About/About"
-import Contact from "./Pages/Contact/Contact"
+// import About from "./Pages/About"
+// import Contact from "./Pages/Contact"
+import Service from "./Pages/Services"
 
 
 
@@ -8,7 +9,7 @@ import Contact from "./Pages/Contact/Contact"
 function App() {
   return (
     <>
-       <About/>
+       <Service/>
     </>
   );
 }
