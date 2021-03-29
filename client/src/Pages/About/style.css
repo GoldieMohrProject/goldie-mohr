@@ -162,7 +162,11 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 
 
-
+.profile {
+  font: 400 14px/26px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 28px;
+}
 
 
 /*   future */
