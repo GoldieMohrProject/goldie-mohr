@@ -12,10 +12,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function About() {
   return (
     <>
-
+<h1 className="title">ABOUT US</h1>
 
       <section className="about_us_area about_us_2 row">
         <div className="container">
+
+
           <div className="row about_row about_us2_pages">
             <div className="who_we_area col-md-7">
               <div className="subtittle">
@@ -49,9 +51,14 @@ function About() {
                 horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western
                 Quebec.
         </p>
+        <br></br>
               <a href="#" className="button_all">Contact Now</a>
             </div>
             <div className="col-md-5 our_skill_inner">
+            <div className="subtittle">
+                <h2>WHAT WE DO</h2>
+              </div>
+              <br></br>
               <div className="single_skill">
                 <h3>Heavy Civil Construction</h3>
                 <div className="progress">
