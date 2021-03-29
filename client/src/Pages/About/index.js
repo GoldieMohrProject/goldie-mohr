@@ -6,6 +6,8 @@ import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import placeholder from '../../assets/placeholder.png'
+
 
 
 
@@ -233,26 +235,27 @@ function About() {
         <div className="container">
           <div className="tittle wow fadeInUp">
 
-            <h2>Our Team</h2>
-            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+            <div className="centering">
+              <h2>Our Team</h2>
+              <hr className="short"></hr>
+              </div>
+              <div className="teamstuff">
+                <p>At Goldie Mohr Limited, we believe that our people are our greatest asset!</p>
+            </div>
 
           </div>
           <div className="row team_row">
             <div className="col-md-3 col-sm-6 wow fadeInUp">
+
               <div className="team_membar">
-                <img src="images/team/tm-5.jpg" alt />
+                <img src={placeholder} alt="nothing" />
                 <div className="team_content">
                   <ul>
                     <li><a href="#">
-
                       <FontAwesomeIcon icon={faFacebookF} />
-
                     </a></li>
-
                     <li><a href="#" aria-hidden="true" >
-
                       <FontAwesomeIcon icon={faLinkedin} />
-
                     </a></li>
                   </ul>
                   <a href="#" className="name">Ann McKenna</a>
@@ -260,21 +263,17 @@ function About() {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
               <div className="team_membar">
-                <img src="images/team/tm-6.jpg" alt />
+                <img src={placeholder} alt="nothing" />
                 <div className="team_content">
                   <ul>
                     <li><a href="#">
-
                       <FontAwesomeIcon icon={faFacebookF} />
-
                     </a></li>
-
                     <li><a href="#" aria-hidden="true" >
-
                       <FontAwesomeIcon icon={faLinkedin} />
-
                     </a></li>
                   </ul>
                   <a href="#" className="name">Deborah Mohr-Caldwell</a>
@@ -282,21 +281,17 @@ function About() {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
               <div className="team_membar">
-                <img src="images/team/tm-7.jpg" alt />
+                <img src={placeholder} alt="nothing" />
                 <div className="team_content">
                   <ul>
                     <li><a href="#">
-
                       <FontAwesomeIcon icon={faFacebookF} />
-
                     </a></li>
-
                     <li><a href="#" aria-hidden="true" >
-
                       <FontAwesomeIcon icon={faLinkedin} />
-
                     </a></li>
                   </ul>
                   <a href="#" className="name">Glen Buch</a>
@@ -304,26 +299,18 @@ function About() {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
               <div className="team_membar">
-                <img src="images/team/tm-8.jpg" alt />
+                <img src={placeholder} alt="nothing" />
                 <div className="team_content">
                   <ul>
-
                     <li><a href="#">
-
                       <FontAwesomeIcon icon={faFacebookF} />
-
                     </a></li>
-
                     <li><a href="#" aria-hidden="true" >
-
                       <FontAwesomeIcon icon={faLinkedin} />
-
                     </a></li>
-
-
-
                   </ul>
                   <a href="#" className="name">Mike Buch</a>
                   <h6>Project Manager</h6>
