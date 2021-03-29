@@ -168,6 +168,33 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   padding-top: 28px;
 }
 
+.centering{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font: 700 36px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.teamstuff {
+  text-align: center;
+  font: 400 18px "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #555555;
+  padding-top: 28px;
+}
+
+.short {
+  width: 15%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(0, 0, 0);
+}
 
 /*   future */
 
