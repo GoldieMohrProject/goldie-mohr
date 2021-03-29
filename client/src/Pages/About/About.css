@@ -25,6 +25,11 @@ body section.row, body header.row, body footer.row {
   margin: 0;
 }
 
+.title {
+  text-align: center;
+  margin: 50px;
+}
+
 /*Ancore*/
 a, .btn, button {
   outline: none;
@@ -76,6 +81,9 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   position: relative;
   z-index: 2;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
 .button_all:before {
