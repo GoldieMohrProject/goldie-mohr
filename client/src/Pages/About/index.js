@@ -190,7 +190,6 @@ function About() {
 
             <div className="centering">
               <h2>Our Team</h2>
-              <hr className="short"></hr>
             </div>
             <div className="teamstuff">
               <p>At Goldie Mohr Limited, we believe that our people are our greatest asset!</p>
@@ -279,11 +278,10 @@ function About() {
       <section className="our_feature_area">
         <div className="container">
           <div className="tittle wow fadeInUp">
-            <div className="subtittle">
+            <div>
               <h2>Memberships</h2>
+              <br></br>
             </div>
-            <div className="memberships">
-              <p>-- insert small blerb about what the memberships are here --</p>
             </div>
           </div>
 
@@ -347,7 +345,6 @@ function About() {
               </div>
             </div>
           </div> */}
-        </div>
       </section>
 
     </>
