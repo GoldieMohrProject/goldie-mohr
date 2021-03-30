@@ -59,7 +59,7 @@
   z-index: 2;
   padding: 0;
 }
-.button_all:before {
+.button_social:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -75,11 +75,11 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-.button_all:hover,
-.button_all:focus {
+.button_social:hover,
+.button_social:focus {
   color: #fff !important;
 }
-.button_all:hover:before,
-.button_all:focus:before {
+.button_social:hover:before,
+.button_social:focus:before {
   transform: scaleY(1);
 }
