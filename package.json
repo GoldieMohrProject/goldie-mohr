@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/GoldieMohrProject/goldie-mohr#readme",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "eslint": "^7.23.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
