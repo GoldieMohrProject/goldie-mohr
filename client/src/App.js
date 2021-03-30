@@ -7,15 +7,17 @@ import Footer from './Components/Footer'
 import Service from "./Pages/Services"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home"
+import Career from "./Pages/Career"
 
 
 function App() {
   return (
 
     <Wrapper>
-     < Navbar/>
+      < Navbar />
       {/* <h1>GOLDIE MOHR</h1> */}
-      <Home/>
+      <Home />
+      <Career />
       <Footer />
     </Wrapper>
   );
