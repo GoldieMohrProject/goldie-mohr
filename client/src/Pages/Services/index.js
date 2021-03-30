@@ -2,47 +2,34 @@ import React from 'react';
 
 import "./style.css"
 
-import { List, Image } from 'antd';
+import { List, Image, Carousel } from 'antd';
 import 'antd/dist/antd.css';
 
+import ImageGallery from 'react-image-gallery';
 
-
-const Buildingdata = [
-  ' French Catholic School Kanata Lakes – Ed. Brunet & Assoc.',
-  ' Michaelle Jean Elementary School – Barrhaven',
-
+const images = [
+  {
+    original: 'https://user-images.githubusercontent.com/77207167/113038314-627c4300-9164-11eb-9dc5-8aff57270417.jpg',
+    thumbnail: 'https://user-images.githubusercontent.com/77207167/113038314-627c4300-9164-11eb-9dc5-8aff57270417.jpg',
+  },
+  {
+    original: 'https://user-images.githubusercontent.com/77207167/113038458-8e97c400-9164-11eb-9a4f-d9c21415b657.JPG',
+    thumbnail: "https://user-images.githubusercontent.com/77207167/113038458-8e97c400-9164-11eb-9a4f-d9c21415b657.JPG"
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+  },
 ];
 
-const Buildingdata1 = [
-  ' Walmart- Innes Road',
-  'Best Buy – Kanata Centrum',
-  ' Hockey Life – Kanata Centrum',
-  'Play-it-again Sports – Terry Fox Drive North',
 
-
-];
-const Roaddata = [
-  "Small Culverts, West – Murphy, Herzberg, Donnelly Roads – The City of Ottawa",
-  "Richmond Road Widening, Richmond @ Stonehaven – The City of Ottawa",
-  "Osgoode Link Trail, Osgoode to Leitrim – The City of yOttawa",
-  "Fallowfield Transitway @ Woodroffe – The City of Ottawa",
-
+const buildingRoadConstruction = [
+"Gravel",
+"Grading",
 ]
 
-const Roaddata1 = [
-  "Wilhaven Subdivision, Wilhaven @ Dunning Rd – Proj. Mgr Novatech Engineering"
-]
-
-const SpecializedCarrier = [
-  "20 foot Tilt-n-Load truck",
-  "Tandems",
-  "Tri-axle",
-  "Pup Trailers",
-  "Tractors",
-  "Trailers",
-  "Dumb body",
-  "Belly dump",
-  "Water Haulage"
+const buildingRoadConstructionRight=[
+  ""
 ]
 
 const VariousSpecialized = [
@@ -50,6 +37,14 @@ const VariousSpecialized = [
   "Recessed decks",
   "Tank Trailers",
   "Drop Decks and Flat Decks"
+]
+
+const Transportation = [
+  "Tractors",
+  "Trailers",
+  "Tank Trailers",
+  "Tri-axle",
+  "Tandems"
 ]
 
 const CrawlerDozers = [
@@ -64,18 +59,6 @@ const Excavators = [
   "Caterpillar 320C , Caterpillar 330C, Komatsu PC 228 & PC 300"
 ]
 
-const HeavyEquipment = [
-  "Caterpillar 420E Backhoe",
-  "Caterpillar 950H Rubber Tire Loader",
-  "Komatsu W430 Rubber Tire Loader",
-  "Caterpillar 242B Skidsteer",
-  "Gehl 4835 Skidsteer",
-  "Caterpillar 140H Motor Grader",
-  "Champion 730 Motor Grader",
-  "Compaction Equipment – various sizes",
-  "Kubotas with bucket, hydraulic sweeper, snow blower, snow blade and material hopper"
-
-]
 
 const Trucks = [
   "Hauling Equipment",
@@ -93,405 +76,138 @@ function Services() {
       {/* Banner area */}
       <section className="banner_area" data-stellar-background-ratio="0.5">
         <h2>Our Services</h2>
-        {/* <ol className="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" className="active">Services 2</a></li>
-        </ol> */}
+
       </section>
-      {/* End Banner area */}
+   
 
 
-      {/* Building Construction Area */}
+    
       <section className="building_construction_area">
         <div className="container">
           <div className="row building_construction_row">
             <div className="row constructing_laft">
-              {/* <h2>Constructing</h2> */}
-              {/* <img src="../../../public/uploads/gl-7.jpg.jpg" alt /> */}
-
+           
 
               <div className="row">
 
 
                 <ul class="row painting">
-                  <div className="col-6">
-                    <li><a href="#Building Construction"><i class="fas fa-building" aria-hidden="true"></i>Building Construction</a></li>
+                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                    <li><a href="#Building Construction"><i class="fas fa-building" aria-hidden="true"></i>Building & Road Construction</a></li>
                   </div>
-                  <div className="col-6">
-                    <li><a href="#Road Construction"><i class="fa fa-road" aria-hidden="true"></i>Road Construction</a></li>
+                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                    <li><a href="#Winter Meintenance"><i class="fa fa-road" aria-hidden="true"></i>Winter Maintenance</a></li>
                   </div>
-                  <div className="col-6">
+                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
                     <li><a href="#Transportation"><i class="fa fa-truck" aria-hidden="true"></i>Transportation</a></li>
                   </div>
-                  <div className="col-6">
-                      <li><a href="#Heavy Equipment Rental"><i class="fas fa-tools" aria-hidden="true"></i>Heavy Equipment Rental</a></li>
-                    </div>
+                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                    <li><a href="#Heavy Equipment Rental"><i class="fas fa-tools" aria-hidden="true"></i>Heavy Equipment Rental</a></li>
+                  </div>
                 </ul>
-
-                <a id="Building Construction" style={{ textAlign: "center" }}>Building Construction</a>
-
-                <div className="col-7">
-                  <div className="row">
-                    <div className="col-lg-5 col-md-6 col-xs-12 ">
-                      <a style={{ textAlign: "center" }}>Public</a>
-                      <List id="items"
-                        size="small"
-                        dataSource={Buildingdata}
-                        renderItem={item => <List.Item  >{item}</List.Item>}
-                      />
-                    </div>
-                    <div className="col-lg-5 col-md-6 col-xs-12 col-6">
-                      <a style={{ textAlign: "center" }}>Private</a>
-                      <List
-                        size="small"
-                        dataSource={Buildingdata1}
-                        renderItem={item => <List.Item>{item}</List.Item>}
-                      />
-                    </div>
-                  </div>
-
-                </div>
-
-                <div className="col-lg-5 col-md-6 col-xs-12">
-
-                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/gl-7.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/gl-7.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/gl-7.jpg"
-                        />
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-
-
-
               </div>
+              <div className="row">
 
+                <a id="Building Construction" style={{ textAlign: "center" }}>Building & Road Construction</a>
 
-              <div id="Services" className="row ">
-
-                <a id="Road Construction" style={{ textAlign: "center" }}>Road Construction</a>
-                <div className="col-5">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/gl-7.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/gl-7.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/gl-7.jpg"
-                        />
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+                <div className="col-3">
+                  <List id="items"
+                    size="small"
+                    dataSource={buildingRoadConstruction}
+                    renderItem={item => <List.Item  >{item}</List.Item>}
+                  />
                 </div>
+                <div className="col-7">
 
-                <div className="col-7 ">
-                  <div className="row">
-                    <div className="col-6">
-                      <a style={{ textAlign: "center" }}>Public</a>
-                      <List id="items"
-                        size="large"
-                        dataSource={Roaddata}
-                        renderItem={item => <List.Item  >{item}</List.Item>}
-                      />
-                    </div>
-                    <div className="col-6">
-                      <a style={{ textAlign: "center" }}>Private</a>
-                      <List
-                        size="large"
-                        dataSource={Roaddata1}
-                        renderItem={item => <List.Item>{item}</List.Item>}
-                      />
-                    </div>
-                  </div>
+                  <ImageGallery items={images} />
+
                 </div>
-
-
-
-
+                <div className="col-2">
+             
+                </div>
 
               </div>
 
               <div className="row">
-                <a id="Transportation" style={{ textAlign: "center" }}>Transportation</a>
 
-                <div className="col">
-                  <div className="row">
-                    <div className="col-lg-5 col-md-6 col-xs-12 ">
-                      <a style={{ textAlign: "center" }}>Specialized Carrier</a>
-                      <List id="items"
-                        size="small"
-                        dataSource={SpecializedCarrier}
-                        renderItem={item => <List.Item  >{item}</List.Item>}
-                      />
-                    </div>
-                    <div className="col-lg-5 col-md-6 col-xs-12 col-6">
-                      <a style={{ textAlign: "center" }}>Various Specialized</a>
-                      <List
-                        size="small"
-                        dataSource={VariousSpecialized}
-                        renderItem={item => <List.Item>{item}</List.Item>}
-                      />
-                    </div>
-                  </div>
+                <a id="Transportation" style={{ textAlign: "center", marginTop: "5%" }}>Transportation</a>
 
-                </div>
-
-                <div className="col-lg- col-md-6 col-xs-12">
-
-                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/rent-truck.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-
-                          src="../../uploads/rent-truck2.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/rent-truck.jpg"
-                        />
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <div id="Services" className="row ">
-
-                <a id="Heavy Equipment Rental" style={{ textAlign: "center" }}>Heavy Equipment Rental</a>
-                <div className="col-5">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/buldozer.png"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/buldozer2.jpg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/greyder.png"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../uploads/truck.png"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-
-                          src="../../../public/uploads/gl-7.jpg.jpg"
-                        />
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div className="col-7 ">
-                  <div className="row">
-                    <div className="col-6">
-                      <a style={{ textAlign: "center" }}>CrawlerDozers</a>
-                      <List id="items"
-                        size="large"
-                        dataSource={CrawlerDozers}
-                        renderItem={item => <List.Item  >{item}</List.Item>}
-                      />
-                    </div>
-
-                    <div className="col-6">
-                      <a style={{ textAlign: "center" }}>HeavyEquipment</a>
-                      <List
-                        size="large"
-                        dataSource={HeavyEquipment}
-                        renderItem={item => <List.Item>{item}</List.Item>}
-                      />
-                    </div>
-                    <div className="col-6">
-                      <a style={{ textAlign: "center" }}>Excavators</a>
-                      <List
-                        size="large"
-                        dataSource={Excavators}
-                        renderItem={item => <List.Item>{item}</List.Item>}
-                      />
-                    </div>
-                    <div className="col-6">
-                      <a style={{ textAlign: "center" }}>Trucks</a>
-                      <List
-                        size="large"
-                        dataSource={Trucks}
-                        renderItem={item => <List.Item>{item}</List.Item>}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-            {/* <div className="col-sm-6 constructing_laft">
-              <a style={{ textAlign: "center" }}>Demolition</a>
-              <div className="row color">
-                <div className="col-6">
-                  <a style={{ textAlign: "center" }}>Public</a>
+                <div className="col-3">
                   <List id="items"
                     size="large"
-                    dataSource={Buildingdata}
+                    dataSource={CrawlerDozers}
                     renderItem={item => <List.Item  >{item}</List.Item>}
                   />
-               
                 </div>
-                <div className="col-6">
-                  <a style={{ textAlign: "center" }}>Private</a>
-                  <List
+                <div className="col-7">
+                  <ImageGallery items={images} />
+
+                </div>
+                <div className="col-2">
+                  <List id="items"
                     size="large"
-                    dataSource={Buildingdata1}
-                    renderItem={item => <List.Item>{item}</List.Item>}
+                    dataSource={Transportation}
+                    renderItem={item => <List.Item  >{item}</List.Item>}
                   />
                 </div>
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" style={{marginLeft:"20%"}}>
-
-                    <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-                   
-                    src="../../../public/uploads/gl-7.jpg.jpg"
-                  />
-
-                   
-                    </div>
-                    <div class="carousel-item">
-                    <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-                   
-                   src="../../../public/uploads/gl-7.jpg.jpg"
-                 />
-                    </div>
-                    <div class="carousel-item">
-                    <Image style={{ border: "solid 2px", maxWidth: "100%" }}
-                   
-                   src="../../../public/uploads/gl-7.jpg.jpg"
-                 />
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
               </div>
 
+              <div className="row">
+
+                <a id="Winter Meintenance" style={{ textAlign: "center", marginTop: "5%" }}>Winter Meintenance</a>
+
+                <div className="col-3">
+                  <List id="items"
+                    size="large"
+                    dataSource={Transportation}
+                    renderItem={item => <List.Item  >{item}</List.Item>}
+                  />
+                </div>
+                <div className="col-7">
+                  <ImageGallery items={images} />
+
+                  </div>
+                <div className="col-2">
+                  <List id="items"
+                    size="large"
+                    dataSource={CrawlerDozers}
+                    renderItem={item => <List.Item  >{item}</List.Item>}
+                  />
+                </div>
+
+              </div>
+
+              <div className="row">
+
+                <a id="Heavy Equipment Rental" style={{ textAlign: "center", marginTop: "5%" }}>Heavy Equipment Rental</a>
+
+                <div className="col-3">
+                  <List id="items"
+                    size="large"
+                    dataSource={CrawlerDozers}
+                    renderItem={item => <List.Item  >{item}</List.Item>}
+                  />
+                </div>
+                <div className="col-7">
+                  <ImageGallery items={images} />
+
+                  </div>
+                <div className="col-2">
+                  <List id="items"
+                    size="large"
+                    dataSource={CrawlerDozers}
+                    renderItem={item => <List.Item  >{item}</List.Item>}
+                  />
+                </div>
+
+              </div>
+
+              
 
 
-            
-            </div> */}
+            </div>
+
           </div>
         </div>
       </section>
