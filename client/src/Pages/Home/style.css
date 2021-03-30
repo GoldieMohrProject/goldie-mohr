@@ -61,7 +61,7 @@
     font: 400 14px/26px "Roboto", sans-serif;
     color: #555555;
     padding-top: 28px;
-    padding-bottom: 54px;
+    /* padding-bottom: 54px; */
   }
   .about_us_area .about_row .about_client {
     padding-top: 7px;
