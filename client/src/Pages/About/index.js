@@ -155,7 +155,7 @@ function About() {
             </p>
           </div>
           <br></br>
-          <a href="#" className="button_all">Contact Now</a>
+          <a href="#" className="contactbtn">Contact Now</a>
           <br></br>
 
         </div>
