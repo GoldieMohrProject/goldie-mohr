@@ -5,6 +5,12 @@
   height: 100px;
 }
 
+#upperFooter {
+  background-color: #454647;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}
+
 #copyright {
   margin: 0;
   top: 50%;

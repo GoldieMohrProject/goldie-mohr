@@ -8,7 +8,7 @@ import Address from '../Footer/Address.png'
 function Footer() {
     return (
         <>
-            <div id="upperFooter" style={{ backgroundColor: "#454647", color: "white" }}>
+            <div id="upperFooter" >
                 <div className="container">
                     <div className="row">
                         <div class="col-md-6 col-sm-6" style={{ marginTop: "15px", marginBottom: "15px" }}>
