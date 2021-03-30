@@ -278,24 +278,30 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 .our_partners_area .book_now_aera {
   background: #3178C6;
   padding: 50px 0;
+  color: white;
 }
 .our_partners_area .book_now_aera .book_now .booking_text {
   padding-top: 8px;
 }
 .our_partners_area .book_now_aera .book_now .booking_text h4 {
   font: 700 18px "Roboto", sans-serif;
-  color: #222222;
+  color: white;
 }
 .our_partners_area .book_now_aera .book_now .booking_text p {
   font: 400 14px/26px "Roboto", sans-serif;
-  color: #555555;
+  color: white;
   padding-top: 5px;
 }
-.our_partners_area .book_now_aera .book_now .book_bottun a {
+.our_partners_area .book_now_aera .book_now a {
   width: 200px;
-  background: #333333;
+  background: white;
   border-radius: 10px;
   color: #fff;
+}
+
+.communityarea {
+  color: white;
+  font: 400 14px/26px "Roboto", sans-serif;
 }
 
 /* End Our Partners Area */
