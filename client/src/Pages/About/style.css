@@ -69,14 +69,14 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 
 
 /* Button */
-.button_all {
+.contactbtn {
   font: 700 18px/59px "Roboto", sans-serif;
   width: 180px;
   text-align: center;
   background: #3178C6;
   display: block;
   border: 0;
-  color: #222222;
+  color: white;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
@@ -86,7 +86,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   margin-top: 15px;
 }
 
-.button_all:before {
+.contactbtn:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -103,10 +103,10 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   transition-timing-function: ease-out;
 }
 
-.button_all:hover, .button_all:focus {
+.contactbtn:hover, .button_all:focus {
     color: #fff !important;
 }
-.button_all:hover:before, .button_all:focus:before {
+.contactbtn:hover:before, .button_all:focus:before {
     transform: scaleY(1);
 }
 .about_us_area {
