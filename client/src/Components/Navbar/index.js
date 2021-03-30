@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {NavLink} from "react-router-dom"
 import './style.css'
 
 
@@ -15,6 +15,7 @@ function Navbar() {
         <li><a href="#"><i className="fa fa-clock" />Mon - Sat 12:00 - 20:00</a></li>
         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li className="ms-auto" id="faUser"><a href="#"><i class="fas fa-user fa-2x" ></i></a></li>
       </ul>
     </div>
   </section>
@@ -27,22 +28,22 @@ function Navbar() {
     <div className="collapse navbar-collapse " id="min_navbar">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Login</a>
+          <NavLink className="nav-link" to="./Service">Services</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Services</a>
+          <NavLink className="nav-link" to="./Projects">Projects</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
+          <NavLink className="nav-link" to="./About">About us</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About us</a>
+          <NavLink className="nav-link" to="/">Career</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link contactUs"  href="#">Contact us</a>
+          <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>
         </li>
       </ul>
     </div>
