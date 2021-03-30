@@ -1,6 +1,6 @@
 /* Banner Area */
 .banner_area {
-  background: url("../../uploads/gl-2.jpg") no-repeat fixed;
+  /* background: url("../../uploads/gl-2.jpg") no-repeat fixed; */
   background-position: center;
   text-align: center;
   position: relative;
@@ -190,7 +190,7 @@
 
 /*-----------featurec work-------------------*/
 .featured_works {
-  /* background: url("../../uploads/gl-2.jpg") no-repeat fixed; */
+  /* background: url("../../../public/uploads/gl-2.jpg.jpg") no-repeat fixed; */
   background-position: center;
   text-align: center;
   position: relative;
@@ -306,6 +306,33 @@ margin-bottom: 5%;
 
 .ant-list-item:hover{
   background-color: #f6b60b;
+}
+
+#Services{
+  margin-top: 5%;
+}
+
+.row .painting {
+  padding: 0;
+  padding-bottom: 40px;
+}
+.row .painting li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.row .painting li a {
+  font: 700 14px/50px "Roboto", sans-serif;
+  color: #555555;
+  background: #f5f5f5;
+  display: block;
+  padding-left: 25px;
+}
+.row .painting li a i {
+  font-size: 18px;
+  padding-right: 20px;
+}
+.row .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
+  color: #f6b60b;
 }
 
 
