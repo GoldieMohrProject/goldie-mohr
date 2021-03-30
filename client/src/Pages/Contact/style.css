@@ -1,0 +1,138 @@
+/* Banner Area */
+.banner_area {
+    /* background: url("../images/banner-bg.jpg") no-repeat fixed; */
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 70px;
+  }
+  .banner_area:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+  }
+  .banner_area h2 {
+    color: #fff;
+    font: 400 40px "Oswald", sans-serif;
+    text-transform: uppercase;
+    padding-top: 85px;
+  }
+  .banner_area .breadcrumb {
+    background-color: transparent;
+    padding-top: 15px;
+  }
+  .banner_area .breadcrumb li a {
+    font: 400 14px "Roboto", sans-serif;
+    color: #fefefe;
+  }
+  .banner_area .breadcrumb li a.active {
+    color: #f6b60b;
+  }
+  
+  /* End Banner Area */
+
+  /* Map Css */
+.contact_map iframe {
+    height: 495px;
+    width: 100%;
+  }
+  
+  /* End Map Css */
+
+
+  /* All contact Info Css */
+.all_contact_info .contact_row {
+    padding: 100px 0;
+  }
+  .all_contact_info .contact_row .contact_info h2 {
+    font: 700 26px/1 "Roboto", sans-serif;
+    color: #222222;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .all_contact_info .contact_row .contact_info h2:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    background: #f6b60b;
+    left: 0;
+    bottom: 0;
+  }
+  .all_contact_info .contact_row .contact_info p {
+    font: 400 14px/26px "Roboto", sans-serif;
+    color: #555555;
+    padding-top: 30px;
+  }
+  .all_contact_info .contact_row .contact_info .location {
+    padding-top: 55px;
+  }
+  .all_contact_info .contact_row .contact_info .location a {
+    font: 400 14px/28px "Roboto", sans-serif;
+    color: #555555;
+    display: block;
+    text-transform: uppercase;
+  }
+  .all_contact_info .contact_row .contact_info .location a:hover, .all_contact_info .contact_row .contact_info .location a:focus {
+    color: #f6b60b;
+  }
+  .all_contact_info .contact_row .contact_info .location .f_location {
+    padding-bottom: 30px;
+  }
+  .all_contact_info .contact_row .contact_info .location .location_laft {
+    width: 98px;
+    float: left;
+  }
+  .all_contact_info .contact_row .contact_info .location .address a {
+    text-transform: none;
+  }
+  .all_contact_info .contact_row .send_message .contact_box {
+    padding-top: 30px;
+  }
+  .all_contact_info .contact_row .send_message .contact_box .input_box {
+    border: 1px solid #dfe3e4;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    height: 50px;
+    padding-left: 15px;
+    width: 100%;
+    color: #d3dadf;
+    margin-bottom: 20px;
+  }
+  .all_contact_info .contact_row .send_message .contact_box .input_box.placeholder {
+    color: #d3dadf;
+  }
+  .all_contact_info .contact_row .send_message .contact_box .input_box:-moz-placeholder {
+    color: #d3dadf;
+  }
+  .all_contact_info .contact_row .send_message .contact_box .input_box::-webkit-input-placeholder {
+    color: #d3dadf;
+  }
+  .all_contact_info .contact_row .send_message .contact_box textarea {
+    height: 120px !important;
+    resize: none;
+  }
+  .all_contact_info .contact_row .send_message .contact_box button {
+    color: #fefefe;
+    font: 400 14px/40px "Roboto", sans-serif;
+    background: #f6b60b;
+    width: 140px;
+    color: #222222;
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+  .all_contact_info .contact_row .send_message .contact_box button:hover, .all_contact_info .contact_row .send_message .contact_box button:focus {
+    color: #f6b60b;
+    background: #222222;
+  }
+  
+  /* End All contact Info Css */
