@@ -7,36 +7,69 @@ import 'antd/dist/antd.css';
 
 import ImageGallery from 'react-image-gallery';
 
-const images = [
+const construction = [
   {
-    original: 'https://user-images.githubusercontent.com/77207167/113038314-627c4300-9164-11eb-9dc5-8aff57270417.jpg',
-    thumbnail: 'https://user-images.githubusercontent.com/77207167/113038314-627c4300-9164-11eb-9dc5-8aff57270417.jpg',
+    original: 'Construction/road.jpg',
+    thumbnail: 'Construction/road.jpg',
   },
   {
-    original: 'https://user-images.githubusercontent.com/77207167/113038458-8e97c400-9164-11eb-9a4f-d9c21415b657.JPG',
-    thumbnail: "https://user-images.githubusercontent.com/77207167/113038458-8e97c400-9164-11eb-9a4f-d9c21415b657.JPG"
+    original: 'Construction/road1.jpg',
+    thumbnail: 'Construction/road1.jpg',
   },
   {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    original: 'Construction/truck.jpg',
+    thumbnail: 'Construction/truck.jpg',
   },
+  {
+    original: 'Construction/pipe.jpg',
+    thumbnail: 'Construction/pipe.jpg',
+  },
+  {
+    original: 'Construction/pipe2.jpg',
+    thumbnail: 'Construction/pipe2.jpg',
+  },
+  {
+    original: 'Construction/pipe3.jpg',
+    thumbnail: 'Construction/pipe3.jpg',
+  },
+  {
+    original: 'Construction/ground.jpg',
+    thumbnail: 'Construction/ground.jpg',
+  },
+  {
+    original: 'Construction/gravel.jpg',
+    thumbnail: 'Construction/gravel.jpg',
+  },
+  {
+    original: 'Construction/asphalt.jpg',
+    thumbnail: 'Construction/asphalt.jpg',
+  }
+];
+
+const transportation = [
+  {
+    original: 'Transportation/transportation.jpg',
+    thumbnail: 'Transportation/transportation.jpg',
+  },
+  {
+    original: 'Transportation/transportation2.jpg',
+    thumbnail: 'Transportation/transportation2.jpg',
+  },
+  {
+    original: 'Transportation/transportation3.jpg',
+    thumbnail: 'Transportation/transportation3.jpg',
+  },
+  {
+    original: 'Transportation/transportation4.jpg',
+    thumbnail: 'Transportation/transportation4.jpg',
+  },
+  
 ];
 
 
 const buildingRoadConstruction = [
 "Gravel",
 "Grading",
-]
-
-const buildingRoadConstructionRight=[
-  ""
-]
-
-const VariousSpecialized = [
-  "Low bed floats",
-  "Recessed decks",
-  "Tank Trailers",
-  "Drop Decks and Flat Decks"
 ]
 
 const Transportation = [
@@ -68,6 +101,9 @@ const Trucks = [
 
 
 function Services() {
+
+
+  
 
 
   return (
@@ -119,7 +155,7 @@ function Services() {
                 </div>
                 <div className="col-7">
 
-                  <ImageGallery items={images} />
+                  <ImageGallery items={construction} />
 
                 </div>
                 <div className="col-2">
@@ -140,7 +176,7 @@ function Services() {
                   />
                 </div>
                 <div className="col-7">
-                  <ImageGallery items={images} />
+                  <ImageGallery items={transportation} />
 
                 </div>
                 <div className="col-2">
@@ -165,7 +201,7 @@ function Services() {
                   />
                 </div>
                 <div className="col-7">
-                  <ImageGallery items={images} />
+                  {/* <ImageGallery items={} /> */}
 
                   </div>
                 <div className="col-2">
@@ -190,7 +226,7 @@ function Services() {
                   />
                 </div>
                 <div className="col-7">
-                  <ImageGallery items={images} />
+                  {/* <ImageGallery items={} /> */}
 
                   </div>
                 <div className="col-2">
