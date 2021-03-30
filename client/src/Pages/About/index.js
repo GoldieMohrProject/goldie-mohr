@@ -2,7 +2,8 @@
 import "./style.css"
 
 import React from 'react';
-import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import './style.css';
+import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import "./Contact.css"
+import './style.css'
 
 
 
@@ -47,13 +47,13 @@ function Contact() {
                                     <a > +1 613 838 58 08</a>
                                     <a >info@goldiemohrltd.ca</a>
                                     <a > PO Box 34009,Ottawa, Ontario, K2J 5B1</a>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6 contact_info send_message">
                             <h2>Send Us a Message</h2>
-                            <form  action="mailto:f.sultanay@gmail.com" method="GET"className="form-inline contact_box">
+                            <form action="mailto:f.sultanay@gmail.com" method="GET" className="form-inline contact_box">
                                 <input type="text" className="form-control input_box" name="name" placeholder="First Name *" />
                                 <input type="text" className="form-control input_box" name="lastName" placeholder="Last Name *" />
                                 <input type="email" className="form-control input_box" name="email" placeholder="Your Email *" />

@@ -1,0 +1,340 @@
+/* Banner Area */
+.banner_area {
+  /* background: url("../../uploads/gl-2.jpg") no-repeat fixed; */
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+.banner_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.banner_area h2 {
+  color: #fff;
+  font: 400 40px "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-top: 85px;
+}
+.banner_area .breadcrumb {
+  background-color: transparent;
+  padding-top: 15px;
+}
+.banner_area .breadcrumb li a {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fefefe;
+}
+.banner_area .breadcrumb li a.active {
+  color: #f6b60b;
+}
+
+/* End Banner Area */
+
+
+.building_construction_area .building_construction_row {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.building_construction_area .building_construction_row .constructing_laft h2 {
+  font: 700 24px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+.building_construction_area .building_construction_row .constructing_laft img {
+  max-width: 100%;
+}
+.building_construction_area .building_construction_row .constructing_laft a {
+  font: 700 24px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  display: block;
+  padding-top: 25px;
+}
+.building_construction_area .building_construction_row .constructing_laft a:hover, .building_construction_area .building_construction_row .constructing_laft a:focus {
+  color: #f6b60b;
+}
+.building_construction_area .building_construction_row .constructing_laft p {
+  font: 400 14px/26px "Roboto", sans-serif;
+  color: #555555;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum {
+  padding-left: 0;
+  padding-top: 15px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator {
+  padding: 0;
+  padding-top: 15px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li {
+  list-style: none;
+  font: 400 14px/26px "Roboto", sans-serif;
+  color: #555555;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li i {
+  color: #f6b60b;
+  padding-right: 30px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum_img {
+  padding-top: 25px;
+  padding-bottom: 16px;
+}
+.building_construction_area .building_construction_row .constructing_laft .ipsum_img img {
+  max-width: 100%;
+}
+.building_construction_area .building_construction_row .constructing_right h2 {
+  font: 700 24px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting {
+  padding: 0;
+  padding-bottom: 40px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li a {
+  font: 700 14px/50px "Roboto", sans-serif;
+  color: #555555;
+  background: #f5f5f5;
+  display: block;
+  padding-left: 25px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li a i {
+  font-size: 18px;
+  padding-right: 20px;
+}
+.building_construction_area .building_construction_row .constructing_right .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
+  color: #f6b60b;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us {
+  background: #f6b60b;
+  padding: 30px;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us h4 {
+  font: 400 14px/1 "Roboto", sans-serif;
+  color: #fefefe;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us .contac_namber {
+  font: 700 18px/26px "Roboto", sans-serif;
+  color: #fefefe;
+  display: block;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us p {
+  font: 400 14px/26px "Roboto", sans-serif;
+  color: #fefefe;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.building_construction_area .building_construction_row .constructing_right .contact_us .button_all {
+  width: 150px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font: 400 14px/36px "Roboto", sans-serif;
+  color: #fefefe;
+}
+
+/*    button   */
+
+.button_all {
+  font: 700 18px/59px "Roboto", sans-serif;
+  width: 180px;
+  text-align: center;
+  background: #f6b60b;
+  display: block;
+  border: 0;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+.button_all:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #222222;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.button_all:hover, .button_all:focus {
+  color: #fff !important;
+}
+.button_all:hover:before, .button_all:focus:before {
+  transform: scaleY(1);
+}
+
+/*--------------------------------------------------*/
+
+/*-----------featurec work-------------------*/
+.featured_works {
+  /* background: url("../../../public/uploads/gl-2.jpg.jpg") no-repeat fixed; */
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+.featured_works:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.featured_works .tittle h2 {
+  color: #fff;
+}
+.featured_works .tittle h4 {
+  color: #fefefe;
+}
+.featured_works .featured_gallery {
+  padding-top: 60px;
+}
+.featured_works .featured_gallery .gallery_iner {
+  position: relative;
+  overflow: hidden;
+}
+.featured_works .featured_gallery .gallery_iner img {
+  max-width: 100%;
+}
+.featured_works .featured_gallery .gallery_iner:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(248, 184, 29, 0.7);
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms linear 0s;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover h4 {
+  color: #fff;
+  font: 700 14px "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  position: relative;
+  right: -100%;
+  transition: all 300ms linear 0s;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover a {
+  width: 100px;
+  font: 300 8px/60px "Roboto", sans-serif;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  background: #333333;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  transition: all 300ms linear 0s;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover a:hover, .featured_works .featured_gallery .gallery_iner .gallery_hover a:focus {
+  background: #fff;
+  color: #f6b60b;
+}
+.featured_works .featured_gallery .gallery_iner:hover:after, .featured_works .featured_gallery .gallery_iner:focus:after {
+  opacity: 1;
+}
+.featured_works .featured_gallery .gallery_iner:hover .gallery_hover h4, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover h4 {
+  right: 0;
+}
+.featured_works .featured_gallery .gallery_iner:hover .gallery_hover a, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover a {
+  left: 0;
+}
+
+#service{
+margin-bottom: 5%;
+}
+
+
+@media (max-width: 300px){
+  #service{
+    width: 100% !important;
+ 
+  }
+ 
+}
+
+/* .color:hover{
+  border: rgb(0, 26, 255) solid 2px;
+  
+} */
+
+.ant-list-item:hover{
+  background-color: #f6b60b;
+}
+
+#Services{
+  margin-top: 5%;
+}
+
+.row .painting {
+  padding: 0;
+  padding-bottom: 40px;
+}
+.row .painting li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.row .painting li a {
+  font: 700 14px/50px "Roboto", sans-serif;
+  color: #555555;
+  background: #f5f5f5;
+  display: block;
+  padding-left: 25px;
+}
+.row .painting li a i {
+  font-size: 18px;
+  padding-right: 20px;
+}
+.row .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
+  color: #f6b60b;
+}
+
+
+
+/*--------------------------------------------------*/
