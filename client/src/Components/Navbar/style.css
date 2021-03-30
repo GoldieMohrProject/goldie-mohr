@@ -1,5 +1,5 @@
 .top_header_area {
-    background: #111f29;
+    background: #3178C6;
   }
   .top_header_area .top_nav li a {
     font: 400 14px/50px "Roboto", sans-serif;
@@ -11,6 +11,10 @@
     color: #f6b60b;
     font-size: 18px;
     padding-right: 10px;
+  }
+  #faUser a i{
+    font-size: 25px;
+    padding-right: 0px;
   }
   .top_header_area .top_nav li a:hover, .top_header_area .top_nav li a:focus {
     background-color: transparent;
