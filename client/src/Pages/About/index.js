@@ -7,7 +7,7 @@ import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import placeholder from '../../assets/placeholder.png'
+// import placeholder from '../../assets/placeholder.png'
 import CAFE from '../../assets/CAFE.png'
 import Dig from '../../assets/Dig.png'
 import ISHA from '../../assets/ISHA.png'
@@ -166,14 +166,14 @@ function About() {
       <section className="our_partners_area">
         <div className="book_now_aera">
           <div className="container">
-            <div className="col-md-10 booking_text">
+            <div className="col-md-10">
               <h4>Our community is important to us.</h4>
               <br></br>
-              <p>
+              <p className="communityarea">
                 As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.
                 </p>
                 <br></br>
-              <p>
+              <p className="communityarea">
                 Over the years GOLDIE MOHR LTD. has supported many local charity groups, charity events, sports teams, service clubs and organizations. As a team, we believe a place should be left better than found and we strive to make this possible through our community involvement.
                 </p>
             </div>
@@ -196,7 +196,9 @@ function About() {
             </div>
 
           </div>
-          <div className="row team_row">
+          </div>
+      </section>
+          {/* <div className="row team_row">
             <div className="col-md-3 col-sm-6 wow fadeInUp">
 
               <div className="team_membar">
@@ -270,8 +272,8 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div> */}
+   
       {/* End Our Team Area */}
 
 
