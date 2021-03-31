@@ -1,125 +1,66 @@
 import React from 'react'
 import Wrapper from '../../Components/Wrapper'
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import Slider from '../../Components/Slider'
 import './style.css'
+configureAnchors({ offset: 0, scrollDuration: 100, keepLastAnchorHash: false })
+
 
 function Home() {
     return (
-
         <Wrapper>
-            <div style={{ height: '75vh', backgroundColor: 'orange' }}>
-                <h1 style={{ textAlign: 'center', paddingTop: '15%' }}>We will put a slider here</h1>
+            <Slider />
+            <div>
+                <a href="#About-Us" class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
+                    <div class="content">
+                        <svg id="more-arrows">
+                            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+                            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+                            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+                        </svg>
+                    </div>
+                </a>
+
             </div>
-            <section class="row professional_builder">
-                <div class="container">
-                    <div class="row builder_all">
-                        <div class="col-md-3 col-sm-6 builder">
-                            <i class="fa fa-home" aria-hidden="true"></i>
-                            <h4>Professional Build</h4>
-                            <p>We provide the finest build quality to ensure our customers' satisfaction</p>
-                        </div>
-                        <div class="col-md-3 col-sm-6 builder">
-                            <i class="fa fa-building" aria-hidden="true"></i>
-                            <h4>We Deliver Quality</h4>
-                            <p>We value your satisfaction and will work hard to surpass your expectations</p>
-                        </div>
-                        <div class="col-md-3 col-sm-6 builder">
-                            <i class="fa fa-clock" aria-hidden="true"></i>
-                            <h4>Always On Time</h4>
-                            <p>Punctuality is of upmost importance when it comes to our workflow</p>
-                        </div>
-                        <div class="col-md-3 col-sm-6 builder">
-                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                            <h4>We Are Passionate</h4>
-                            <p>We will work tirelessly to complete projects demanded by our customers</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* About us */}
-            <section class="row about_us_area">
-                <div class="container ">
-                    <div class="tittle">
-                        <h2>About Us</h2>
-                        <h4>We strive to provide MOHR Value to our customers, our team members and our suppliers.
-                             Whether your needs are for one yard of topsoil, the site preparation of a new building,
-                              a culvert replacement, a recreation area or a new road, GOLDIE MOHR LTD can help you. 
-                              We are a heavy civil construction company. Our services include earth moving, transportation,
-                               heavy equipment rental, winter maintenance and float services.
-                            </h4>
-                    </div>
-
-                    <div class="row about_row">
-                        <div class="col-md-7 col-sm-6 who_we_area">
-                            <div class="subtittle">
-                                <h2>WHO WE ARE</h2>
+            <ScrollableAnchor id={'About-Us'}>
+                <section class="row professional_builder" >
+                    <div class="container">
+                        <div class="row builder_all">
+                            <div class="tittle" style={{ marginBottom: '10%' }}>
+                                <h2>About Us</h2>
                             </div>
-                            <p>We aim to satisfy your heavy civil construction needs from project management to equipment rental.
-                                 The GOLDIE MOHR LTD. team will provide quality service from snow removal to heavy specialized
-                                  transportation. We are the professionals to deliver quality service for any and all your heavy 
-                                  civil construction projects. Please remember our premium building and landscaping materials at 
-                                  competitive prices.
-
-                            GOLDIE MOHR LTD. is a Canadian family business. 2020 We celebrate our 60th anniversary.
-
-                          </p>
-                            <a href="#" class="button_all">Contact Now</a>
-                        </div>
-                        <div class="col-md-5 col-sm-6 about_client">
-                            <img src="https://user-images.githubusercontent.com/71358869/112927046-5ea7dc80-90e2-11eb-8de6-772e20995f93.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="what_we_area row">
-                <div class="container">
-                    <div class="tittle wow fadeInUp">
-                        <h2>WHAT WE OFFER</h2>
-                        <h4 style={{fontWeight:'bolder'}}>Goldie Mohr Ltd has the ability to mobilize and execute large earth excavation projects with precision.</h4>
-                        <h4>Our Services Includes But Are Not Limited To:</h4>
-                    </div>
-                    <div class="row construction_iner">
-                        <div class="col-md-4 col-sm-6 construction">
-                            <div class="cns-img">
-                                <img src="images/cns-1.jpg" alt="" />
-                            </div>
-                            <div class="cns-content">
+                            <div class="col-md-3 col-sm-6 builder">
                                 <i class="fa fa-home" aria-hidden="true"></i>
-                                <a href="#">BUILDING CONSTRUCTION</a>
-                                <p>Lorem Ipsum is simply dummy text of the print-ing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+                                <h4>Professional Build</h4>
+                                <p>We provide the finest build quality to ensure our customers' satisfaction</p>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 construction">
-                            <div class="cns-img">
-                                <img src="images/cns-2.jpg" alt="" />
+                            <div class="col-md-3 col-sm-6 builder">
+                                <i class="fa fa-building" aria-hidden="true"></i>
+                                <h4>We Deliver Quality</h4>
+                                <p>We value your satisfaction and will work hard to surpass your expectations</p>
                             </div>
-                            <div class="cns-content">
-                                <i class="fa fa-keyboard" aria-hidden="true"></i>
-                                <a href="#">HEAVY EQUIPMENT RENTAL</a>
-                                <p>Lorem Ipsum is simply dummy text of the print-ing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+                            <div class="col-md-3 col-sm-6 builder">
+                                <i class="fa fa-clock" aria-hidden="true"></i>
+                                <h4>Always On Time</h4>
+                                <p>Punctuality is of upmost importance when it comes to our workflow</p>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 construction">
-                            <div class="cns-img">
-                                <img src="images/cns-3.jpg" alt="" />
+                            <div class="col-md-3 col-sm-6 builder">
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <h4>We Are Passionate</h4>
+                                <p>We will work tirelessly to complete projects demanded by our customers</p>
                             </div>
-                            <div class="cns-content">
-                                <i class="fa fa-gavel" aria-hidden="true"></i>
-                                <a href="#">DEMOLITION</a>
-                                <p>Lorem Ipsum is simply dummy text of the print-ing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
-                            </div>
+
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </ScrollableAnchor>
+
+
             <section class="our_feature_area">
                 <div class="container">
-                    <div class="tittle wow fadeInUp" >
-                        <h2>Our Features</h2>
-                        <h4>After many years of service in the Ottawa community, we feel confident that we can cater to your needs. 
-                            We get the job done and we don’t just meet expectations; we exceed them. Our customers keep coming back
-                             because we are dependable, knowledgeable and pleasant to work with.</h4>
-                    </div>
+
                     <div class="feature_row row">
                         <div class="col-md-6 feature_img">
 
@@ -132,22 +73,47 @@ function Home() {
                                 <div class="achievments_row row">
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-check-square" aria-hidden="true"></i>
-                                        <span class="counter">800</span>
+                                        <CountUp  end={800} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span class="counter" ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
                                         <h6>PROJECT COMPLETED</h6>
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-home" aria-hidden="true"></i>
-                                        <span class="counter">229</span>
+                                        {/* <span class="counter">229</span> */}
+                                        <CountUp  end={229} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span class="counter" ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
                                         <h6>HOUSE RENOVATIONS</h6>
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-child" aria-hidden="true"></i>
-                                        <span class="counter">100</span>
+                                        <CountUp  end={100} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span class="counter" ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
                                         <h6>WORKERS EMPLOYED</h6>
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
-                                        <span class="counter">25</span>
+                                        <CountUp  end={25} redraw={true}>
+                                            {({ countUpRef, start }) => (
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <span class="counter" ref={countUpRef} />
+                                                </VisibilitySensor>
+                                            )}
+                                        </CountUp>
                                         <h6>AWARDS WON</h6>
                                     </div>
                                 </div>
@@ -157,9 +123,9 @@ function Home() {
 
 
                         </div>
-                        <div class="col-md-6 feature_content">
+                        <div id="#whyus" class="col-md-6 feature_content">
                             <div class="container">
-                                <div class="subtittle" style={{marginTop:'3%'}}>
+                                <div class="subtittle" style={{ marginTop: '3%' }}>
                                     <h3>WHY CHOOSE US</h3>
                                     <h6>Aside from our amazing staff,we take the time and care to make sure even the tiniest
                                          detail is managed, in every circumstance.</h6>
@@ -199,21 +165,24 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </section>
 
-            <section class="row featured_works backgroundd" data-stellar-background-ratio="0.3" style={{ backgroundPosition: ' 50% -1185.36px', marginTop:'5%', marginBottom:'0.11%' }}>
+            <section class="row featured_works backgroundd" data-stellar-background-ratio="0.3" style={{ backgroundPosition: ' 50% -1185.36px', marginTop: '5%', marginBottom: '0.11%' }}>
                 <div class="tittle wow fadeInUp">
                     <h2>Safety</h2>
-                    <h4 style={{paddingLeft:'10%', paddingRight:'10%',lineHeight: '140%', marginTop:'4%'}}>As a member of the W.S.I.B Safety Group, Goldie Mohr Ltd. is able to reduce workplace injuries and ensure 
-                        safety at all job sites. The main focus of the Goldie Mohr Ltd. safety department is to create the safest
-                         environment possible, for all stakeholders (the public, employees, sub-contractors and customers) by
-                          maintaining the policies and standards influenced by W.S.I.B. Safety Group.  Accident prevention is what 
+                    <h4 style={{ paddingLeft: '10%', paddingRight: '10%', lineHeight: '140%', marginTop: '4%' }}>As a member of the W.S.I.B Safety Group, Goldie Mohr Ltd. is able to reduce workplace injuries and ensure
+                    safety at all job sites. The main focus of the Goldie Mohr Ltd. safety department is to create the safest
+                    environment possible, for all stakeholders (the public, employees, sub-contractors and customers) by
+                    maintaining the policies and standards influenced by W.S.I.B. Safety Group.  Accident prevention is what
                           Goldie Mohr Ltd. strives for through this program.</h4>
                 </div>
             </section>
-            
+
+
         </Wrapper>
 
     )

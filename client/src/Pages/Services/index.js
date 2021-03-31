@@ -194,7 +194,7 @@ function Services() {
                 <div style={{ marginTop: '5%' }} className="row">
                   <div className="col-2"></div>
                   <div className="col-lg-2 col-md-2 col-xs-12">
-                    <li  >Tractors </li>
+                    <li   >Tractors </li>
                   </div>
                   <div className="col-lg-2 col-md-2 col-xs-12">
                     <li> Trailers</li>
