@@ -31,11 +31,11 @@ function Navbar() {
                                 <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="./Service">Services</NavLink>
+                                <NavLink className="nav-link" to="./Service">Services & Projects</NavLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink className="nav-link" to="./Projects">Projects</NavLink>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="./About">About us</NavLink>
                             </li>

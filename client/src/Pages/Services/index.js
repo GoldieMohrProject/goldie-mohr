@@ -108,7 +108,7 @@ function Services() {
 
       {/* Banner area */}
       <section className="banner_area" data-stellar-background-ratio="0.5">
-        <h2>Our Services</h2>
+        <h2>Our Services / Projects</h2>
 
       </section>
 
