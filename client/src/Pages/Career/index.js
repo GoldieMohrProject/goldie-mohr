@@ -6,7 +6,7 @@ function Career() {
     return (
         <>
             <div id="careerImage">
-                <h1 id="careerTitle">CAREER</h1>
+                <h1 id="careerTitle">CAREERS</h1>
             </div>
             <div className="container">
                 <div style={{ marginBottom: "40px", marginTop: "40px" }}>
