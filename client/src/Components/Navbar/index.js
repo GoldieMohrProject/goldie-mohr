@@ -39,7 +39,7 @@ function Navbar() {
           <NavLink className="nav-link" aria-current="page" to="/" onClick={() => {window.location.href="/"}} >Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="./Service">Services</NavLink>
+          <NavLink className="nav-link" to="./Services">Services</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="./Projects">Projects</NavLink>
@@ -48,7 +48,7 @@ function Navbar() {
           <NavLink className="nav-link" to="./About">About us</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/">Career</NavLink>
+          <NavLink className="nav-link" to="/">Careers</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>

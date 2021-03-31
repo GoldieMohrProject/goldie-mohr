@@ -29,6 +29,7 @@
   text-transform: uppercase;
 }
 
+
 .tittle h2 {
   font: 400 24px "Oswald", sans-serif;
   color: #222222;
@@ -57,116 +58,6 @@
   padding-top: 55px;
 }
 
-.about_us_area .about_row {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.about_us_area .about_row p {
-  font: 400 14px/26px "Roboto", sans-serif;
-  color: #555555;
-  padding-top: 28px;
-  padding-bottom: 54px;
-}
-.about_us_area .about_row .about_client {
-  padding-top: 7px;
-}
-.about_us_area .about_row .about_client img {
-  max-width: 100%;
-}
-.about_us_area .about_row .our_skill_inner .single_skill h3 {
-  font: 700 18px "Roboto", sans-serif;
-  color: #222222;
-  padding-bottom: 8px;
-}
-.about_us_area .about_row .our_skill_inner .single_skill .progress {
-  background: #f5f5f5;
-  box-shadow: none;
-  height: 8px;
-  width: 100%;
-  overflow: visible;
-  border-radius: 0;
-  position: relative;
-  margin-bottom: 40px;
-}
-.about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar {
-  background: #3178C6;
-  box-shadow: none;
-}
-.about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar .progress_parcent {
-  font: 700 18px "Roboto", sans-serif;
-  color: #222222;
-  position: absolute;
-  right: 0;
-  top: -30px;
-}
-.about_us_area .about_us2_pages {
-  padding-top: 90px;
-}
-
-/*--------------------------------------------------*/
-.what_we_area {
-  background: #3178C6;
-}
-.what_we_area .tittle h2:after {
-  background: #fff;
-}
-.what_we_area .tittle h4 {
-  color: #333;
-}
-.what_we_area .construction_iner {
-  padding-top: 60px;
-  padding-bottom: 70px;
-}
-.what_we_area .construction_iner .construction {
-  text-align: center;
-  padding-bottom: 30px;
-  cursor: move;
-}
-.what_we_area .construction_iner .construction .cns-img {
-  z-index: 2;
-}
-.what_we_area .construction_iner .construction .cns-img img {
-  max-width: 100%;
-}
-.what_we_area .construction_iner .construction .cns-content {
-  background: #fff;
-  padding: 0 30px;
-  padding-bottom: 20px;
-  margin-top: -30px;
-}
-.what_we_area .construction_iner .construction .cns-content i {
-  color: #fff;
-  font-size: 24px;
-  background: #333333;
-  line-height: 60px;
-  width: 60px;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-  transition: all 300ms linear 0s;
-  position: relative;
-}
-.what_we_area .construction_iner .construction .cns-content a {
-  font: 700 18px "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #222222;
-  padding-top: 17px;
-  display: block;
-}
-.what_we_area .construction_iner .construction .cns-content p {
-  font: 400 14px/26px "Roboto", sans-serif;
-  color: #555555;
-  padding-top: 20px;
-}
-.what_we_area .construction_iner .construction:hover a, .what_we_area .construction_iner .construction:focus a {
-  color: #3178C6;
-}
-.what_we_area .construction_iner .construction:hover i, .what_we_area .construction_iner .construction:focus i {
-  font-size: 35px;
-}
-
-/*--------------------------------------------------*/
 /*--------------------------------------------------*/
 .our_achievments_area {
   background: url("https://user-images.githubusercontent.com/71358869/112876133-1a412000-9093-11eb-87df-a44bfdeedfec.jpg") no-repeat fixed;
@@ -232,19 +123,14 @@
 .p0 {
   padding: 0;
 }
-.backgroundd{
-  background-position: 0% 0
-}  
 .featured_works {
-  background: url("https://user-images.githubusercontent.com/71358869/112877965-5ffee800-9095-11eb-9467-6a9b9359e091.jpg") no-repeat fixed;
-  background-position: center;
+  background: url("https://user-images.githubusercontent.com/71358869/113165769-30281f80-9210-11eb-952d-c46e00bfe040.jpg") no-repeat fixed;
+
   text-align: center;
   position: relative;
   z-index: 1;
-  /* padding-bottom: 100px; */
   display: block;
   overflow: hidden;
-  padding-bottom: 100px;
 }
 .featured_works:after {
   content: "";
@@ -356,7 +242,7 @@ padding-bottom: 15px;
 .our_feature_area .feature_row .feature_content .media .media-left {
 padding-right: 30px;
 }
-.our_feature_area .feature_row .feature_content .media .media-left a i {
+.our_feature_area .feature_row .feature_content .media .media-left h6 i {
 font-size: 24px;
 color: #3178C6;
 line-height: 50px;
@@ -365,13 +251,14 @@ text-align: center;
 background: white;
 border: 5px solid #3178C6;
 }
-.our_feature_area .feature_row .feature_content .media .media-body a {
+.our_feature_area .feature_row .feature_content .media .media-body h6 {
 font: 700 18px "Roboto", sans-serif;
 color: #222222;
 text-transform: uppercase;
 }
-.our_feature_area .feature_row .feature_content .media .media-body a:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
+.our_feature_area .feature_row .feature_content .media .media-body h6:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
 color: #3178C6;
+cursor: pointer;
 }
 .our_feature_area .feature_row .feature_content .media .media-body p {
 font: 400 14px/26px "Roboto", sans-serif;
@@ -386,16 +273,8 @@ padding-top: 20px;
 }
 }
 
-/* .container {
-
-height: 100vh;
-padding: 20px;
-text-align: center;
-} */
 .content {
 height: 5;
-/* position: relative; */
-
 bottom: 2%;
 transform: translate(0%, 0%);
 }
@@ -408,7 +287,7 @@ width: 75px;
 height: 65px;
 }
 #more-arrows:hover polygon {
-fill: #fff;
+fill: black;
 transition: all 0.2s ease-out;
 }
 #more-arrows:hover polygon.arrow-bottom {
@@ -418,7 +297,7 @@ transform: translateY(-18px);
 transform: translateY(18px);
 }
 polygon {
-fill: rgb(247, 243, 237);
+fill: rgb(25, 98, 235);
 transition: all 0.2s ease-out;
 }
 polygon.arrow-middle {
