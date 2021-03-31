@@ -222,7 +222,7 @@ function Services() {
                 <div style={{ marginTop: '5%' }} className="row">
                   <div className="col-2"></div>
                   <div className="col-lg-2 col-md-2 col-xs-12">
-                    <li  >Tractors </li>
+                    <li   >Tractors </li>
                   </div>
                   <div className="col-lg-2 col-md-2 col-xs-12">
                     <li> Trailers</li>
@@ -248,7 +248,7 @@ function Services() {
 
               <div className="row">
 
-                <a id="Winter Meintenance" style={{ textAlign: "center", marginTop: "5%" }}>Winter Meintenance</a>
+                <a id="Winter Meintenance" style={{ textAlign: "center", marginTop: "5%" }}>Winter Maintenance</a>
 
                 <div className="row">
 
