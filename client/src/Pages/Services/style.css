@@ -360,10 +360,13 @@ margin-bottom: 5%;
 }
 
 .row .col-lg-3  {
-  list-style: none
+  list-style: none;
+  font-weight: bold;
+
 }
 .row .col-lg-2 {
-  list-style: none
+  list-style: none;
+  font-weight: bold;
 }
 
 
