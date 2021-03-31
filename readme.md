@@ -11,9 +11,7 @@
 
    Pages 
 
-   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)--  Projects (Fatih)  --   
-
-   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)   --
+   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)--  Projects (Fatih)  --   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)   --
 
    Register Page (Faisal) -- (Training)   
 
@@ -24,6 +22,10 @@
    LastName
    Phone Number
    User Profile Picture
+
+
+
+
 
                          BACK END   (mysql)
 
