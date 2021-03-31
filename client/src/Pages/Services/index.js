@@ -162,22 +162,13 @@ function Services() {
 
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
 
-<<<<<<< HEAD
-                  <a>
-=======
 
                     <a>
->>>>>>> parent of 523b269 (Revert "Merge branch 'branch-Developer' into branch-Shiva")
                       <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
 
                       GRAVEL
 
                     </a>
-<<<<<<< HEAD
-                   
-=======
-
->>>>>>> parent of 523b269 (Revert "Merge branch 'branch-Developer' into branch-Shiva")
                   </div>
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
 
