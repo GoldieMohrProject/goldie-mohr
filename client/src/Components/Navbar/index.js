@@ -4,7 +4,7 @@ import './style.css'
 
 
 function Navbar() {
-  
+ 
   return ( 
     <>
   <section className="top_header_area">
@@ -19,7 +19,7 @@ function Navbar() {
       </ul>
     </div>
   </section>
-  <nav className="navbar navbar-expand-lg navbar-light header_aera" id="main_navbar">
+  <nav className="navbar navbar-expand-lg navbar-light header_aera stroke" id="main_navbar">
   <div className="container">
     <a className="navbar-brand" href="#"><img src="images/header-logo.png" ></img></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#min_navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@ function Navbar() {
     <div className="collapse navbar-collapse " id="min_navbar">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+          <NavLink className="nav-link" aria-current="page" to="/" onClick={() => {window.location.href="/"}} >Home</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="./Service">Services</NavLink>
