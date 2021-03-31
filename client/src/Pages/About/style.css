@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
 /*Color Variables*/
 ::selection {
-  background-color: #3178C6;
+  background-color: #f8b81d;
   color: #FFFFFF;
 }
 
@@ -69,14 +69,14 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 
 
 /* Button */
-.contactbtn {
+.button_all {
   font: 700 18px/59px "Roboto", sans-serif;
   width: 180px;
   text-align: center;
-  background: #3178C6;
+  background: #f6b60b;
   display: block;
   border: 0;
-  color: white;
+  color: #222222;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
@@ -86,7 +86,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   margin-top: 15px;
 }
 
-.contactbtn:before {
+.button_all:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -103,10 +103,10 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   transition-timing-function: ease-out;
 }
 
-.contactbtn:hover, .button_all:focus {
+.button_all:hover, .button_all:focus {
     color: #fff !important;
 }
-.contactbtn:hover:before, .button_all:focus:before {
+.button_all:hover:before, .button_all:focus:before {
     transform: scaleY(1);
 }
 .about_us_area {
@@ -144,7 +144,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   margin-bottom: 40px;
 }
 .about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar {
-  background: #3178C6;
+  background: #f6b60b;
   box-shadow: none;
 
 }
@@ -217,11 +217,6 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   transform: scale(1.1);
 }
 
-.teampic {
-  margin-top: 50px;
-  box-shadow: 3px 7px 8px 3px #888888;
-}
-
 /*   future */
 
 .our_feature_area {
@@ -248,12 +243,12 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .our_feature_area .feature_row .feature_content .media .media-left a i {
   font-size: 24px;
-  color: #3178C6;
+  color: #f6b60b;
   line-height: 50px;
   width: 60px;
   text-align: center;
   background: #333333;
-  border: 5px solid #3178C6;
+  border: 5px solid #f6b60b;
 }
 .our_feature_area .feature_row .feature_content .media .media-body a {
   font: 700 18px "Roboto", sans-serif;
@@ -261,7 +256,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   text-transform: uppercase;
 }
 .our_feature_area .feature_row .feature_content .media .media-body a:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
-  color:#3178C6;
+  color: #f6b60b;
 }
 .our_feature_area .feature_row .feature_content .media .media-body p {
   font: 400 14px/26px "Roboto", sans-serif;
@@ -281,32 +276,26 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   width: 100%;
 }
 .our_partners_area .book_now_aera {
-  background: #3178C6;
+  background: #f6b60b;
   padding: 50px 0;
-  color: white;
 }
 .our_partners_area .book_now_aera .book_now .booking_text {
   padding-top: 8px;
 }
 .our_partners_area .book_now_aera .book_now .booking_text h4 {
   font: 700 18px "Roboto", sans-serif;
-  color: white;
+  color: #222222;
 }
 .our_partners_area .book_now_aera .book_now .booking_text p {
   font: 400 14px/26px "Roboto", sans-serif;
-  color: white;
+  color: #555555;
   padding-top: 5px;
 }
-.our_partners_area .book_now_aera .book_now a {
+.our_partners_area .book_now_aera .book_now .book_bottun a {
   width: 200px;
-  background: white;
+  background: #333333;
   border-radius: 10px;
   color: #fff;
-}
-
-.communityarea {
-  color: white;
-  font: 400 14px/26px "Roboto", sans-serif;
 }
 
 /* End Our Partners Area */
@@ -330,7 +319,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   max-width: 100%;
 }
 .our_team_area .team_row .team_membar .team_content {
-  background: #3178C6;
+  background: #f6b60b;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -366,7 +355,7 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   display: block;
 }
 .our_team_area .team_row .team_membar .team_content ul li a:hover, .our_team_area .team_row .team_membar .team_content ul li a:focus {
-  color: #3178C6;
+  color: #f6b60b;
   background: #fff;
 }
 .our_team_area .team_row .team_membar .team_content .name {

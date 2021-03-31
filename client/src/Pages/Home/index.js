@@ -12,8 +12,8 @@ function Home() {
     return (
         <Wrapper>
             <Slider />
-            <div >
-                <a href="#About-Us" class="container hideArrow" style={{ zIndex:'10',position: 'absolute', paddingLeft: '47%', bottom: '0%' }}>
+            <div>
+                <a href="#About-Us" class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
                             <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
@@ -84,7 +84,8 @@ function Home() {
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-home" aria-hidden="true"></i>
-                                        <CountUp  end={229} redraw={true}>
+                                        {/* <span class="counter">229</span> */}
+                                        <CountUp end={229} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
@@ -131,34 +132,34 @@ function Home() {
                                 </div>
                                 <div class="media">
                                     <div class="media-left">
-                                        <h6>
+                                        <a href="#">
                                             <i class="fa fa-wrench" aria-hidden="true"></i>
-                                        </h6>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <h6>60+ YEARS OF EXPERIENCE</h6>
+                                        <a href="#">60+ YEARS OF EXPERIENCE</a>
                                         <p>Our long experience means we have expertise which reaches across a number of services, as well as knowledge of specific protocol and local regulations. But we know that things change, and we are constantly striving to adapt and improve. </p>
                                     </div>
                                 </div>
                                 <div class="media">
                                     <div class="media-left">
-                                        <h6>
+                                        <a href="#">
                                             <i class="fa fa-users" aria-hidden="true"></i>
-                                        </h6>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <h6>Best Customer Services</h6>
+                                        <a href="#">Best Customer Services</a>
                                         <p>Our employees provide unmatched service, delivering top quality service for your business! All of our team members are committed to personal service. In keeping with this desire, we are not satisfied with our work until you are as well.</p>
                                     </div>
                                 </div>
                                 <div class="media">
                                     <div class="media-left">
-                                        <h6>
+                                        <a href="#">
                                             <i class="fa fa-rocket" aria-hidden="true"></i>
-                                        </h6>
+                                        </a>
                                     </div>
                                     <div class="media-body">
-                                        <h6 style={{fontWeight:'bold'}}>QUALIFIED EXPERTS</h6>
+                                        <a href="#">QUALIFIED EXPERTS</a>
                                         <p>You want results? Contact us today !There really is no other way. </p>
                                     </div>
                                 </div>
@@ -170,15 +171,14 @@ function Home() {
                 </div>
             </section>
 
-            <section class="row featured_works " data-stellar-background-ratio="0.3" style={{ backgroundPosition: ' 50% -0.36px', marginTop: '5%', marginBottom: '0.11%' }}>
+            <section class="row featured_works backgroundd" data-stellar-background-ratio="0.3" style={{ backgroundPosition: ' 50% -1185.36px', marginTop: '5%', marginBottom: '0.11%' }}>
                 <div class="tittle wow fadeInUp">
-                    <h2 >Safety</h2>
-                    <h5 style={{ paddingLeft: '10%', paddingRight: '10%', marginTop: '4%',  textTransform: 'none' , color: 'white'}}>
-                        As a member of the W.S.I.B Safety Group, Goldie Mohr Ltd. is able to reduce workplace injuries and ensure
+                    <h2>Safety</h2>
+                    <h4 style={{ paddingLeft: '10%', paddingRight: '10%', lineHeight: '140%', marginTop: '4%' }}>As a member of the W.S.I.B Safety Group, Goldie Mohr Ltd. is able to reduce workplace injuries and ensure
                     safety at all job sites. The main focus of the Goldie Mohr Ltd. safety department is to create the safest
                     environment possible, for all stakeholders (the public, employees, sub-contractors and customers) by
                     maintaining the policies and standards influenced by W.S.I.B. Safety Group.  Accident prevention is what
-                          Goldie Mohr Ltd. strives for through this program.</h5>
+                          Goldie Mohr Ltd. strives for through this program.</h4>
                 </div>
             </section>
 
