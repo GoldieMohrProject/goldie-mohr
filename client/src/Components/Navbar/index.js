@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import './style.css'
 
 
@@ -49,9 +49,8 @@ function Navbar() {
     </div>
   </div>
 </nav>
-
-    </>
-  )
+</>
+)
 }
 
 export default Navbar
