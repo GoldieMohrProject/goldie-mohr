@@ -121,7 +121,7 @@
   color: #3178C6;
 }
 .building_construction_area .building_construction_row .constructing_right .contact_us {
-  background: #f6b60b;
+  background: #3178C6;
   padding: 30px;
 }
 .building_construction_area .building_construction_row .constructing_right .contact_us h4 {
@@ -155,7 +155,7 @@
   font: 700 18px/59px "Roboto", sans-serif;
   width: 180px;
   text-align: center;
-  background: #f6b60b;
+  background: #3178C6;
   display: block;
   border: 0;
   color: #222222;
@@ -275,7 +275,7 @@
 }
 .featured_works .featured_gallery .gallery_iner .gallery_hover a:hover, .featured_works .featured_gallery .gallery_iner .gallery_hover a:focus {
   background: #fff;
-  color: #f6b60b;
+  color: #3178C6;
 }
 .featured_works .featured_gallery .gallery_iner:hover:after, .featured_works .featured_gallery .gallery_iner:focus:after {
   opacity: 1;
@@ -312,7 +312,7 @@ margin-bottom: 5%;
 } */
 
 .ant-list-item:hover{
-  background-color: #f6b60b;
+  background-color:#3178C6;
 }
 
 #Services{
