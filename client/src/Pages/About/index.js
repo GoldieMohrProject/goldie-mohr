@@ -7,7 +7,7 @@ import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// import placeholder from '../../assets/placeholder.png'
+import team from '../../assets/team.jpg'
 import CAFE from '../../assets/CAFE.png'
 import Dig from '../../assets/Dig.png'
 import ISHA from '../../assets/ISHA.png'
@@ -70,7 +70,7 @@ function About() {
               <div className="single_skill">
                 <h3>Heavy Civil Construction</h3>
                 <div className="progress">
-                  <div className="progress-bar" role="progressbar" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100} style={{ width: "90%" }}>
+                  <div className="progress-bar" role="progressbar" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100} style={{ width: "89%" }}>
                     <div className="progress_parcent"><span className="counter2">89</span>%</div>
                   </div>
                 </div>
@@ -193,6 +193,7 @@ function About() {
             </div>
             <div className="teamstuff">
               <p>At Goldie Mohr Limited, we believe that our people are our greatest asset!</p>
+              <img src={team} alt="team photo" className="teampic" />
             </div>
 
           </div>
