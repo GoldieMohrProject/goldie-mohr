@@ -159,7 +159,14 @@ function Services() {
                   <div className="col-2"></div>
 
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
-                    <li  >Gravel </li>
+
+
+                    <a>
+                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
+
+                      GRAVEL
+
+                    </a>
                   </div>
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
                     <li> Grading</li>
@@ -210,6 +217,8 @@ function Services() {
                     <li>Tri-axle</li>
                   </div>
 
+
+                  </div>
 
                 </div>
               </div>
@@ -289,7 +298,6 @@ function Services() {
 
 
             </div>
-            </div>
 
           </div>
 
@@ -307,6 +315,15 @@ function Services() {
                 <p>Lorem Ipsum is simply dummy text of the print-ing and typesetting industry. If you use this site regularly and would like to help keep</p>
                 <a className="button_all">Contact Us</a>
               </div> */}
+
+
+
+
+
+
+      {/* End Building Construction Area */}
+
+      {/* Our Featured Works Area */}
 
       <section className="featured_works row" data-stellar-background-ratio="0.3">
 
