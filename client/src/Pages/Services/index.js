@@ -270,11 +270,6 @@ function Services() {
                         TRI-AXLE
                     </a>
 
-<<<<<<< Updated upstream
-                  </div>
-
-=======
->>>>>>> Stashed changes
                 </div>
               </div>
 
@@ -387,6 +382,7 @@ function Services() {
 
 
 
+            </div>
             </div>
 
           </div>
