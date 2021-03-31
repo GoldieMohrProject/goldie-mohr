@@ -1,0 +1,311 @@
+/*--------------------------------------------------*/
+.professional_builder {
+  /* background: #f5f5f5; */
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.professional_builder .builder_all .builder {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.professional_builder .builder_all .builder i {
+  font-size: 48px;
+  color: #3178C6;
+  padding-bottom: 35px;
+}
+.professional_builder .builder_all .builder h4 {
+  font: 700 18px "Roboto", sans-serif;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.professional_builder .builder_all .builder p {
+  font: 400 14px/26px "Roboto", sans-serif;
+  color: #555555;
+}
+
+/*--------------------------------------------------*/
+.tittle {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.tittle h2 {
+  font: 400 24px "Oswald", sans-serif;
+  color: #222222;
+  padding-top: 90px;
+  position: relative;
+}
+.tittle h2 {
+  font: 400 24px "Oswald", sans-serif;
+  color: #222222;
+  padding-top: 90px;
+  position: relative;
+}
+.tittle h2:after {
+  content: "";
+  position: absolute;
+  background: #3178C6;
+  height: 5px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+.tittle h4 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 55px;
+}
+
+/*--------------------------------------------------*/
+.our_achievments_area {
+  background: url("https://user-images.githubusercontent.com/71358869/112876133-1a412000-9093-11eb-87df-a44bfdeedfec.jpg") no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+.our_achievments_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: #44688bcc;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.our_achievments_area .tittle h2 {
+  color: #fff;
+}
+.our_achievments_area .tittle h4 {
+  color: #fefefe;
+}
+.our_achievments_area .achievments_row {
+  padding-top: 60px;
+}
+.our_achievments_area .achievments_row .completed {
+  text-align: center;
+  border-right: 3px solid #fff;
+}
+.our_achievments_area .achievments_row .completed:last-child {
+  border: 0;
+}
+.our_achievments_area .achievments_row .completed i {
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  padding-top: 10px;
+}
+.our_achievments_area .achievments_row .completed .counter {
+  font: 700 40px "Roboto", sans-serif;
+  color: #3178C6;
+  display: block;
+  padding-top: 23px;
+}
+.our_achievments_area .achievments_row .completed h6 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.counter{ font: 700 40px "Roboto", sans-serif;
+  color: #3178C6;
+  display: block;
+  padding-top: 23px;}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.p0 {
+  padding: 0;
+}
+.featured_works {
+  background: url("https://user-images.githubusercontent.com/71358869/113165769-30281f80-9210-11eb-952d-c46e00bfe040.jpg") no-repeat fixed;
+
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+}
+.featured_works:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: #44688bcc;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.featured_works .tittle h2 {
+  color: #fff;
+}
+.featured_works .tittle h4 {
+  color: #fefefe;
+}
+.featured_works .featured_gallery {
+  padding-top: 60px;
+}
+.featured_works .featured_gallery .gallery_iner {
+  position: relative;
+  overflow: hidden;
+}
+.featured_works .featured_gallery .gallery_iner img {
+  max-width: 100%;
+}
+.featured_works .featured_gallery .gallery_iner:after {
+  content: "";
+  position: absolute;
+  background-color: #3178C6;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms linear 0s;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover h4 {
+  color: #fff;
+  font: 700 14px "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  position: relative;
+  right: -100%;
+  transition: all 300ms linear 0s;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover a {
+  width: 200px;
+  font: 400 14px/60px "Roboto", sans-serif;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  background: #333333;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  transition: all 300ms linear 0s;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.featured_works .featured_gallery .gallery_iner .gallery_hover a:hover, .featured_works .featured_gallery .gallery_iner .gallery_hover a:focus {
+  background: #fff;
+  color: #f6b60b;
+}
+.featured_works .featured_gallery .gallery_iner:hover:after, .featured_works .featured_gallery .gallery_iner:focus:after {
+  opacity: 1;
+}
+.featured_works .featured_gallery .gallery_iner:hover .gallery_hover h4, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover h4 {
+  right: 0;
+}
+.featured_works .featured_gallery .gallery_iner:hover .gallery_hover a, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover a {
+  left: 0;
+}
+
+/*--------------------------------------------------*/
+
+.our_feature_area {
+padding-bottom: 90px;
+background: #fefefe;
+}
+.our_feature_area .feature_row {
+padding-top: 70px;
+}
+.our_feature_area .feature_row .feature_img {
+padding-top: 10px;
+}
+.our_feature_area .feature_row .feature_img img {
+max-width: 100%;
+}
+.our_feature_area .feature_row .feature_content .subtittle {
+padding-bottom: 40px;
+}
+.our_feature_area .feature_row .feature_content .media {
+padding-bottom: 15px;
+}
+.our_feature_area .feature_row .feature_content .media .media-left {
+padding-right: 30px;
+}
+.our_feature_area .feature_row .feature_content .media .media-left h6 i {
+font-size: 24px;
+color: #3178C6;
+line-height: 50px;
+width: 60px;
+text-align: center;
+background: white;
+border: 5px solid #3178C6;
+}
+.our_feature_area .feature_row .feature_content .media .media-body h6 {
+font: 700 18px "Roboto", sans-serif;
+color: #222222;
+text-transform: uppercase;
+}
+.our_feature_area .feature_row .feature_content .media .media-body h6:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
+color: #3178C6;
+cursor: pointer;
+}
+.our_feature_area .feature_row .feature_content .media .media-body p {
+font: 400 14px/26px "Roboto", sans-serif;
+color: #555555;
+padding-top: 20px;
+}
+
+/*--------------------------------------------------*/
+@media (max-width: 480px) {
+.hideArrow {
+  display: none;
+}
+}
+
+.content {
+height: 5;
+bottom: 2%;
+transform: translate(0%, 0%);
+}
+.content p {
+margin: 0 0 20px;
+}
+/* Arrow & Hover Animation */
+#more-arrows {
+width: 75px;
+height: 65px;
+}
+#more-arrows:hover polygon {
+fill: black;
+transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+transform: translateY(18px);
+}
+polygon {
+fill: rgb(25, 98, 235);
+transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+opacity: 0.75;
+}
+polygon.arrow-top {
+opacity: 0.5;
+}
+
+
+
