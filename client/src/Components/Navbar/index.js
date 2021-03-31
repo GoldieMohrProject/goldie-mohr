@@ -15,7 +15,7 @@ function Navbar() {
         <li><a href="#"><i className="fa fa-clock" />Mon - Sat 12:00 - 20:00</a></li>
         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li className="ms-auto" id="faUser"><a href="#"><i class="fas fa-user fa-2x" ></i></a></li>
+        <li className="ms-auto" id="faUser"><NavLink className="nav-link" to="./Login"><i class="fas fa-user fa-2x" ></i></NavLink></li>
       </ul>
     </div>
   </section>
@@ -31,7 +31,7 @@ function Navbar() {
           <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="./Service">Services</NavLink>
+          <NavLink className="nav-link" to="./Services">Services</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="./Projects">Projects</NavLink>
@@ -40,7 +40,7 @@ function Navbar() {
           <NavLink className="nav-link" to="./About">About us</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/">Career</NavLink>
+          <NavLink className="nav-link" to="/">Careers</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>
