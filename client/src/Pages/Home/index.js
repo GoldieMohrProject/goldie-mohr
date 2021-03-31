@@ -13,7 +13,7 @@ function Home() {
         <Wrapper>
             <Slider />
             <div>
-                <a href={"About-Us"} class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
+                <a href="#About-Us" class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
                             <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
