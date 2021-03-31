@@ -10,7 +10,7 @@
   }
   .professional_builder .builder_all .builder i {
     font-size: 48px;
-    color: #f6b60b;
+    color: #3178C6;
     padding-bottom: 35px;
   }
   .professional_builder .builder_all .builder h4 {
@@ -29,7 +29,12 @@
     text-transform: uppercase;
   }
 
-
+ .tittle h2 {
+    font: 400 24px "Oswald", sans-serif;
+    color: #222222;
+    padding-top: 90px;
+    position: relative;
+  }
   .tittle h2 {
     font: 400 24px "Oswald", sans-serif;
     color: #222222;
@@ -39,7 +44,7 @@
   .tittle h2:after {
     content: "";
     position: absolute;
-    background: #f6b60b;
+    background: #3178C6;
     height: 5px;
     width: 60px;
     left: 50%;
@@ -85,7 +90,7 @@
     margin-bottom: 40px;
   }
   .about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar {
-    background: #f6b60b;
+    background: #3178C6;
     box-shadow: none;
   }
   .about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar .progress_parcent {
@@ -101,7 +106,7 @@
   
   /*--------------------------------------------------*/
 .what_we_area {
-    background: #f8b81d;
+    background: #3178C6;
   }
   .what_we_area .tittle h2:after {
     background: #fff;
@@ -155,7 +160,7 @@
     padding-top: 20px;
   }
   .what_we_area .construction_iner .construction:hover a, .what_we_area .construction_iner .construction:focus a {
-    color: #f6b60b;
+    color: #3178C6;
   }
   .what_we_area .construction_iner .construction:hover i, .what_we_area .construction_iner .construction:focus i {
     font-size: 35px;
@@ -175,7 +180,7 @@
     content: "";
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #44688bcc;
     left: 0;
     right: 0;
     bottom: 0;
@@ -206,7 +211,7 @@
   }
   .our_achievments_area .achievments_row .completed .counter {
     font: 700 40px "Roboto", sans-serif;
-    color: #f6b60b;
+    color: #3178C6;
     display: block;
     padding-top: 23px;
   }
@@ -218,6 +223,10 @@
     padding-bottom: 5px;
   }
   
+  .counter{ font: 700 40px "Roboto", sans-serif;
+    color: #3178C6;
+    display: block;
+    padding-top: 23px;}
   /*--------------------------------------------------*/
   /*--------------------------------------------------*/
   .p0 {
@@ -241,7 +250,7 @@
     content: "";
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #44688bcc;
     left: 0;
     right: 0;
     bottom: 0;
@@ -267,7 +276,7 @@
   .featured_works .featured_gallery .gallery_iner:after {
     content: "";
     position: absolute;
-    background-color: rgba(248, 184, 29, 0.7);
+    background-color: #3178C6;
     display: block;
     top: 0;
     left: 0;
@@ -324,7 +333,7 @@
   }
   
   /*--------------------------------------------------*/
-  *--------------------------------------------------*/
+  
 .our_feature_area {
   padding-bottom: 90px;
   background: #fefefe;
@@ -349,12 +358,12 @@
 }
 .our_feature_area .feature_row .feature_content .media .media-left a i {
   font-size: 24px;
-  color: #f6b60b;
+  color: #3178C6;
   line-height: 50px;
   width: 60px;
   text-align: center;
-  background: #333333;
-  border: 5px solid #f6b60b;
+  background: white;
+  border: 5px solid #3178C6;
 }
 .our_feature_area .feature_row .feature_content .media .media-body a {
   font: 700 18px "Roboto", sans-serif;
@@ -362,7 +371,7 @@
   text-transform: uppercase;
 }
 .our_feature_area .feature_row .feature_content .media .media-body a:hover, .our_feature_area .feature_row .feature_content .media .media-body a:focus {
-  color: #f6b60b;
+  color: #3178C6;
 }
 .our_feature_area .feature_row .feature_content .media .media-body p {
   font: 400 14px/26px "Roboto", sans-serif;
@@ -371,3 +380,53 @@
 }
 
 /*--------------------------------------------------*/
+@media (max-width: 480px) {
+  .hideArrow {
+    display: none;
+  }
+}
+
+/* .container {
+
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+} */
+.content {
+  height: 5;
+  /* position: relative; */
+  
+  bottom: 2%;
+  transform: translate(0%, 0%);
+}
+.content p {
+  margin: 0 0 20px;
+}
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+#more-arrows:hover polygon {
+  fill: #fff;
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(18px);
+}
+polygon {
+  fill: rgb(247, 243, 237);
+  transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+polygon.arrow-top {
+  opacity: 0.5;
+}
+
+
+

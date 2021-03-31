@@ -4,8 +4,13 @@ import './style.css'
 import Email from '../Footer/Email.png'
 import Phone from '../Footer/Phone.png'
 import Address from '../Footer/Address.png'
+import  { goToTop,removeHash } from 'react-scrollable-anchor'
 
 function Footer() {
+    function goTop(){
+        removeHash()
+        goToTop()
+    }
     return (
         <>
             <div id="upperFooter" >
@@ -18,6 +23,23 @@ function Footer() {
                             {/* <ul id="socialmedia"> */}
                             <li style={{ display: "inline-flex", marginRight: "10px" }}><a href="https://www.facebook.com/GoldieMohr" target="_blank" className="button_social"><i id="facebooklogo" class="fab fa-facebook-f fa-2x" aria-hidden="true"></i></a></li>
                             <li style={{ display: "inline-flex", marginRight: "10px" }}><a href="https://www.facebook.com/GoldieMohr" target="_blank" className="button_social"><i id="twitterlogo" class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                            <li style={{ display: "inline-flex", paddingLeft:'100px'}}>
+                                <a href class='animated-arrow' onClick={goTop}>
+                                    <span class='the-arrow -left'>
+                                        <span class='shaft'></span>
+                                    </span>
+                                    <span class='main'>
+                                        <span class='text'>
+                                            Scroll Top
+                                            </span>
+                                        <span class='the-arrow -right'>
+                                            <span class='shaft'></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                         
+
                         </div>
                         {/* end of about our company */}
                         <div class="col-md-6 col-sm-6" style={{ marginTop: "15px", marginBottom: "15px" }}>
