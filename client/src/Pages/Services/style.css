@@ -34,7 +34,7 @@
   color: #fefefe;
 }
 .banner_area .breadcrumb li a.active {
-  color: #f6b60b;
+  color: #3178C6;
 }
 
 /* End Banner Area */
@@ -62,7 +62,7 @@
   padding-top: 25px;
 }
 .building_construction_area .building_construction_row .constructing_laft a:hover, .building_construction_area .building_construction_row .constructing_laft a:focus {
-  color: #f6b60b;
+  color: #3178C6;
 }
 .building_construction_area .building_construction_row .constructing_laft p {
   font: 400 14px/26px "Roboto", sans-serif;
@@ -82,7 +82,7 @@
   color: #555555;
 }
 .building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li i {
-  color: #f6b60b;
+  color: #3178C6;
   padding-right: 30px;
 }
 .building_construction_area .building_construction_row .constructing_laft .ipsum_img {
@@ -118,7 +118,7 @@
   /* padding-right: 20px; */
 }
 .building_construction_area .building_construction_row .constructing_right .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
-  color: #f6b60b;
+  color: #3178C6;
 }
 .building_construction_area .building_construction_row .constructing_right .contact_us {
   background: #f6b60b;
