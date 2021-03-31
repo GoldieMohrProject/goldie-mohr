@@ -10,7 +10,7 @@
 
    Pages 
 
-   Home(Said) (HALF-DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile ()
+   Home(Said) (HALF-DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile () --  
 
 
 

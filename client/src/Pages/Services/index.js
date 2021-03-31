@@ -220,7 +220,7 @@ function Services() {
 
               <div className="row">
 
-                <a id="Winter Meintenance" style={{ textAlign: "center", marginTop: "5%" }}>Winter Meintenance</a>
+                <a id="Winter Meintenance" style={{ textAlign: "center", marginTop: "5%" }}>Winter Maintenance</a>
 
                 <div className="row">
 
