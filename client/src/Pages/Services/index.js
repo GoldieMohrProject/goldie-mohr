@@ -63,13 +63,42 @@ const transportation = [
     original: 'Transportation/transportation4.jpg',
     thumbnail: 'Transportation/transportation4.jpg',
   },
-  
+
 ];
+
+const services = [
+  {
+    original: 'Rental-Equipment/rental1.jpg',
+    thumbnail: 'Rental-Equipment/rental1.jpg'
+  },
+  {
+    original: "Rental-Equipment/rental2.jpg",
+    thumbnail: "Rental-Equipment/rental2.jpg"
+  },
+  {
+    original: 'Transportation/transportation2.jpg',
+    thumbnail: 'Transportation/transportation2.jpg',
+  },
+  {
+    original: 'Transportation/transportation3.jpg',
+    thumbnail: 'Transportation/transportation3.jpg',
+  }
+]
+
+const winter = [
+  {
+    original: 'Winter-Meintenance/winter.mp4',
+    thumbnail: 'Winter-Meintenance/winter.mp4',
+  }
+]
 
 
 const buildingRoadConstruction = [
-"Gravel",
-"Grading",
+  "Gravel",
+  "Grading",
+  "Road Build",
+  "Asphalt Maintanence",
+
 ]
 
 const Transportation = [
@@ -80,16 +109,12 @@ const Transportation = [
   "Tandems"
 ]
 
-const CrawlerDozers = [
-  "Bulldozers with low ground pressure",
-  "GPS Machine Control available",
-  "Caterpillar D6K LGP, D6N LGP & D3G LGP"
-]
 
-const Excavators = [
-  "Rubber tire excavator – 904 Liebherr",
-  '1 excavator with “zero clearance”',
-  "Caterpillar 320C , Caterpillar 330C, Komatsu PC 228 & PC 300"
+
+const WinterMeintanence = [
+  "Removing Snow ",
+  "Cleaning SideWalks",
+  "De-Icing"
 ]
 
 
@@ -103,7 +128,7 @@ const Trucks = [
 function Services() {
 
 
-  
+
 
 
   return (
@@ -114,139 +139,174 @@ function Services() {
         <h2>Our Services</h2>
 
       </section>
-   
 
 
-    
+
+
       <section className="building_construction_area">
         <div className="container">
           <div className="row building_construction_row">
-            <div className="row constructing_laft">
-           
+            <div className="row constructing_laft ">
 
-              <div className="row">
+
+              <div className="row justify-content-center">
 
 
                 <ul class="row painting">
-                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                  <div className="col-lg-6 col-md-6 col-xs-12 ">
                     <li><a href="#Building Construction"><i class="fas fa-building" aria-hidden="true"></i>Building & Road Construction</a></li>
                   </div>
-                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                  <div className="col-lg-5=6 col-md-6 col-xs-12 ">
                     <li><a href="#Winter Meintenance"><i class="fa fa-road" aria-hidden="true"></i>Winter Maintenance</a></li>
                   </div>
-                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                  <div className="col-lg-6 col-md-6 col-xs-12 ">
                     <li><a href="#Transportation"><i class="fa fa-truck" aria-hidden="true"></i>Transportation</a></li>
                   </div>
-                  <div className="col-lg-5 col-md-6 col-xs-12 col-6">
+                  <div className="col-lg-6 col-md-6 col-xs-12 ">
                     <li><a href="#Heavy Equipment Rental"><i class="fas fa-tools" aria-hidden="true"></i>Heavy Equipment Rental</a></li>
                   </div>
                 </ul>
               </div>
               <div className="row">
 
-                <a id="Building Construction" style={{ textAlign: "center" }}>Building & Road Construction</a>
+                <a id="Building Construction" style={{ textAlign: "center", marginTop: "5%" }}>Building & Road Construction</a>
 
-                <div className="col-3">
-                  <List id="items"
-                    size="small"
-                    dataSource={buildingRoadConstruction}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
-                </div>
-                <div className="col-7">
+                <div className="row">
+                  {/* <div className="col-1"></div> */}
 
-                  <ImageGallery items={construction} />
+                  <div className="col">
+
+                    <ImageGallery autoPlay="true" items={construction} />
+
+                  </div>
 
                 </div>
-                <div className="col-2">
-             
-                </div>
 
+                <div style={{ marginTop: '5%' }} className="row">
+
+                  <div className="col-2"></div>
+
+                  <div className="col-lg-2 col-md-3 col-xs-12 ">
+                    <li  >Gravel </li>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-xs-12 ">
+                    <li> Grading</li>
+                  </div>
+
+                  <div className="col-lg-2 col-md-3 col-xs-12 ">
+                    <li> Road Build</li>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-xs-12 ">
+                    <li> Asphalt Maintanence</li>
+                  </div>
+
+
+                </div>
               </div>
 
               <div className="row">
 
                 <a id="Transportation" style={{ textAlign: "center", marginTop: "5%" }}>Transportation</a>
 
-                <div className="col-3">
-                  <List id="items"
-                    size="large"
-                    dataSource={CrawlerDozers}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
-                </div>
-                <div className="col-7">
-                  <ImageGallery items={transportation} />
+                <div className="row">
+
+
+                  <div className="col">
+
+                    <ImageGallery autoPlay="true" items={transportation} />
+
+                  </div>
 
                 </div>
-                <div className="col-2">
-                  <List id="items"
-                    size="large"
-                    dataSource={Transportation}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
-                </div>
 
+                <div style={{ marginTop: '5%' }} className="row">
+                  <div className="col-2"></div>
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li  >Tractors </li>
+                  </div>
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li> Trailers</li>
+                  </div>
+
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li> Road Build</li>
+                  </div>
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li> Tank Trailers</li>
+                  </div>
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li>Tri-axle</li>
+                  </div>
+
+
+
+
+                </div>
               </div>
+
+
 
               <div className="row">
 
                 <a id="Winter Meintenance" style={{ textAlign: "center", marginTop: "5%" }}>Winter Meintenance</a>
 
-                <div className="col-3">
-                  <List id="items"
-                    size="large"
-                    dataSource={Transportation}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
-                </div>
-                <div className="col-7">
-                  {/* <ImageGallery items={} /> */}
+                <div className="row">
+
+
+                  <div className="col">
+
+                    <ImageGallery autoPlay="true" items={construction} />
 
                   </div>
-                <div className="col-2">
-                  <List id="items"
-                    size="large"
-                    dataSource={CrawlerDozers}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
+
                 </div>
 
+                <div style={{ marginTop: '5%' }} className="row">
+                  <div className="col-3"></div>
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li  >Removing Snow</li>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li> Cleaning SideWalks</li>
+                  </div>
+
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li> De-Icing</li>
+                  </div>
+
+                </div>
               </div>
+
+
 
               <div className="row">
 
                 <a id="Heavy Equipment Rental" style={{ textAlign: "center", marginTop: "5%" }}>Heavy Equipment Rental</a>
 
-                <div className="col-3">
-                  <List id="items"
-                    size="large"
-                    dataSource={CrawlerDozers}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
-                </div>
-                <div className="col-7">
-                  {/* <ImageGallery items={} /> */}
+                <div className="row">
+
+                  <div className="col">
+
+                    <ImageGallery autoPlay="true" items={services} />
 
                   </div>
-                <div className="col-2">
-                  <List id="items"
-                    size="large"
-                    dataSource={CrawlerDozers}
-                    renderItem={item => <List.Item  >{item}</List.Item>}
-                  />
+
+
                 </div>
 
+
+
               </div>
+            {/* </div> */}
 
-              
 
 
-            </div>
 
           </div>
+
         </div>
-      </section>
+        </div>
+    </section>
 
 
 
@@ -265,68 +325,68 @@ function Services() {
 
 
 
-      {/* End Building Construction Area */}
+  {/* End Building Construction Area */ }
 
-      {/* Our Featured Works Area */}
+  {/* Our Featured Works Area */ }
 
-      <section className="featured_works row" data-stellar-background-ratio="0.3">
+  <section className="featured_works row" data-stellar-background-ratio="0.3">
 
-        <div className="tittle wow fadeInUp">
-          <h2>Our Featured Works</h2>
-          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-        </div>
-        <div className="featured_gallery">
+    <div className="tittle wow fadeInUp">
+      <h2>Our Featured Works</h2>
+      <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+    </div>
+    <div className="featured_gallery">
 
-          <div className="row" >
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12 col-6 gallery_iner p0">
-              <img src="../../uploads/gl-7.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>Bolt Apartments</h4>
-                <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-              <img src="../../uploads/gl-7.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>Bolt Apartments</h4>
-                <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-              <img src="../../uploads/gl-7.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>Bolt Apartments</h4>
-                <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="../../uploads/gl-7.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>Bolt Apartments</h4>
-                <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="../../uploads/gl-7.jpg" alt="..." />
-              <div className="gallery_hover">
-                <h4>Bolt Apartments</h4>
-                <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="../../uploads/gl-7.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>Bolt Apartments</h4>
-                <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-
+      <div className="row" >
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12 col-6 gallery_iner p0">
+          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>Bolt Apartments</h4>
+            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
-
         </div>
-      </section>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
+          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>Bolt Apartments</h4>
+            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
+          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>Bolt Apartments</h4>
+            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
+          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>Bolt Apartments</h4>
+            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
+          <img src="../../uploads/gl-7.jpg" alt="..." />
+          <div className="gallery_hover">
+            <h4>Bolt Apartments</h4>
+            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
+          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>Bolt Apartments</h4>
+            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
 
-      {/* End Our Featured Works Area */}
+      </div>
+
+    </div>
+  </section>
+
+  {/* End Our Featured Works Area */ }
 
     </>
 

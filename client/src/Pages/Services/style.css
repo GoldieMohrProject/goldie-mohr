@@ -115,7 +115,7 @@
 }
 .building_construction_area .building_construction_row .constructing_right .painting li a i {
   font-size: 18px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 .building_construction_area .building_construction_row .constructing_right .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
   color: #f6b60b;
@@ -292,13 +292,19 @@ margin-bottom: 5%;
 }
 
 
-@media (max-width: 300px){
-  #service{
-    width: 100% !important;
+@media (max-width: 750px){
+  .col-8{
+    width: 50% !important;
  
   }
  
 }
+
+ @media only screen and (max-width: 600px) {
+  .row {
+    margin: auto !important;
+  }
+} 
 
 /* .color:hover{
   border: rgb(0, 26, 255) solid 2px;
@@ -345,14 +351,29 @@ margin-bottom: 5%;
 .ant-list-items li:hover {
   
   background-color: #3178C6 !important;
+  color: white;
+
   
 }
+.ant-list-items li{
+  font-size: larger !important
+}
 
-
+.row .col-lg-3  {
+  list-style: none
+}
+.row .col-lg-2 {
+  list-style: none
+}
 
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+@media (min-width:500){
+  .row .col-6{
+    width: 100% !important;
+  }
+}
 
 
 /*--------------------------------------------------*/
