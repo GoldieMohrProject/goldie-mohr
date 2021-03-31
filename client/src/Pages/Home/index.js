@@ -13,7 +13,7 @@ function Home() {
         <Wrapper>
             <Slider />
             <div>
-                <a href="#About-Us" class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
+                <a href={"About-Us"} class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
                             <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
@@ -73,7 +73,7 @@ function Home() {
                                 <div class="achievments_row row">
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-check-square" aria-hidden="true"></i>
-                                        <CountUp  end={800} redraw={true}>
+                                        <CountUp end={800} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
@@ -85,7 +85,7 @@ function Home() {
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-home" aria-hidden="true"></i>
                                         {/* <span class="counter">229</span> */}
-                                        <CountUp  end={229} redraw={true}>
+                                        <CountUp end={229} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
@@ -96,7 +96,7 @@ function Home() {
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-child" aria-hidden="true"></i>
-                                        <CountUp  end={100} redraw={true}>
+                                        <CountUp end={100} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
@@ -107,7 +107,7 @@ function Home() {
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
-                                        <CountUp  end={25} redraw={true}>
+                                        <CountUp end={25} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
