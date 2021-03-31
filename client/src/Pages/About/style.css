@@ -220,7 +220,6 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 .teampic {
   margin-top: 50px;
   box-shadow: 3px 7px 8px 3px #888888;
-  transition: all .2s ease-in-out;
 }
 
 /*   future */
