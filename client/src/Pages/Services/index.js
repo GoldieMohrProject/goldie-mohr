@@ -159,7 +159,14 @@ function Services() {
                   <div className="col-2"></div>
 
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
-                    <li  >Gravel </li>
+
+                  <a>
+                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
+
+                      GRAVEL
+
+                    </a>
+                   
                   </div>
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
                     <li> Grading</li>
