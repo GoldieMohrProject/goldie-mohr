@@ -233,7 +233,7 @@
     padding: 0;
   }
 .backgroundd{
-    background-position: 50% -1185.36px
+    background-position: 0% 0
 }  
 .featured_works {
     background: url("https://user-images.githubusercontent.com/71358869/112877965-5ffee800-9095-11eb-9467-6a9b9359e091.jpg") no-repeat fixed;
@@ -241,7 +241,7 @@
     text-align: center;
     position: relative;
     z-index: 1;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     display: block;
     overflow: hidden;
     padding-bottom: 100px;
