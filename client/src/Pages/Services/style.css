@@ -369,11 +369,11 @@ margin-bottom: 5%;
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-@media (min-width:500){
+/* @media (min-width:500){
   .row .col-6{
     width: 100% !important;
   }
-}
+} */
 
 
 /*--------------------------------------------------*/
