@@ -2,7 +2,6 @@ import React from 'react';
 
 import "./style.css"
 
-import { List, Image, Carousel } from 'antd';
 import 'antd/dist/antd.css';
 
 import ImageGallery from 'react-image-gallery';
@@ -83,7 +82,10 @@ const services = [
     original: 'Transportation/transportation3.jpg',
     thumbnail: 'Transportation/transportation3.jpg',
   }
+
 ]
+
+
 
 const winter = [
   {
@@ -92,36 +94,6 @@ const winter = [
   }
 ]
 
-
-const buildingRoadConstruction = [
-  "Gravel",
-  "Grading",
-  "Road Build",
-  "Asphalt Maintanence",
-
-]
-
-const Transportation = [
-  "Tractors",
-  "Trailers",
-  "Tank Trailers",
-  "Tri-axle",
-  "Tandems"
-]
-
-
-
-const WinterMeintanence = [
-  "Removing Snow ",
-  "Cleaning SideWalks",
-  "De-Icing"
-]
-
-
-const Trucks = [
-  "Hauling Equipment",
-  "Variety of dump trucks"
-]
 
 
 
@@ -291,6 +263,23 @@ function Services() {
 
                   </div>
 
+
+                </div>
+                <div style={{ marginTop: '5%' }} className="row">
+                  {/* <div className="col"></div> */}
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li  >TRACKTOR</li>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li>Greyder</li>
+                  </div>
+
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li>Truck</li>
+                  </div>
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li>Truck</li>
+                  </div>
 
                 </div>
 
