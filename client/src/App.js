@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import Service from "./Pages/Services/index"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/index"
+import Login from "./Pages/Login/index"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/Service" component={Service} />
         <Route exact path="/Career" component={Home} />
         <Route exact path="/Projects" component={Home} />
+        <Route exact path="/Login" component={Login} />
         </Wrapper>
       <Footer />
     </div>
