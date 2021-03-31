@@ -1,0 +1,33 @@
+.loginarea {
+    background-color: #3178C6;
+    margin-top: 60px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 25px;
+    border: 5px solid #409cff;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+.loginbtn {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    border: none;
+}
+.loginbtn:hover {
+    transform: scale(1.1);
+    background-color: #409cff;
+    color: white;
+}

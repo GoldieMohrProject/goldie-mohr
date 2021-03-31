@@ -1,0 +1,128 @@
+.top_header_area {
+    background: #3178C6;
+  }
+  .top_header_area .top_nav li a {
+    font: 400 14px/50px "Roboto", sans-serif;
+    color: #fff;
+    padding: 0;
+    padding-left: 30px;
+  }
+  .top_header_area .top_nav li a i {
+    color: #ffffff;
+    font-size: 18px;
+    padding-right: 10px;
+  }
+  #faUser a i{
+    font-size: 25px;
+    padding-right: 0px;
+  }
+  .top_header_area .top_nav li a:hover, .top_header_area .top_nav li a:focus {
+    background-color: transparent;
+    /*color: #3178C6;*/
+  }
+  .top_header_area .top_nav li:first-child a {
+    padding: 0;
+  }
+  .top_header_area .social_nav {
+    margin: 0;
+    padding-top: 12px;
+  }
+  .top_header_area .social_nav li a {
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+  }
+  .top_header_area .social_nav li a i {
+    line-height: 24px;
+  }
+  .top_header_area .social_nav li a:hover, .top_header_area .social_nav li a:focus {
+    background: #3178C6;
+    color: #111f29;
+  }
+  
+ 
+  .header_aera{
+
+    background-color: rgb(255, 255, 255)!important;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    padding:0px!important;
+    box-shadow: 0px 0px 20px 0px rgba(21, 47, 95, 0.2);
+  }
+
+  .header_aera  .navbar-brand {
+    padding-top: 0px;
+  }
+
+  .header_aera .navbar-brand img {
+    max-width: 100%;
+  }
+
+  .header_aera .navbar-collapse .navbar-nav li a {
+    font: 700 14px/100px "Roboto", sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    padding: 0;
+    padding-left: 30px;
+  }
+  .header_aera .navbar-collapse .navbar-nav li a:hover, .header_aera .navbar-collapse .navbar-nav li a:focus {
+    color: #3178C6;
+  }
+ 
+
+  .navbar-toggler-icon span{
+    color:  #ffffff!important;
+  }
+  .navbar-toggler{
+    color:  #3178C6!important;
+    
+  }
+  @media (max-width: 980px) {
+    .header_aera .navbar-collapse .navbar-nav li  {
+    font-variant-east-asian: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height:0px;
+    font-family: Roboto, sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 70px;
+        border-bottom: 1px solid  #3178C6;
+        height: 40px;
+    }
+    .header_aera .navbar-collapse .navbar-nav .contactUs{
+        border-bottom: 0px;
+    }
+  }
+
+
+  nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(41, 71, 153);
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
