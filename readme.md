@@ -5,12 +5,12 @@
 
    Components
 
-    Wrapper (Faisal) (DONE) -- Navbar(Shiva) (DONE)   --  Footer (Faisal) (DONE)  --  
+    Wrapper (Faisal) (DONE) -- Navbar(Shiva) (DONE)   --  Footer (Faisal) (DONE)  --   Job (DONE) -- Slider (DONE)
 
 
    Pages 
 
-   Home(Said) (HALF-DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile ()
+   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)  --  Projects (Fatih)
 
 
 
