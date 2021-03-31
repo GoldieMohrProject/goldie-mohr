@@ -2,6 +2,11 @@ import React from 'react'
 import './style.css'
 
 class Slider extends React.Component {
+  constructor(props){
+   super(props)
+   this.state ={}
+   
+  }
   componentDidMount() {
     const script = document.createElement("script");
     script.async = true;

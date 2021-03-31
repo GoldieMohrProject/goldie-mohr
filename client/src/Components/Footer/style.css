@@ -9,7 +9,6 @@
   background-color: #3178c6;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
-  /* height: 250px; */
   padding-top: 30px;
 }
 
@@ -128,7 +127,8 @@ body {
   width: 0;
   background-color: #999;
 }
-.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+.the-arrow.-left > .shaft:before,
+.the-arrow.-left > .shaft:after {
   width: 0;
   background-color: #999;
 }
@@ -145,7 +145,8 @@ body {
   width: 64px;
   transition-delay: 0.2s;
 }
-.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+.the-arrow.-right > .shaft:before,
+.the-arrow.-right > .shaft:after {
   width: 8px;
   transition-delay: 0.3s;
   transition: all 0.5s;
@@ -165,7 +166,8 @@ body {
   transition-delay: 0;
   will-change: transform;
 }
-.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+.the-arrow > .shaft:before,
+.the-arrow > .shaft:after {
   background-color: #eaeaea;
   content: "";
   display: block;
@@ -200,7 +202,8 @@ body {
   transition-delay: 0.1s;
   background-color: #eaeaea;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+.animated-arrow:hover > .the-arrow.-left > .shaft:before,
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
   width: 8px;
   transition-delay: 0.1s;
   background-color: #eaeaea;
@@ -219,7 +222,8 @@ body {
   transform: translateX(200%);
   transition-delay: 0;
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before,
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
   width: 0;
   transition-delay: 0;
   transition: all 0.1s;

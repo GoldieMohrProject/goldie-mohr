@@ -73,7 +73,7 @@ function Home() {
                                 <div class="achievments_row row">
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-check-square" aria-hidden="true"></i>
-                                        <CountUp  end={800} redraw={true}>
+                                        <CountUp end={800} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
@@ -95,7 +95,7 @@ function Home() {
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-child" aria-hidden="true"></i>
-                                        <CountUp  end={100} redraw={true}>
+                                        <CountUp end={100} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
@@ -106,7 +106,7 @@ function Home() {
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-trophy" aria-hidden="true"></i>
-                                        <CountUp  end={25} redraw={true}>
+                                        <CountUp end={25} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
                                                     <span class="counter" ref={countUpRef} />
