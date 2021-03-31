@@ -3,16 +3,16 @@ import Wrapper from '../../Components/Wrapper'
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import Slider from '../../Components/Slider'
 import './style.css'
 configureAnchors({ offset: 0, scrollDuration: 100, keepLastAnchorHash: false })
 
 
 function Home() {
     return (
-
         <Wrapper>
-
-            <div id="#home" style={{ height: '78vh', backgroundColor: 'orange' }}>
+            <Slider />
+            <div>
                 <a href="#About-Us" class="container hideArrow" style={{ position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
@@ -23,7 +23,6 @@ function Home() {
                     </div>
                 </a>
 
-                <h1 style={{ textAlign: 'center', paddingTop: '15%' }}>We will put a slider here</h1>
             </div>
             <ScrollableAnchor id={'About-Us'}>
                 <section class="row professional_builder" >
