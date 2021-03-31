@@ -10,10 +10,7 @@ function Contact() {
             {/* Banner area */}
             <section className="banner_area" data-stellar-background-ratio="0.5">
                 <h2>Contact Us</h2>
-                <ol className="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" className="active">Contact Us</a></li>
-                </ol>
+              
             </section>
             {/* End Banner area */}
 

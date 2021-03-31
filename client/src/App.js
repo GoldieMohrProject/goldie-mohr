@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import About from "./Pages/About/index"
+import About from "./Pages/About"
 import React from 'react'
 import Wrapper from './Components/Wrapper'
-import Contact from "./Pages/Contact/index"
+import Contact from "./Pages/Contact"
 import Footer from './Components/Footer'
-import Service from "./Pages/Services/index"
+import Service from "./Pages/Services"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home"
 import Career from "./Pages/Career"
