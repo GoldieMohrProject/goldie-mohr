@@ -6,11 +6,6 @@ import 'antd/dist/antd.css';
 
 import ImageGallery from 'react-image-gallery';
 
-import { ArrowRightOutlined } from '@ant-design/icons';
-
-
-
-
 const construction = [
   {
     original: 'Construction/road.jpg',
@@ -90,6 +85,8 @@ const services = [
 
 ]
 
+
+
 const winter = [
   {
     original: 'Winter-Meintenance/winter.mp4',
@@ -111,7 +108,7 @@ function Services() {
 
       {/* Banner area */}
       <section className="banner_area" data-stellar-background-ratio="0.5">
-        <h2>Our Services / Projects</h2>
+        <h2>Our Services</h2>
 
       </section>
 
@@ -159,54 +156,20 @@ function Services() {
 
                 <div style={{ marginTop: '5%' }} className="row">
 
+                  <div className="col-2"></div>
 
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
-
-
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                      GRAVEL
-
-                    </a>
-
+                    <li  >Gravel </li>
                   </div>
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
-
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        GRADING
-                    </a>
-
-
+                    <li> Grading</li>
                   </div>
 
                   <div className="col-lg-2 col-md-3 col-xs-12 ">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        ROAD BUILD
-                    </a>
-
+                    <li> Road Build</li>
                   </div>
-                  <div className="col-lg-3 col-md-3 col-xs-12 ">
-
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        ASPHALT MAINTANENCE
-                    </a>
-
-                  </div>
-                  <div className="col-lg-3 col-md-3 col-xs-12 ">
-
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                     PARKING LOT
-                  </a>
-
+                  <div className="col-lg-2 col-md-3 col-xs-12 ">
+                    <li> Asphalt Maintanence</li>
                   </div>
 
 
@@ -229,51 +192,31 @@ function Services() {
                 </div>
 
                 <div style={{ marginTop: '5%' }} className="row">
-
+                  <div className="col-2"></div>
                   <div className="col-lg-2 col-md-2 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        TRACTORS
-                    </a>
-
+                    <li   >Tractors </li>
                   </div>
                   <div className="col-lg-2 col-md-2 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        TRAILERS
-                    </a>
-
+                    <li> Trailers</li>
                   </div>
 
-                  <div className="col-lg-3 col-md-3 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        ROAD BUILD
-                    </a>
-
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li> Road Build</li>
                   </div>
-                  <div className="col-lg-3 col-md-3 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        TANK TRAILERS
-                    </a>
-
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li> Tank Trailers</li>
                   </div>
-                  <div className="col-lg-2 col-md-3 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        TRI-AXLE
-                    </a>
-
+                  <div className="col-lg-2 col-md-2 col-xs-12">
+                    <li>Tri-axle</li>
                   </div>
+
+
+
 
                 </div>
               </div>
+
+
 
               <div className="row">
 
@@ -291,31 +234,16 @@ function Services() {
                 </div>
 
                 <div style={{ marginTop: '5%' }} className="row">
-
+                  <div className="col-3"></div>
                   <div className="col-lg-3 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        REMOVING SNOW
-                    </a>
-
+                    <li  >Removing Snow</li>
                   </div>
-                  <div className="col-lg-4 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        CLEANING SIDEWALKS
-                    </a>
-
+                  <div className="col-lg-3 col-md-4 col-xs-12">
+                    <li> Cleaning SideWalks</li>
                   </div>
 
                   <div className="col-lg-3 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                        DE-ICING
-                    </a>
-
+                    <li> De-Icing</li>
                   </div>
 
                 </div>
@@ -335,43 +263,22 @@ function Services() {
 
                   </div>
 
+
                 </div>
                 <div style={{ marginTop: '5%' }} className="row">
-
+                  {/* <div className="col"></div> */}
                   <div className="col-lg-3 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                      TRACKTOR
-                    </a>
-
-
+                    <li  >TRACKTOR</li>
                   </div>
                   <div className="col-lg-3 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                      GREYDER
-                    </a>
-
-
+                    <li>Greyder</li>
                   </div>
 
                   <div className="col-lg-3 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                      TRUCK
-                    </a>
-
+                    <li>Truck</li>
                   </div>
                   <div className="col-lg-3 col-md-4 col-xs-12">
-                    <a>
-                      <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
-
-                      EXCAVATORS
-                    </a>
-
+                    <li>Truck</li>
                   </div>
 
                 </div>
@@ -379,16 +286,16 @@ function Services() {
 
 
               </div>
-              {/* </div> */}
+            {/* </div> */}
 
 
 
-
-            </div>
 
           </div>
+
         </div>
-      </section>
+        </div>
+    </section>
 
 
 
@@ -407,68 +314,68 @@ function Services() {
 
 
 
-      {/* End Building Construction Area */}
+  {/* End Building Construction Area */ }
 
-      {/* Our Featured Works Area */}
+  {/* Our Featured Works Area */ }
 
-      <section className="featured_works row" data-stellar-background-ratio="0.3">
+  <section className="featured_works row" data-stellar-background-ratio="0.3">
 
-        <div className="tittle wow fadeInUp">
-          <h2>Our Featured Works</h2>
-          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
-        </div>
-        <div className="featured_gallery">
+    <div className="tittle wow fadeInUp">
+      <h2>Our Featured Works</h2>
+      <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+    </div>
+    <div className="featured_gallery">
 
-          <div className="row" >
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12 col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt="..." />
-              <div className="gallery_hover">
-                <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-            <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
-              <div className="gallery_hover">
-                <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
-              </div>
-            </div>
-
+      <div className="row" >
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12 col-6 gallery_iner p0">
+          <img src="Transportation/transportation3.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
-
         </div>
-      </section>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
+          <img src="Transportation/transportation3.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
+          <img src="Transportation/transportation3.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
+          <img src="Transportation/transportation3.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
+          <img src="Transportation/transportation3.jpg" alt="..." />
+          <div className="gallery_hover">
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
+        <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
+          <img src="Transportation/transportation3.jpg" alt=".." />
+          <div className="gallery_hover">
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+          </div>
+        </div>
 
-      {/* End Our Featured Works Area */}
+      </div>
+
+    </div>
+  </section>
+
+  {/* End Our Featured Works Area */ }
 
     </>
 
