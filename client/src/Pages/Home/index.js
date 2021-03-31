@@ -1,14 +1,12 @@
 import React from 'react'
 import Wrapper from '../../Components/Wrapper'
+import Slider from '../../Components/Slider'
 import './style.css'
 
 function Home() {
     return (
-
         <Wrapper>
-            <div style={{ height: '75vh', backgroundColor: 'orange' }}>
-                <h1 style={{ textAlign: 'center', paddingTop: '15%' }}>We will put a slider here</h1>
-            </div>
+            <Slider/>
             <section class="row professional_builder">
                 <div class="container">
                     <div class="row builder_all">

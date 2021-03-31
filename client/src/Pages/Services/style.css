@@ -1,11 +1,11 @@
 /* Banner Area */
 .banner_area {
-  /* background: url("../../uploads/gl-2.jpg") no-repeat fixed; */
+  background: url('https://user-images.githubusercontent.com/77207167/113043685-ca358c80-916a-11eb-995b-a044297e9630.JPG') no-repeat fixed;
   background-position: center;
   text-align: center;
   position: relative;
   z-index: 1;
-  padding-bottom: 70px;
+  padding-bottom: 180px;
 }
 .banner_area:after {
   content: "";
@@ -22,7 +22,8 @@
   color: #fff;
   font: 400 40px "Oswald", sans-serif;
   text-transform: uppercase;
-  padding-top: 85px;
+  padding-top: 140px;
+
 }
 .banner_area .breadcrumb {
   background-color: transparent;
@@ -114,7 +115,7 @@
 }
 .building_construction_area .building_construction_row .constructing_right .painting li a i {
   font-size: 18px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 .building_construction_area .building_construction_row .constructing_right .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
   color: #f6b60b;
@@ -291,13 +292,19 @@ margin-bottom: 5%;
 }
 
 
-@media (max-width: 300px){
-  #service{
-    width: 100% !important;
+@media (max-width: 750px){
+  .col-8{
+    width: 50% !important;
  
   }
  
 }
+
+ @media only screen and (max-width: 600px) {
+  .row {
+    margin: auto !important;
+  }
+} 
 
 /* .color:hover{
   border: rgb(0, 26, 255) solid 2px;
@@ -332,9 +339,41 @@ margin-bottom: 5%;
   padding-right: 20px;
 }
 .row .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
-  color: #f6b60b;
+  color: #3178C6;
 }
 
+@media (min-width:600){
+  .row .painting .col-6{
+    width: 50% !important;
+  }
+}
+
+.ant-list-items li:hover {
+  
+  background-color: #3178C6 !important;
+  color: white;
+
+  
+}
+.ant-list-items li{
+  font-size: larger !important
+}
+
+.row .col-lg-3  {
+  list-style: none
+}
+.row .col-lg-2 {
+  list-style: none
+}
+
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/* @media (min-width:500){
+  .row .col-6{
+    width: 100% !important;
+  }
+} */
 
 
 /*--------------------------------------------------*/
