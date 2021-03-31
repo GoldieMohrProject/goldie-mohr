@@ -339,45 +339,45 @@ function Services() {
 
       <div className="row" >
         <div id="service" className="col-lg-4 col-md-6 col-xs-12 col-6 gallery_iner p0">
-          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <img src="Transportation/transportation3.jpg" alt=".." />
           <div className="gallery_hover">
-            <h4>Bolt Apartments</h4>
-            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
         </div>
         <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <img src="Transportation/transportation3.jpg" alt=".." />
           <div className="gallery_hover">
-            <h4>Bolt Apartments</h4>
-            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
         </div>
         <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <img src="Transportation/transportation3.jpg" alt=".." />
           <div className="gallery_hover">
-            <h4>Bolt Apartments</h4>
-            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
         </div>
         <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <img src="Transportation/transportation3.jpg" alt=".." />
           <div className="gallery_hover">
-            <h4>Bolt Apartments</h4>
-            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
         </div>
         <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-          <img src="../../uploads/gl-7.jpg" alt="..." />
+          <img src="Transportation/transportation3.jpg" alt="..." />
           <div className="gallery_hover">
-            <h4>Bolt Apartments</h4>
-            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
         </div>
         <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-          <img src="../../uploads/gl-7.jpg" alt=".." />
+          <img src="Transportation/transportation3.jpg" alt=".." />
           <div className="gallery_hover">
-            <h4>Bolt Apartments</h4>
-            <a href="../../uploads/gl-7.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+            <h4>2021 Project</h4>
+            <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
           </div>
         </div>
 
