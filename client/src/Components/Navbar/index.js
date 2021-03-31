@@ -4,54 +4,53 @@ import './style.css'
 
 
 function Navbar() {
-
-    return (
-        <>
-            <section className="top_header_area">
-                <div className="container">
-                    <ul className="nav navbar-expand-lg navbar-light top_nav">
-                        <li><a href="#"><i className="fa fa-phone" />+1 (613) 838 5042</a></li>
-                        <li><a href="#"><i className="fa fa-envelope" />info@goldiemohrltd.ca</a></li>
-                        <li><a href="#"><i className="fa fa-clock" />Mon - Sat 12:00 - 20:00</a></li>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li className="ms-auto" id="faUser"><a href="#"><i class="fas fa-user fa-2x" ></i></a></li>
-                    </ul>
-                </div>
-            </section>
-            <nav className="navbar navbar-expand-lg navbar-light header_aera" id="main_navbar">
-                <div className="container">
-                    <a className="navbar-brand" href="#"><img src="images/header-logo.png" ></img></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#min_navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse " id="min_navbar">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="./Service">Services & Projects</NavLink>
-                            </li>
-                            {/* <li className="nav-item">
-                                <NavLink className="nav-link" to="./Projects">Projects</NavLink>
-                            </li> */}
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="./About">About us</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="/Career">Career</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link contactUs" to="./Contact">Contact us</NavLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-        </>
-    )
+ 
+  return ( 
+    <>
+  <section className="top_header_area">
+    <div className="container">
+      <ul className="nav navbar-expand-lg navbar-light top_nav">
+        <li><a href="#"><i className="fa fa-phone" />+1 (613) 838 5042</a></li>
+        <li><a href="#"><i className="fa fa-envelope" />info@goldiemohrltd.ca</a></li>
+        <li><a href="#"><i className="fa fa-clock" />Mon - Sat 12:00 - 20:00</a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li className="ms-auto" id="faUser"><NavLink className="nav-link" to="./Login"><i class="fas fa-user fa-2x" ></i></NavLink></li>
+      </ul>
+    </div>
+  </section>
+  <nav className="navbar navbar-expand-lg navbar-light header_aera stroke" id="main_navbar">
+  <div className="container">
+    <a className="navbar-brand" href="#"><img src="images/header-logo.png" ></img></a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#min_navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse " id="min_navbar">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
+          <NavLink className="nav-link" aria-current="page" to="/" onClick={() => {window.location.href="/"}} >Home</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="./Services">Services</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="./Projects">Projects</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="./About">About us</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/">Careers</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</>
+)
 }
 
 export default Navbar
