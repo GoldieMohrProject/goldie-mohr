@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/About" component={About} />
         <Route exact path="/" component={Home} />
         <Route exact path="/Service" component={Service} />
-        <Route exact path="/Career" component={Career} />
+        <Route exact path="/Career" component={Home} />
         <Route exact path="/Projects" component={Home} />
         <Route exact path="/Login" component={Login} />
         </Wrapper>
