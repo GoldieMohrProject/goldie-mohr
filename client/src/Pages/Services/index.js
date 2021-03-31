@@ -270,8 +270,6 @@ function Services() {
                         TRI-AXLE
                     </a>
 
-                  </div>
-
                 </div>
               </div>
 
@@ -385,6 +383,7 @@ function Services() {
 
 
             </div>
+            </div>
 
           </div>
         </div>
@@ -401,15 +400,6 @@ function Services() {
                 <p>Lorem Ipsum is simply dummy text of the print-ing and typesetting industry. If you use this site regularly and would like to help keep</p>
                 <a className="button_all">Contact Us</a>
               </div> */}
-
-
-
-
-
-
-      {/* End Building Construction Area */}
-
-      {/* Our Featured Works Area */}
 
       <section className="featured_works row" data-stellar-background-ratio="0.3">
 
