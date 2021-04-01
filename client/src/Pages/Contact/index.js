@@ -14,11 +14,7 @@ function Contact() {
             </section>
             {/* End Banner area */}
 
-            {/* Map */}
-            <div className="contact_map">
-                <iframe src="https://www.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=3862+Moodie+Drive,+Ottawa,+ON&aq=0&oq=3862+Moodie+Drive&sll=45.250157,-75.800257&sspn=0.592656,1.295013&ie=UTF8&hq=&hnear=3862+Moodie+Dr,+Ottawa,+Ottawa+Division,+Ontario+K0A+2Z0&t=m&z=14&ll=45.217851,-75.772802&output=embed" />
-            </div>
-            {/* End Map */}
+
 
             {/* All contact Info */}
             <section className="all_contact_info">
@@ -63,6 +59,12 @@ function Contact() {
                 </div>
             </section>
             {/* End All contact Info */}
+
+                        {/* Map */}
+                        <div className="contact_map">
+                <iframe src="https://www.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=3862+Moodie+Drive,+Ottawa,+ON&aq=0&oq=3862+Moodie+Drive&sll=45.250157,-75.800257&sspn=0.592656,1.295013&ie=UTF8&hq=&hnear=3862+Moodie+Dr,+Ottawa,+Ottawa+Division,+Ontario+K0A+2Z0&t=m&z=14&ll=45.217851,-75.772802&output=embed" />
+            </div>
+            {/* End Map */}
 
 
 
