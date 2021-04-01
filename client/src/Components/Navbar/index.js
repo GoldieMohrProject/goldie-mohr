@@ -13,8 +13,8 @@ function Navbar() {
         <li><a href="#"><i className="fa fa-phone" />+1 (613) 838 5042</a></li>
         <li><a href="#"><i className="fa fa-envelope" />info@goldiemohrltd.ca</a></li>
         <li><a href="#"><i className="fa fa-clock" />Mon - Sat 12:00 - 20:00</a></li>
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/GoldieMohr"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/goldiemohrltd"><i class="fab fa-twitter"></i></a></li>
         <li className="ms-auto" id="faUser"><a href="#"></a></li>
         <div class="dropdown">
         <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
