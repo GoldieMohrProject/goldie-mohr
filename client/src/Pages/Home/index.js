@@ -13,7 +13,7 @@ function Home() {
         <Wrapper>
             <Slider />
             <div >
-                <a href="#About-Us" class="container hideArrow" style={{ zIndex:'10',position: 'absolute', paddingLeft: '47%', bottom: '0%' }}>
+                <a href="#About-Us" class="container hideArrow" style={{ zIndex:'10',position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
                             <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
@@ -25,7 +25,7 @@ function Home() {
 
             </div>
             <ScrollableAnchor id={'About-Us'}>
-                <section class="row professional_builder" >
+                <section class="row professional_builder backgroounnd"  >
                     <div class="container">
                         <div class="row builder_all">
                             <div class="tittle" style={{ marginBottom: '10%' }}>
