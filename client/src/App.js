@@ -8,6 +8,7 @@ import Service from "./Pages/Services"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home"
 import Career from "./Pages/Career"
+import Register from "./Pages/Register"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/Service" component={Service} />
           <Route exact path="/Career" component={Career} />
           <Route exact path="/Projects" component={Home} />
+          <Route exact path="/Register" component={Register} />
         </Wrapper>
         <Footer />
       </div>
