@@ -1,4 +1,8 @@
-.trainingarea{
+div {
+    font-family: "Roboto", sans-serif;
+}
+
+.trainingarea {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -10,9 +14,22 @@ p {
     padding-bottom: 25px;
 }
 
-h1 {
+.trainingtitle {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #3178C6;
+    color: white;
+}
+
+.pdf {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    background-color:  #3178C6;
+    transition: all .2s ease-in-out;
+}
+.pdf:hover {
+    text-decoration: none;
+    background-color: black;
     color: white;
 }
