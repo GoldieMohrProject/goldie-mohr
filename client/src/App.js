@@ -10,6 +10,7 @@ import Home from "./Pages/Home/index"
 import Login from "./Pages/Login/index"
 import Career from "./Pages/Career"
 import Product from "./Pages/Products/index"
+import Training from "./Pages/Training/index"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/Product" component={Product}/>
         <Route exact path="/Career" component={Career} />
         <Route exact path="/Login" component={Login} />
+        <Route exact path="/Training" component={Training} />
         </Wrapper>
         <Footer />
       </div>
