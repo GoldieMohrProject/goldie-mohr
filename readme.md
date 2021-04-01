@@ -4,17 +4,26 @@
                         FRONT END
 
    Components
+                                Navbar(After Login)  (Profile) (Training)
 
-    Wrapper (Faisal) (DONE) -- Navbar(Shiva) (DONE)   --  Footer (Faisal) (DONE)  --  
+    Wrapper (Faisal) (DONE) -- Navbar(Shiva) (DONE)   --  Footer (Faisal) (DONE)  --   Job (DONE) -- Slider (DONE) -- Register(Faisal)
 
 
    Pages 
 
-   Home(Said) (HALF-DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile ()
+   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)--  Projects (Fatih)  --   
+
+   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)   --
+
+   Register Page (Faisal) -- (Training)   
 
 
-
-
+   Email                   WSH Video
+   Password                WSH Quiz
+   Name                     
+   LastName
+   Phone Number
+   User Profile Picture
 
                          BACK END   (mysql)
 
