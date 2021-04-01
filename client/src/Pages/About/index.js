@@ -3,9 +3,6 @@ import "./style.css"
 
 import React from 'react';
 import './style.css';
-import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import team from '../../assets/team.jpg'
 import CAFE from '../../assets/CAFE.png'
@@ -199,85 +196,7 @@ function About() {
           </div>
           </div>
       </section>
-          {/* <div className="row team_row">
-            <div className="col-md-3 col-sm-6 wow fadeInUp">
-
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Ann McKenna</a>
-                  <h6>President</h6>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Deborah Mohr-Caldwell</a>
-                  <h6>Director</h6>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Glen Buch</a>
-                  <h6>Construction Manager</h6>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Mike Buch</a>
-                  <h6>Project Manager</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-   
-      {/* End Our Team Area */}
-
-
+          
       <section className="our_feature_area">
         <div className="container">
           <div className="tittle wow fadeInUp">
@@ -301,53 +220,7 @@ function About() {
         <img src={WSIB} className="imgmemb"/>
          </div>
 
-          {/* <div className="feature_row row">
-            <div className="col-md-6 feature_img">
-              <img src="https://user-images.githubusercontent.com/77207167/112711390-5c554080-8e9e-11eb-952d-2f96f7c573ef.jpg" alt />
-            </div>
-            <div className="col-md-6 feature_content">
-              <div className="subtittle">
-                <h2>WHY CHOOSE US</h2>
-                <h5>There are many variations of passages of Lorem Ipsum available.</h5>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-wrench" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">60+ YEARS OF EXPERIENCE</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-rocket" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">QUALIFIED EXPERTS</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-users" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">Best Customer Services</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
+         
       </section>
 
     </>

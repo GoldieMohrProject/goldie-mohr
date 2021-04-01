@@ -13,9 +13,17 @@ function Navbar() {
         <li><a href="#"><i className="fa fa-phone" />+1 (613) 838 5042</a></li>
         <li><a href="#"><i className="fa fa-envelope" />info@goldiemohrltd.ca</a></li>
         <li><a href="#"><i className="fa fa-clock" />Mon - Sat 12:00 - 20:00</a></li>
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li className="ms-auto" id="faUser"><NavLink className="nav-link" to="./Login"><i class="fas fa-user fa-2x" ></i></NavLink></li>
+        <li><a target="_blank" href="https://www.facebook.com/GoldieMohr"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/goldiemohrltd"><i class="fab fa-twitter"></i></a></li>
+        <li className="ms-auto" id="faUser"><a href="#"></a></li>
+        <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
+        <div class="dropdown-content">
+          <a href="#">Training</a>
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
       </ul>
     </div>
   </section>
@@ -31,16 +39,16 @@ function Navbar() {
           <NavLink className="nav-link" aria-current="page" to="/" onClick={() => {window.location.href="/"}} >Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="./Services">Services</NavLink>
+          <NavLink className="nav-link" to="./Service">Services & Projects</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="./Projects">Projects</NavLink>
+          <NavLink className="nav-link" to="./Product">Products</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="./About">About us</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/">Careers</NavLink>
+          <NavLink className="nav-link" to="./Career">Careers</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>
