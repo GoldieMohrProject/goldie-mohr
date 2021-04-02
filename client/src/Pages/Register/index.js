@@ -25,6 +25,11 @@ class Register extends React.Component {
     handleChange = event => {
         const name = event.target.name;
         const value = event.target.value;
+        if (name === "phone" && value <= 10) {
+            this.setState({
+                [name]: value
+            });
+        }
         this.setState({
             [name]: value
         });
@@ -44,11 +49,11 @@ class Register extends React.Component {
         return (
             <>
                 <div id="registerImage">
-                    <h1 id="registerTitle">CAREERS</h1>
+                    <h1 id="registerTitle">REGISTER</h1>
                 </div>
                 <div style={{ marginTop: "55px" }}>
                     <div className="container">
-                        <h3 style={{ color: "black", marginBottom: "30px" }}>Add new employee</h3>
+                        <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
 
                         <RegisterForm firstname={this.state.firstname}
                             lastname={this.state.lastname} email={this.state.email}
