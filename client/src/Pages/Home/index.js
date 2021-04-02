@@ -68,7 +68,7 @@ function Home() {
 
                                 <div class="tittle wow fadeInUp" >
                                     <h2>Our Achievements</h2>
-                                    <h4>the signature blue trucks with the golden horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western Quebec.</h4>
+                                    <h4 style={{padding:'5%'}}>the signature blue trucks with the golden horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western Quebec.</h4>
                                 </div>
                                 <div class="achievments_row row">
                                     <div class="col-md-3 col-sm-6 p0 completed">
@@ -76,7 +76,7 @@ function Home() {
                                         <CountUp end={800} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}}  class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -87,7 +87,7 @@ function Home() {
                                         <CountUp  end={229} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -98,7 +98,7 @@ function Home() {
                                         <CountUp end={100} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -109,7 +109,7 @@ function Home() {
                                         <CountUp end={25} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}}  class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>

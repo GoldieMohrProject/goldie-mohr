@@ -3,8 +3,8 @@ require( 'dotenv' ).config() // looks for .env ; process.env gets it's values
 const path = require('path')
 const express = require('express')
 const apiRouter = require('./app/router')
-const app = express()
 
+const app = express()
 const PORT = process.env.PORT || 8080
 
 // for parsing incoming POST data
@@ -20,7 +20,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // for routes
-apiRouter(app)
+// all our RESTful API routes come from
+// apiRouter( app, API_URL, STATIC_PATH )
+
+app.use('/', apiRouter)
 
 // **OPTIONAL** If your REACT routing allows non-standard paths (ex. fake paths for React-Router)
 // THEN you need to enable this for server-side serving to work
