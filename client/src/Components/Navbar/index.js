@@ -51,6 +51,9 @@ function Navbar() {
                                 <NavLink className="nav-link" to="./Career">Careers</NavLink>
                             </li>
                             <li className="nav-item">
+                                <NavLink className="nav-link" to="./Register">Register</NavLink>
+                            </li>
+                            <li className="nav-item">
                                 <NavLink className="nav-link contactUs" to="./Contact">Contact us</NavLink>
                             </li>
                         </ul>
