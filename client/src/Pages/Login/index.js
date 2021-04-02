@@ -4,8 +4,9 @@ import './style.css'
 function Login() {
     return (
         <div>
+              <div className="sup">
             <div className="loginarea">
-            <h3>Login</h3>
+            <h3 className="logintitle">Login</h3>
             <br></br>
             <form>
                 <div class="mb-3">
@@ -16,10 +17,11 @@ function Login() {
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
-                <button type="submit" className="loginbtn">Login</button>
+                <button type="submit" id="loginbtn">Login</button>
             </form>
-            <p>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
+</div>
             </div>
+            <p className="qs">Haven't registered yet? Click <a href="./Register">here</a> to register</p>
         </div>
     )
 }
