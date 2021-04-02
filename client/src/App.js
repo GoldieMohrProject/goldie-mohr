@@ -11,6 +11,7 @@ import Login from "./Pages/Login/index"
 import Career from "./Pages/Career"
 import Register from "./Pages/Register"
 import Product from "./Pages/Products/index"
+import Training from "./Pages/Training/index"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/Product" component={Product} />
           <Route exact path="/Career" component={Career} />
           <Route exact path="/Login" component={Login} />
+          <Route exact path="/Training" component={Training} />
           <Route exact path="/Register" component={Register} />
         </Wrapper>
         <Footer />

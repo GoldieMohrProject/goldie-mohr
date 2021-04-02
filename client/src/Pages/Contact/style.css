@@ -62,7 +62,7 @@
     position: absolute;
     height: 2px;
     width: 80px;
-    background: #f6b60b;
+    background: #3178C6;;
     left: 0;
     bottom: 0;
   }
@@ -81,7 +81,7 @@
     text-transform: uppercase;
   }
   .all_contact_info .contact_row .contact_info .location a:hover, .all_contact_info .contact_row .contact_info .location a:focus {
-    color: #f6b60b;
+    color: #3178C6;;
   }
   .all_contact_info .contact_row .contact_info .location .f_location {
     padding-bottom: 30px;
@@ -131,8 +131,48 @@
     text-transform: uppercase;
   }
   .all_contact_info .contact_row .send_message .contact_box button:hover, .all_contact_info .contact_row .send_message .contact_box button:focus {
-    color: #f6b60b;
+    color:#3178C6;;
     background: #222222;
   }
+
+  #sendbtn {
+    font: 700 18px/59px "Roboto", sans-serif;
+    text-align: center;
+    /* background: #f6b60b; */
+    display: block;
+    margin-right: 10px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+  }
+  #sendbtn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:black;
+    color: #3178C6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  #sendbtn:hover,
+  #sendbtn:focus {
+    color: #fff !important;
+  }
+  #sendbtn:hover:before,
+  #sendbtn:focus:before {
+    transform: scaleY(1);
+  }
+  
   
   /* End All contact Info Css */
