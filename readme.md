@@ -11,7 +11,7 @@
 
    Pages 
 
-   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)--  Projects (Fatih)  --   
+   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)  --  Projects (Fatih)
 
    Member Login (Mischa)   --   Profile ()  ---  Career(DONE)   --
 
