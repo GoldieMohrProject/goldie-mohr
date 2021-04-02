@@ -9,6 +9,9 @@ import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/index"
 import Login from "./Pages/Login/index"
 import Career from "./Pages/Career"
+import Register from "./Pages/Register"
+import Product from "./Pages/Products/index"
+import Training from "./Pages/Training/index"
 
 
 function App() {
@@ -17,17 +20,20 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
-        <Route exact path="/Contact" component={Contact} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Service" component={Service} />
-        <Route exact path="/Career" component={Home} />
-        <Route exact path="/Projects" component={Home} />
-        <Route exact path="/Login" component={Login} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Service" component={Service} />
+          <Route exact path="/Product" component={Product} />
+          <Route exact path="/Career" component={Career} />
+          <Route exact path="/Login" component={Login} />
+          <Route exact path="/Training" component={Training} />
+          <Route exact path="/Register" component={Register} />
         </Wrapper>
         <Footer />
       </div>
     </Router>
+
 
   );
 }

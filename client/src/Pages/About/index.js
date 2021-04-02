@@ -1,11 +1,7 @@
-
 import "./style.css"
 
 import React from 'react';
 import './style.css';
-import { faFacebookF, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import team from '../../assets/team.jpg'
 import CAFE from '../../assets/CAFE.png'
@@ -18,12 +14,11 @@ import OTA from '../../assets/OTA.png'
 import WSIB from '../../assets/WSIB.png'
 
 
-
-
 function About() {
   return (
     <>
       <h1 className="title">ABOUT US</h1>
+      <hr className="titleline"></hr>
 
       <section className="about_us_area about_us_2 row">
         <div className="container">
@@ -145,16 +140,15 @@ function About() {
             <p>
               After many years of service in the Ottawa community, we feel confident that we can cater to your needs. We get the job done and we don’t just meet expectations; we exceed them. Our customers keep coming back because we are dependable, knowledgeable and pleasant to work with.
           </p>
-            <br></br>
             <p>
               Our employees provide unmatched service, delivering top quality service for your business! All of our team members are committed to personal service. In keeping with this desire, we are not satisfied with our work until you are as well.
           </p>
-            <br></br>
+    
             <p>
               Aside from our amazing staff, we take the time and care to make sure even the tiniest detail is managed, in every circumstance. There really is no other way. Contact us today and find out how we can help you. It is our pleasure!
             </p>
           </div>
-          <br></br>
+       
           <a href="#" className="contactbtn">Contact Now</a>
           <br></br>
 
@@ -168,11 +162,11 @@ function About() {
           <div className="container">
             <div className="col-md-10">
               <h4>Our community is important to us.</h4>
-              <br></br>
+           
               <p className="communityarea">
                 As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.
                 </p>
-                <br></br>
+             
               <p className="communityarea">
                 Over the years GOLDIE MOHR LTD. has supported many local charity groups, charity events, sports teams, service clubs and organizations. As a team, we believe a place should be left better than found and we strive to make this possible through our community involvement.
                 </p>
@@ -199,85 +193,7 @@ function About() {
           </div>
           </div>
       </section>
-          {/* <div className="row team_row">
-            <div className="col-md-3 col-sm-6 wow fadeInUp">
-
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Ann McKenna</a>
-                  <h6>President</h6>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Deborah Mohr-Caldwell</a>
-                  <h6>Director</h6>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Glen Buch</a>
-                  <h6>Construction Manager</h6>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div className="team_membar">
-                <img src={placeholder} alt="nothing" />
-                <div className="team_content">
-                  <ul>
-                    <li><a href="#">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </a></li>
-                    <li><a href="#" aria-hidden="true" >
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </a></li>
-                  </ul>
-                  <a href="#" className="name">Mike Buch</a>
-                  <h6>Project Manager</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-   
-      {/* End Our Team Area */}
-
-
+          
       <section className="our_feature_area">
         <div className="container">
           <div className="tittle wow fadeInUp">
@@ -301,53 +217,7 @@ function About() {
         <img src={WSIB} className="imgmemb"/>
          </div>
 
-          {/* <div className="feature_row row">
-            <div className="col-md-6 feature_img">
-              <img src="https://user-images.githubusercontent.com/77207167/112711390-5c554080-8e9e-11eb-952d-2f96f7c573ef.jpg" alt />
-            </div>
-            <div className="col-md-6 feature_content">
-              <div className="subtittle">
-                <h2>WHY CHOOSE US</h2>
-                <h5>There are many variations of passages of Lorem Ipsum available.</h5>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-wrench" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">60+ YEARS OF EXPERIENCE</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-rocket" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">QUALIFIED EXPERTS</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-              <div className="media">
-                <div className="media-left">
-                  <a href="#">
-                    <i className="fa fa-users" aria-hidden="true" />
-                  </a>
-                </div>
-                <div className="media-body">
-                  <a href="#">Best Customer Services</a>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting indus-try. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
+         
       </section>
 
     </>
