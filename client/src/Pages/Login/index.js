@@ -18,6 +18,7 @@ function Login() {
                 </div>
                 <button type="submit" className="loginbtn">Login</button>
             </form>
+            <p>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
             </div>
         </div>
     )
