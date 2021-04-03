@@ -7,7 +7,7 @@ import Footer from './Components/Footer'
 import Service from "./Pages/Services"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/index"
-import Login from "./Pages/Login/index"
+import Login from "./Components/Login/index"
 import Career from "./Pages/Career"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
