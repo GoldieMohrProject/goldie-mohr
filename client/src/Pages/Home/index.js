@@ -13,7 +13,7 @@ function Home() {
         <Wrapper>
             <Slider />
             <div >
-                <a href="#About-Us" class="container hideArrow" style={{ zIndex:'10',position: 'absolute', paddingLeft: '47%', bottom: '0%' }}>
+                <a href="#About-Us" class="container hideArrow" style={{ zIndex:'10',position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
                             <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
@@ -25,7 +25,7 @@ function Home() {
 
             </div>
             <ScrollableAnchor id={'About-Us'}>
-                <section class="row professional_builder" >
+                <section class="row professional_builder backgroounnd"  >
                     <div class="container">
                         <div class="row builder_all">
                             <div class="tittle" style={{ marginBottom: '10%' }}>
@@ -68,7 +68,7 @@ function Home() {
 
                                 <div class="tittle wow fadeInUp" >
                                     <h2>Our Achievements</h2>
-                                    <h4>the signature blue trucks with the golden horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western Quebec.</h4>
+                                    <h4 style={{padding:'5%'}}>the signature blue trucks with the golden horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western Quebec.</h4>
                                 </div>
                                 <div class="achievments_row row">
                                     <div class="col-md-3 col-sm-6 p0 completed">
@@ -76,7 +76,7 @@ function Home() {
                                         <CountUp end={800} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}}  class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -87,7 +87,7 @@ function Home() {
                                         <CountUp  end={229} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -98,7 +98,7 @@ function Home() {
                                         <CountUp end={100} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -109,7 +109,7 @@ function Home() {
                                         <CountUp end={25} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span class="counter" ref={countUpRef} />
+                                                    <span style={{color:'white'}}  class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
