@@ -19,6 +19,7 @@ function Navbar() {
         <div class="dropdown">
         <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
         <div class="dropdown-content">
+          <a href="./Login">Login</a>
           <a href="./Training">Training</a>
           <a href="#">Profile</a>
           <a href="#">Logout</a>
