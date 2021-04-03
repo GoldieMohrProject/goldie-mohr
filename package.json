@@ -31,6 +31,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "antd": "^4.15.0",
+    "bootstrap": "^4.6.0",
     "concurrently": "^6.0.0",
     "eslint": "^7.23.0",
     "express": "^4.17.1",
@@ -38,6 +39,7 @@
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
+    "react-bootstrap": "^1.5.2",
     "react-countup": "^4.3.3",
     "react-image-gallery": "^1.0.9",
     "react-reveal": "^1.2.2",
