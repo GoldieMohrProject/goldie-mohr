@@ -7,7 +7,6 @@ import Footer from './Components/Footer'
 import Service from "./Pages/Services"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/index"
-import Login from "./Components/Login/index"
 import Career from "./Pages/Career"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
@@ -25,7 +24,7 @@ function App() {
       <div>
         <Navbar handleModal={handleShow}/>
         <Wrapper>
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} style={{ zIndex: 0 }}>
                 <Modal.Header closeButton>
                     <Modal.Title>Login</Modal.Title>
                 </Modal.Header>
@@ -60,7 +59,6 @@ function App() {
         <Route exact path="/Service" component={Service} />
         <Route exact path="/Product" component={Product}/>
         <Route exact path="/Career" component={Career} />
-        <Route exact path="/Login" component={Login} />
         <Route exact path="/Training" component={Training} />
         </Wrapper>
         <Footer />
