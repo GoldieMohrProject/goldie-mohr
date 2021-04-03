@@ -3,6 +3,15 @@ import "./style.css"
 import React from 'react';
 import './style.css';
 
+// history photos
+import history1 from '../../assets/history1.jpg'
+import history2 from '../../assets/history2.jpg'
+import history3 from '../../assets/history3.jpg'
+import history4 from '../../assets/history4.jpg'
+import history5 from '../../assets/history5.jpg'
+import history6 from '../../assets/history6.jpg'
+
+// membership photos
 import team from '../../assets/team.jpg'
 import CAFE from '../../assets/CAFE.png'
 import Dig from '../../assets/Dig.png'
@@ -15,6 +24,38 @@ import WSIB from '../../assets/WSIB.png'
 
 
 function About() {
+  
+//   var slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   var captionText = document.getElementById("caption");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+//   captionText.innerHTML = dots[slideIndex-1].alt;
+// }
+
   return (
     <>
       <h1 className="title">ABOUT US</h1>
@@ -131,6 +172,64 @@ function About() {
         </div>
       </section>
 
+
+      {/* HISTORY IMAGES SECTION */}
+      <div className="history-container justify-content-center">
+        {/* Full-width images with number text */}
+        {/* <div className="mySlides">
+          <div className="numbertext">1 / 6</div>
+          <img src={history1} style={{ width: '100%' }} />
+        </div>
+        <div className="mySlides">
+          <div className="numbertext">2 / 6</div>
+          <img src={history2} style={{ width: '100%' }} />
+        </div>
+        <div className="mySlides">
+          <div className="numbertext">3 / 6</div>
+          <img src={history3} style={{ width: '100%' }} />
+        </div>
+        <div className="mySlides">
+          <div className="numbertext">4 / 6</div>
+          <img src={history4} style={{ width: '100%' }} />
+        </div>
+        <div className="mySlides">
+          <div className="numbertext">5 / 6</div>
+          <img src={history5} style={{ width: '100%' }} />
+        </div>
+        <div className="mySlides">
+          <div className="numbertext">6 / 6</div>
+          <img src={history6} style={{ width: '100%' }} />
+        </div> */}
+        {/* Next and previous buttons */}
+        {/* <a className="prev" onclick="plusSlides(-1)">❮</a>
+        <a className="next" onclick="plusSlides(1)">❯</a> */}
+        {/* Image text */}
+        {/* <div className="caption-container">
+          <p id="caption" />
+        </div> */}
+        {/* Thumbnail images */}
+        <div className="row">
+          <div className="col-lg-2 col-md-3 col-sm-6">
+            <img className="demo cursor" src={history1} style={{ width: '100%' }} alt="old photo" />
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-6">
+            <img className="demo cursor" src={history2} style={{ width: '100%' }} alt="old photo" />
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-6">
+            <img className="demo cursor" src={history3} style={{ width: '100%' }} alt="old photo" />
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-6">
+            <img className="demo cursor" src={history4} style={{ width: '100%' }} alt="old photo" />
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-6">
+            <img className="demo cursor" src={history5} style={{ width: '100%' }} alt="old photo" />
+          </div>
+          <div className="col-lg-2 col-md-3 col-sm-6">
+            <img className="demo cursor" src={history6} style={{ width: '100%' }} alt="old photo" />
+          </div>
+        </div>
+      </div>
+
       <section>
         <div className="container">
           <div className="subtittle">
@@ -143,12 +242,12 @@ function About() {
             <p>
               Our employees provide unmatched service, delivering top quality service for your business! All of our team members are committed to personal service. In keeping with this desire, we are not satisfied with our work until you are as well.
           </p>
-    
+
             <p>
               Aside from our amazing staff, we take the time and care to make sure even the tiniest detail is managed, in every circumstance. There really is no other way. Contact us today and find out how we can help you. It is our pleasure!
             </p>
           </div>
-       
+
           <a href="#" className="contactbtn">Contact Now</a>
           <br></br>
 
@@ -162,11 +261,11 @@ function About() {
           <div className="container">
             <div className="col-md-10">
               <h4>Our community is important to us.</h4>
-           
+
               <p className="communityarea">
                 As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.
                 </p>
-             
+
               <p className="communityarea">
                 Over the years GOLDIE MOHR LTD. has supported many local charity groups, charity events, sports teams, service clubs and organizations. As a team, we believe a place should be left better than found and we strive to make this possible through our community involvement.
                 </p>
@@ -191,9 +290,9 @@ function About() {
             </div>
 
           </div>
-          </div>
+        </div>
       </section>
-          
+
       <section className="our_feature_area">
         <div className="container">
           <div className="tittle wow fadeInUp">
@@ -201,23 +300,23 @@ function About() {
               <h2>Memberships</h2>
               <br></br>
             </div>
-            </div>
           </div>
+        </div>
 
-          <div className="membershiparea">
-        <img src={CAFE} className="imgmemb"/>
-        <img src={Dig} className="imgmemb"/>
-        <img src={ISHA} className="imgmemb"/>
-        <img src={NCHCA} className="imgmemb"/>
-         </div>
-         <div className="membershiparea">
-        <img src={OCA} className="imgmemb"/>
-        <img src={OSWCA} className="imgmemb"/>
-        <img src={OTA} className="imgmemb"/>
-        <img src={WSIB} className="imgmemb"/>
-         </div>
+        <div className="membershiparea">
+          <img src={CAFE} className="imgmemb" />
+          <img src={Dig} className="imgmemb" />
+          <img src={ISHA} className="imgmemb" />
+          <img src={NCHCA} className="imgmemb" />
+        </div>
+        <div className="membershiparea">
+          <img src={OCA} className="imgmemb" />
+          <img src={OSWCA} className="imgmemb" />
+          <img src={OTA} className="imgmemb" />
+          <img src={WSIB} className="imgmemb" />
+        </div>
 
-         
+
       </section>
 
     </>
