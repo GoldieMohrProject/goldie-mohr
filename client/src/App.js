@@ -8,6 +8,7 @@ import Service from "./Pages/Services"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/index"
 import Career from "./Pages/Career"
+import Register from "./Pages/Register"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import {Modal} from "react-bootstrap"
@@ -64,7 +65,7 @@ function App() {
         <Footer />
       </div>
     </Router>
-  
+
 
   );
 }

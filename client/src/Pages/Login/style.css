@@ -20,9 +20,9 @@
     .loginarea {
       width: 85%;
     }
-    }
 
-.logintitle {
+ 
+h3 {
     color: white;
     text-align: center;
 }
@@ -44,6 +44,7 @@ label {
     z-index: 2;
     padding: 10px;
   }
+  
 #loginbtn:before {
     content: "";
     position: absolute;
