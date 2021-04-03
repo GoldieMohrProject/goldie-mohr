@@ -7,7 +7,7 @@ function Login() {
             <div className="loginarea">
             <h3>Login</h3>
             <br></br>
-            <form method='GET' action='/login_user'>
+            <form method='POST' action='/api/users/login'>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
                     <input name='email' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />

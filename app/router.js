@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const orm = require('./db/orm');
 const sessionManager = require( './session-manager' )
 
@@ -19,11 +20,11 @@ async function authRequired(req, res, next){
 
 function router( app, API_URL ){
     // OAUTH Authentication --------------------------------------------
-    async function createOAuthSession({ type, authId, name, thumbnail } ){
-        console.log( `[createOAuthSession] called for ${name}` );
+    async function createOAuthSession({ type, authId, first_name, last_name, picture } ){
+        console.log( `[createOAuthSession] called for ${first_name}` );
 
         // register user in system (if they aren't there, and get the associated session)
-        const { status, message, userData } = await orm.userOAuthRegister({ type, authId, name, thumbnail })
+        const { status, message, userData } = await orm.userOAuthRegister({ type, authId, first_name, last_name, picture })
 
         const session = sessionManager.create( userData.id )
         // returns the logged-in user info to javascript
@@ -53,7 +54,7 @@ function router( app, API_URL ){
 
         // generate a session-key
         const session = sessionManager.create( userData.id )
-        // console.log( `.. login complete! session: ${session}` )
+        // console.log( `.. login complete! session: ${session}` )s
         res.send({ status, session, userData, message })
     })
 
