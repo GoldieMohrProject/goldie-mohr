@@ -27,7 +27,7 @@ function Contact() {
                            </p>
                             <div className="location">
                                 <div className="location_laft">
-                                    <a className="f_location" >location</a>
+                                    <a  >location</a>
                                     <a >phone</a>
                                     <a > toll free</a>
                                     <a >fax</a>
