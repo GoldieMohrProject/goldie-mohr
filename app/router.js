@@ -75,19 +75,19 @@ function router( app, API_URL ){
         res.send({ status: true, message: 'Logout complete' })
     })
 
-    app.get('/api/products/:id?', authRequired, async function(req, res) {
-        const productId = req.params.id
-        const { status, products, message }= await orm.productList( productId ) // req.sessionData.userId
-        console.log( ` .. got ${products.length} tasks for ownerId(${req.sessionData.userId})` )
-        res.send({ status, products, message })
-    })
+    // app.get('/api/products/:id?', authRequired, async function(req, res) {
+    //     const productId = req.params.id
+    //     const { status, products, message }= await orm.productList( productId ) // req.sessionData.userId
+    //     console.log( ` .. got ${products.length} tasks for ownerId(${req.sessionData.userId})` )
+    //     res.send({ status, products, message })
+    // })
 
-    app.post('/api/products', authRequired, async function(req, res) {
-        const newProduct = req.body.task
-        const { status, products, message }= await orm.productSaveAndList( newProduct, req.sessionData.userId )
-        console.log( ` .. updated with '${newProduct}' for ownerId(${req.sessionData.userId})` )
-        res.send({ status, products, message })
-    })
+    // app.post('/api/products', authRequired, async function(req, res) {
+    //     const newProduct = req.body.task
+    //     const { status, products, message }= await orm.productSaveAndList( newProduct, req.sessionData.userId )
+    //     console.log( ` .. updated with '${newProduct}' for ownerId(${req.sessionData.userId})` )
+    //     res.send({ status, products, message })
+    // })
 }
 
 module.exports = router

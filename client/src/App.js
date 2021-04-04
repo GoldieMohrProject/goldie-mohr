@@ -13,6 +13,7 @@ import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import {Modal} from "react-bootstrap"
 import {Button} from "react-bootstrap"
+import Login from "./Pages/Login"
 
 function App() {
   const [show, setShow] = useState(false);
@@ -25,7 +26,7 @@ function App() {
       <div>
         <Navbar handleModal={handleShow}/>
         <Wrapper>
-        <Modal show={show} onHide={handleClose} style={{ zIndex: 0 }}>
+        <Modal show={show} onHide={handleClose} >
                 <Modal.Header closeButton>
                     <Modal.Title>Login</Modal.Title>
                 </Modal.Header>
@@ -61,6 +62,9 @@ function App() {
         <Route exact path="/Product" component={Product}/>
         <Route exact path="/Career" component={Career} />
         <Route exact path="/Training" component={Training} />
+        <Route exact path="/Register" component={Register} />
+        <Route exact path="/Login" component={Login} />
+
         </Wrapper>
         <Footer />
       </div>
