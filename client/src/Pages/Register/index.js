@@ -1,11 +1,13 @@
 import React from 'react'
 import './style.css'
 import RegisterForm from '../../Components/RegisterForm'
+import fetchJSON from "../../Utils/API.js"
 
 
 class Register extends React.Component {
-
-    state = {
+    constructor (props) {
+        super(props)
+    this.state = {
         firstname: "",
         lastname: "",
         email: "",
@@ -14,6 +16,11 @@ class Register extends React.Component {
         selectedFile: null
         // password: "",
     }
+    this.handleChange = this.handleChange.bind(this)
+    this.api = this.api.bind(this)
+    this.onFileChange=this.onFileChange.bind(this)
+    this.handleSubmit=this.handleSubmit.bind(this)
+}
 
     onFileChange = event => {
 
@@ -43,7 +50,21 @@ class Register extends React.Component {
         //     [name]: value
         // });
         console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
+        this.api()
+     
     };
+
+    api = async function data(){
+
+        const { message } = await fetch('/api/users/register').then(r => r.json())
+  
+        
+        console.log("api function called")
+
+        return message
+        
+    }
+ 
 
     render() {
         return (
@@ -58,7 +79,7 @@ class Register extends React.Component {
                         <RegisterForm firstname={this.state.firstname}
                             lastname={this.state.lastname} email={this.state.email}
                             phone={this.state.phone} password={this.state.password}
-                            handleSubmit={this.handleSubmit}
+                            handleSubmit={this.api}
                             handleChange={this.handleChange}
                             onFileChange={this.onFileChange} />
                     </div>
@@ -69,4 +90,4 @@ class Register extends React.Component {
     }
 }
 
-export default Register
+export default Register;

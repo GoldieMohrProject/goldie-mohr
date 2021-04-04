@@ -9,7 +9,7 @@ import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home/index"
 import Login from "./Pages/Login/index"
 import Career from "./Pages/Career"
-import Register from "./Pages/Register"
+import Register from "./Pages/Register/index"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 
@@ -29,6 +29,7 @@ function App() {
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Training" component={Training} />
           <Route exact path="/Register" component={Register} />
+   
         </Wrapper>
         <Footer />
       </div>
