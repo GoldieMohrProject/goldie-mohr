@@ -3,7 +3,7 @@ import React from 'react'
 function RegisterForm(props) {
     return (
         <>
-            <form className="">
+            <form>
                 <div className="mb-3" style={{ backgroundColor: "#F2F2F2" }}>
                     <label style={{ color: "black", marginLeft: "12px" }} for="firstNameInput" className="form-label">First Name</label>
                     <input onChange={props.handleChange} name="firstname" style={{ borderRadius: "0px" }} value={props.firstname} type="text" className="form-control" id="firstNameInput" placeholder="Enter first name" required />

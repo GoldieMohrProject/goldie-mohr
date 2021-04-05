@@ -13,7 +13,7 @@ class Register extends React.Component {
         password: "",
         phone: "",
         selectedFile: null,
-     
+
     }
 
     onFileChange = event => {
@@ -48,25 +48,25 @@ class Register extends React.Component {
             picture: this.state.selectedFile,
 
         }
-      
-            const fetchOptions = {
-                method: 'post',
-                headers: {
-                    'Content-Type': 'application/json',
-                    // looks for a session entry in localStorage, and if so pass it
-                    // 'Session': localStorage.session || ''
-                },
-                body : JSON.stringify( userInfo )
-            }
-            // only attach the body for put/post
-            // if( method === 'post' || method === 'put' ) {
-            //     fetchOptions.body = JSON.stringify( data )
-            // }
-          
-            // return fetch( url,fetchOptions ).then( res=>res.json() )
+
+        const fetchOptions = {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+                // looks for a session entry in localStorage, and if so pass it
+                // 'Session': localStorage.session || ''
+            },
+            body: JSON.stringify(userInfo)
+        }
+        // only attach the body for put/post
+        // if( method === 'post' || method === 'put' ) {
+        //     fetchOptions.body = JSON.stringify( data )
+        // }
+
+        // return fetch( url,fetchOptions ).then( res=>res.json() )
         // }
         console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
-        let x = await fetch( '/api/users/register',fetchOptions).then( res=>res.json())
+        let x = await fetch('/api/users/register', fetchOptions).then(res => res.json())
         return console.log(x)
         // const { status, message } = await fetchJSON('/api/users/register', 'post', userInfo)
         // const name = event.target.name;
@@ -74,34 +74,34 @@ class Register extends React.Component {
         // this.setState({
         //     [name]: value
         // });
-    
 
-    // console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
-};
 
-render() {
-    return (
-        <>
-            <div id="registerImage">
-                {/* <div>{this.state.selectedFile}</div> */}
-                <h1 id="registerTitle">REGISTER</h1>
-            </div>
-            <div style={{ marginTop: "55px" }}>
-                <div className="container">
-                    <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
+        // console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
+    };
 
-                    <RegisterForm firstname={this.state.firstname}
-                        lastname={this.state.lastname} email={this.state.email}
-                        phone={this.state.phone} password={this.state.password}
-                        handleSubmit={this.handleSubmit}
-                        handleChange={this.handleChange}
-                        onFileChange={this.onFileChange} />
+    render() {
+        return (
+            <>
+                <div id="registerImage">
+                    {/* <div>{this.state.selectedFile}</div> */}
+                    <h1 id="registerTitle">REGISTER</h1>
                 </div>
-            </div>
+                <div style={{ marginTop: "55px" }}>
+                    <div className="container">
+                        <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
 
-        </>
-    )
-}
+                        <RegisterForm firstname={this.state.firstname}
+                            lastname={this.state.lastname} email={this.state.email}
+                            phone={this.state.phone} password={this.state.password}
+                            handleSubmit={this.handleSubmit}
+                            handleChange={this.handleChange}
+                            onFileChange={this.onFileChange} />
+                    </div>
+                </div>
+
+            </>
+        )
+    }
 }
 
 export default Register
