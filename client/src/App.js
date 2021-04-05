@@ -12,6 +12,7 @@ import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import { Modal } from "react-bootstrap"
 import { Button } from "react-bootstrap"
+import Navbar from './Components/Navbar'
 
 import CardProfile from "./Pages/Profile/index"
 function App() {
@@ -62,7 +63,7 @@ function App() {
         <Route exact path="/Career" component={Career} />
         <Route exact path="/Training" component={Training} />
         <Route exact path="/Register" component={Register} />
-        <Route exact path="/Login" component={Login} />
+        {/* <Route exact path="/Login" component={Login} /> */}
         <Route exact path="/Profile" component={CardProfile} />
 
         </Wrapper>
