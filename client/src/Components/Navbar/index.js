@@ -17,10 +17,10 @@ function Navbar() {
         <li><a target="_blank" href="https://twitter.com/goldiemohrltd"><i class="fab fa-twitter"></i></a></li>
         <li className="ms-auto" id="faUser"><a href="#"></a></li>
         <div class="dropdown">
-        <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
+        <button class="dropbtn" ><NavLink to="./Login"><i class="fas fa-user fa-lg userColor"></i></NavLink></button>
         <div class="dropdown-content">
           <a href="#">Training</a>
-          <a href="#">Profile</a>
+          <NavLink to="./Profile">Profile</NavLink>
           <a href="#">Logout</a>
         </div>
       </div>
@@ -50,8 +50,8 @@ function Navbar() {
         <li className="nav-item">
           <NavLink className="nav-link" to="./Career">Careers</NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>
+        <li className="nav-item contactUs">
+          <NavLink className="nav-link "  to="./Contact">Contact us</NavLink>
         </li>
       </ul>
     </div>

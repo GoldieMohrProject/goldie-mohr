@@ -10,8 +10,7 @@ import Home from "./Pages/Home/index"
 import Login from "./Pages/Login/index"
 import Career from "./Pages/Career"
 import Product from "./Pages/Products/index"
-
-
+import CardProfile from "./Pages/Profile/index"
 function App() {
   return (
     <Router>
@@ -25,6 +24,7 @@ function App() {
         <Route exact path="/Product" component={Product}/>
         <Route exact path="/Career" component={Career} />
         <Route exact path="/Login" component={Login} />
+        <Route exact path="/Profile" component={CardProfile} />
         </Wrapper>
         <Footer />
       </div>
