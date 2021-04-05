@@ -10,7 +10,7 @@ const ImgUpload =({
     return(
       <label for="photo-upload" className="custom-file-upload fas">
         <div className="img-wrap img-upload" >
-          <img for="photo-upload" src={src}/>
+          <img  className="uploadImg"for="photo-upload" src={src}/>
         </div>
         <input id="photo-upload" type="file" onChange={onChange}/> 
       </label>
@@ -58,7 +58,7 @@ const ImgUpload =({
             <div class="col-md-4 ">
             <label className="custom-file-upload fas">
             <div className="img-wrap" >
-                <img for="photo-upload" src={src}/>
+                <img className="uploadImg" for="photo-upload" src={src}/>
             </div>
              </label>
             </div>
@@ -166,7 +166,6 @@ const ImgUpload =({
         });
       }
       reader.readAsDataURL(file);
-      await fetchJSON( '/api/file', 'post', { file } )
     }
     editName (e) {
       const name = e.target.value;

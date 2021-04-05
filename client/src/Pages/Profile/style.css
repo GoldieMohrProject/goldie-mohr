@@ -59,16 +59,16 @@
   .img-upload:hover:before{
    opacity: 1;
   }
-  img {
+  .uploadImg {
     width: auto;
     height: 100%;
   }
   
-  span{
+  /*span{
     text-transform: uppercase;
     font-weight: 700;
     color: #676767;
-  }
+  }*/
   
   input{
     border-radius: 15px;
