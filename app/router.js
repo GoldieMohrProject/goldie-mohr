@@ -1,25 +1,25 @@
 /* eslint-disable camelcase */
 const orm = require('./db/orm');
-const sessionManager = require( './session-manager' )
+const sessionManager = require('./session-manager')
 
 // session checking middleware
-async function authRequired(req, res, next){
+async function authRequired(req, res, next) {
     // check session set, and it's valid
-    const sessionData = sessionManager.verifyAndLoad( req.headers.session )
-    console.log('sasadasda',req.headers.session)
-    if( !sessionData ){
-        console.log( `[${req.method} ${req.url}] .. [authRequired] invalid session, refusing (403)` )
+    const sessionData = sessionManager.verifyAndLoad(req.headers.session)
+    console.log('sasadasda', req.headers.session)
+    if (!sessionData) {
+        console.log(`[${req.method} ${req.url}] .. [authRequired] invalid session, refusing (403)`)
         res.status(403).send({ status: false, message: 'Requires valid session. Please login again.' })
         return
     }
-    console.log( `[${req.method} ${req.url}] .. [authRequired] session GOOD` )
+    console.log(`[${req.method} ${req.url}] .. [authRequired] session GOOD`)
     // session was good, pass info on, let's continue endpoint processing...
     req.sessionData = sessionData
     next()
 }
 
 
-function router( app){
+function router(app) {
     // OAUTH Authentication --------------------------------------------
     // async function createOAuthSession({ type, authId, first_name, last_name, picture } ){
     //     console.log( `[createOAuthSession] called for ${first_name}` );
@@ -32,45 +32,63 @@ function router( app){
     //     return { status, session, userData, message };
     // }
 
-    app.post('/api/users/register', async function(req, res) {
-        console.log( '[POST /api/users/register] request body:', req.body )
-        const { status, userData, message }= await orm.userRegister( req.body )
-        if( !status ){
+    app.post('/api/users/register', async function (req, res) {
+        console.log('[POST /api/users/register] request body:', req.body)
+        const { status, userData, message } = await orm.userRegister(req.body)
+        if (!status) {
             res.status(403).send({ status, message }); return
         }
 
         // generate a session-key
-        const session = sessionManager.create( userData.id )
-        console.log( `.. registration complete! session: ${session}` )
+        const session = sessionManager.create(userData.id)
+        console.log(`.. registration complete! session: ${session}`)
 
         res.send({ status, session, userData, message })
     })
 
-    app.post('/api/users/login', async function(req, res) {
-        console.log( '[POST /api/users/login] req.body:', req.body )
-        const { status, userData, message }= await orm.userLogin( req.body.email, req.body.password )
-        if( !status ){
+    app.get('/api/users/findByEmail/:email', async function (req, res) {
+        const email = req.params.email
+
+        const {userData } = await orm.findByEmail(email)
+
+        res.send({  userData })
+
+    })
+
+    app.post('/api/users/score', async function (req,res){
+        let userId = req.body.userID
+        let userScore = req.body.score
+
+        const {userData } = await orm.SaveScore(userId,userScore)
+
+        res.send({  userData })
+    })
+
+    app.post('/api/users/login', async function (req, res) {
+        console.log('[POST /api/users/login] req.body:', req.body)
+        const { status, userData, message } = await orm.userLogin(req.body.email, req.body.password)
+        if (!status) {
             res.status(403).send({ status, message }); return
         }
 
         // generate a session-key
-        const session = sessionManager.create( userData.id )
+        const session = sessionManager.create(userData.id)
         // console.log( `.. login complete! session: ${session}` )s
         res.send({ status, session, userData, message })
     })
 
-    app.get('/api/users/session', authRequired, async function(req, res) {
-        const { status, userData, message }= await orm.userSession( req.sessionData.userId )
-        if( !status ){
+    app.get('/api/users/session', authRequired, async function (req, res) {
+        const { status, userData, message } = await orm.userSession(req.sessionData.userId)
+        if (!status) {
             res.status(403).send({ status, message }); return
         }
 
-        console.log( `.. login complete! session: ${session}` )
+        console.log(`.. login complete! session: ${session}`)
         res.send({ status, session, userData, message })
     })
-    app.get('/api/users/profile', async function(req, res) {
-        const { status, userData, message }= await orm.userProfile(req.headers.email)
-        if( !status ){
+    app.get('/api/users/profile', async function (req, res) {
+        const { status, userData, message } = await orm.userProfile(req.headers.email)
+        if (!status) {
             res.status(403).send({ status, message }); return
         }
 
@@ -78,9 +96,9 @@ function router( app){
         res.send({ status, userData, message })
     })
 
-    app.post('/api/users/editProfile', async function(req, res) {
-        const { status, userData, message }= await orm.editUserProfile(req.body, req.headers.email)
-        if( !status ){
+    app.post('/api/users/editProfile', async function (req, res) {
+        const { status, userData, message } = await orm.editUserProfile(req.body, req.headers.email)
+        if (!status) {
             res.status(403).send({ status, message }); return
         }
 
@@ -89,10 +107,10 @@ function router( app){
     })
 
     // all these endpoints require VALID session info
-    app.get('/api/users/logout', authRequired, async function(req, res) {
-        console.log('tryinggggggg to get req.header.session',req.headers.session)
-        sessionManager.remove( req.headers.session )
-        console.log( ` .. removed session ${req.headers.session}`)
+    app.get('/api/users/logout', authRequired, async function (req, res) {
+        console.log('tryinggggggg to get req.header.session', req.headers.session)
+        sessionManager.remove(req.headers.session)
+        console.log(` .. removed session ${req.headers.session}`)
         res.send({ status: true, message: 'Logout complete', authOK: false })
     })
 

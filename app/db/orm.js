@@ -142,12 +142,50 @@ async function editUserProfile( user, email ){
         }
     }
 }
+
+async function findByEmail(email) {
+    const userData = await db.query(`SELECT * from user where email = '${email}'`)
+    // console.table(data)
+    return {
+        status: true,
+        message: '',
+        userData: {
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            last_name: userData[0].last_name,
+            email: userData[0].email,
+            phone_number: userData[0].phone_number,
+            picture: userData[0].picture
+        }
+    }
+}
+async function SaveScore(userId,userScore) {
+
+   let userData = await db.query(`INSERT INTO user_scores (score,userID) values (${userScore},${userId}) `)
+   
+   return {
+    status: true,
+    message: '',
+    userData: {
+        id: userData[0].userID,
+        first_name: userData[0].first_name,
+        last_name: userData[0].last_name,
+        email: userData[0].email,
+        phone_number: userData[0].phone_number,
+        picture: userData[0].picture
+    }
+}
+}
+
+
 module.exports = {
     userRegister,
     userLogin,
     userSession,
     userProfile,
-    editUserProfile
+    editUserProfile,
+    findByEmail,
+    SaveScore
 }
 
 

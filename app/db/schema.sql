@@ -16,3 +16,10 @@ phone_number varchar (20),
 picture BLOB
 
 );
+
+create table user_scores(
+    id INTEGER AUTO_INCREMENT not NULL PRIMARY KEY,
+    score INTEGER (2),
+    userID INTEGER,
+    FOREIGN KEY(userID) REFERENCES user(userID),
+)
