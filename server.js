@@ -31,6 +31,14 @@ if (process.env.NODE_ENV === 'production') {
     app.use( express.static('public') )
 }
 
+const array = [{"qqweqe":"adasdsd"},"1231313",111111]
+
+app.get('/api/users/register', async (req,res)=>{
+    res.send(array)
+    console.log("connected back end")
+    console.log(array)
+})
+
 // for routes
 // static paths (ex. assets, js, images, etc) served automatically from:
 // app.use(express.static( STATIC_PATH ))
@@ -41,11 +49,11 @@ apiRouter( app )
 
 // **OPTIONAL** If your REACT routing allows non-standard paths (ex. fake paths for React-Router)
 // THEN you need to enable this for server-side serving to work
-if (process.env.NODE_ENV === 'production') {
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, './client/build/index.html'));
-    });
-}
+// if (process.env.NODE_ENV === 'production') {
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname, './client/build/index.html'));
+//     });
+// }
 
 app.listen(PORT, () => {
     console.log(`==> 🌎  Listening on port ${PORT}. Visit http://localhost:${PORT} in your browser.`);

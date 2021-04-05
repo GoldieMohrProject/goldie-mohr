@@ -7,7 +7,7 @@ import Footer from './Components/Footer'
 import Service from "./Pages/Services"
 import Home from "./Pages/Home/index"
 import Career from "./Pages/Career"
-import Register from "./Pages/Register"
+import Register from "./Pages/Register/index"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import Login from "./Pages/Login"
