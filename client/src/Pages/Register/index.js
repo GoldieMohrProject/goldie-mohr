@@ -86,14 +86,16 @@ class Register extends React.Component {
 
                 <div style={{ marginTop: "55px" }}>
                     <div className="container">
-                        <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
+                        <div style={{ marginLeft: "100px", marginRight: "100px" }}>
+                            <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
 
-                        <RegisterForm firstname={this.state.firstname}
-                            lastname={this.state.lastname} email={this.state.email}
-                            phone={this.state.phone} password={this.state.password}
-                            handleSubmit={this.handleSubmit}
-                            handleChange={this.handleChange}
-                            onFileChange={this.onFileChange} />
+                            <RegisterForm firstname={this.state.firstname}
+                                lastname={this.state.lastname} email={this.state.email}
+                                phone={this.state.phone} password={this.state.password}
+                                handleSubmit={this.handleSubmit}
+                                handleChange={this.handleChange}
+                                onFileChange={this.onFileChange} />
+                        </div>
                     </div>
                 </div>
 
