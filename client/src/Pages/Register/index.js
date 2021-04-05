@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import RegisterForm from '../../Components/RegisterForm'
-import fetchJSON from "../../Utils/API.js"
+// import fetchJSON from "../../util/API.js"
 
 
 class Register extends React.Component {
@@ -13,8 +13,8 @@ class Register extends React.Component {
         email: "",
         password: "",
         phone: "",
-        selectedFile: null
-        // password: "",
+        selectedFile: null,
+     
     }
     this.handleChange = this.handleChange.bind(this)
     this.api = this.api.bind(this)
@@ -43,51 +43,71 @@ class Register extends React.Component {
     };
 
 
-    handleSubmit = event => {
+    handleSubmit = async (event) => {
+        event.preventDefault()
+        const userInfo = {
+            first_name: this.state.firstname.trim(),
+            last_name: this.state.lastname.trim(),
+            email: this.state.email.trim(),
+            phone_number: this.state.phone.trim(),
+            password: this.state.password.trim(),
+            picture: this.state.selectedFile,
+
+        }
+      
+            const fetchOptions = {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // looks for a session entry in localStorage, and if so pass it
+                    // 'Session': localStorage.session || ''
+                },
+                body : JSON.stringify( userInfo )
+            }
+            // only attach the body for put/post
+            // if( method === 'post' || method === 'put' ) {
+            //     fetchOptions.body = JSON.stringify( data )
+            // }
+          
+            // return fetch( url,fetchOptions ).then( res=>res.json() )
+        // }
+        console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
+        let x = await fetch( '/api/users/register',fetchOptions).then( res=>res.json())
+        return console.log(x)
+        // const { status, message } = await fetchJSON('/api/users/register', 'post', userInfo)
         // const name = event.target.name;
         // const value = event.target.value;
         // this.setState({
         //     [name]: value
         // });
-        console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
-        this.api()
-     
-    };
+    
 
-    api = async function data(){
+    // console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
+};
 
-        const { message } = await fetch('/api/users/register').then(r => r.json())
-  
-        
-        console.log("api function called")
+render() {
+    return (
+        <>
+            <div id="registerImage">
+                {/* <div>{this.state.selectedFile}</div> */}
+                <h1 id="registerTitle">REGISTER</h1>
+            </div>
+            <div style={{ marginTop: "55px" }}>
+                <div className="container">
+                    <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
 
-        return message
-        
-    }
- 
-
-    render() {
-        return (
-            <>
-                <div id="registerImage">
-                    <h1 id="registerTitle">REGISTER</h1>
+                    <RegisterForm firstname={this.state.firstname}
+                        lastname={this.state.lastname} email={this.state.email}
+                        phone={this.state.phone} password={this.state.password}
+                        handleSubmit={this.handleSubmit}
+                        handleChange={this.handleChange}
+                        onFileChange={this.onFileChange} />
                 </div>
-                <div style={{ marginTop: "55px" }}>
-                    <div className="container">
-                        <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
+            </div>
 
-                        <RegisterForm firstname={this.state.firstname}
-                            lastname={this.state.lastname} email={this.state.email}
-                            phone={this.state.phone} password={this.state.password}
-                            handleSubmit={this.api}
-                            handleChange={this.handleChange}
-                            onFileChange={this.onFileChange} />
-                    </div>
-                </div>
-
-            </>
-        )
-    }
+        </>
+    )
+}
 }
 
 export default Register;
