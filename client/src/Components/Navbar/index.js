@@ -52,7 +52,9 @@ function Navbar(props) {
         <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
         <div class="dropdown-content">
           {!localStorage.session &&
-          <a onClick={props.handleModal}>Login</a>}
+          <>
+          <a onClick={props.handleModal}>Login</a>
+          <NavLink to="/register" className="navbar-brand">Register</NavLink> </>         }
           {localStorage.session && <>
             <NavLink to="/" className="navbar-brand">Training</NavLink>
             <NavLink to="/" className="navbar-brand">Profile</NavLink>
