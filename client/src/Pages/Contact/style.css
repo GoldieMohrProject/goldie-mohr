@@ -1,178 +1,191 @@
 /* Banner Area */
 .banner_area {
-    /* background: url("../images/banner-bg.jpg") no-repeat fixed; */
-    background-position: center;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    padding-bottom: 70px;
-  }
-  .banner_area:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    z-index: -1;
-  }
-  .banner_area h2 {
-    color: #fff;
-    font: 400 40px "Oswald", sans-serif;
-    text-transform: uppercase;
-    padding-top: 85px;
-  }
-  .banner_area .breadcrumb {
-    background-color: transparent;
-    padding-top: 15px;
-  }
-  .banner_area .breadcrumb li a {
-    font: 400 14px "Roboto", sans-serif;
-    color: #fefefe;
-  }
-  .banner_area .breadcrumb li a.active {
-    color: #f6b60b;
-  }
-  
-  /* End Banner Area */
+  /* background: url("../images/banner-bg.jpg") no-repeat fixed; */
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+.banner_area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.banner_area h2 {
+  color: #fff;
+  font: 400 40px "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-top: 85px;
+}
+.banner_area .breadcrumb {
+  background-color: transparent;
+  padding-top: 15px;
+}
+.banner_area .breadcrumb li a {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fefefe;
+}
+.banner_area .breadcrumb li a.active {
+  color: #f6b60b;
+}
 
-  /* Map Css */
+/* End Banner Area */
+
+/* Map Css */
 .contact_map iframe {
-    height: 495px;
-    width: 100%;
-  }
-  
-  /* End Map Css */
+  height: 495px;
+  width: 100%;
+}
 
+/* End Map Css */
 
-  /* All contact Info Css */
+/* All contact Info Css */
 .all_contact_info .contact_row {
-    padding: 100px 0;
-  }
-  .all_contact_info .contact_row .contact_info h2 {
-    font: 700 26px/1 "Roboto", sans-serif;
-    color: #222222;
-    padding-bottom: 30px;
-    position: relative;
-  }
-  .all_contact_info .contact_row .contact_info h2:after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 80px;
-    background: #3178C6;;
-    left: 0;
-    bottom: 0;
-  }
-  .all_contact_info .contact_row .contact_info p {
-    font: 400 14px/26px "Roboto", sans-serif;
-    color: #555555;
-    padding-top: 30px;
-  }
-  .all_contact_info .contact_row .contact_info .location {
-    padding-top: 55px;
-  }
-  .all_contact_info .contact_row .contact_info .location a {
-    font: 400 14px/28px "Roboto", sans-serif;
-    color: #555555;
-    display: block;
-    text-transform: uppercase;
-  }
-  .all_contact_info .contact_row .contact_info .location a:hover, .all_contact_info .contact_row .contact_info .location a:focus {
-    color: #3178C6;;
-  }
-  .all_contact_info .contact_row .contact_info .location .f_location {
-    padding-bottom: 30px;
-  }
-  .all_contact_info .contact_row .contact_info .location .location_laft {
-    width: 98px;
-    float: left;
-  }
-  .all_contact_info .contact_row .contact_info .location .address a {
-    text-transform: none;
-  }
-  .all_contact_info .contact_row .send_message .contact_box {
-    padding-top: 30px;
-  }
-  .all_contact_info .contact_row .send_message .contact_box .input_box {
-    border: 1px solid #dfe3e4;
-    border-radius: 0;
-    box-shadow: none;
-    outline: none;
-    height: 50px;
-    padding-left: 15px;
-    width: 100%;
-    color: #d3dadf;
-    margin-bottom: 20px;
-  }
-  .all_contact_info .contact_row .send_message .contact_box .input_box.placeholder {
-    color: #d3dadf;
-  }
-  .all_contact_info .contact_row .send_message .contact_box .input_box:-moz-placeholder {
-    color: #d3dadf;
-  }
-  .all_contact_info .contact_row .send_message .contact_box .input_box::-webkit-input-placeholder {
-    color: #d3dadf;
-  }
-  .all_contact_info .contact_row .send_message .contact_box textarea {
-    height: 120px !important;
-    resize: none;
-  }
-  .all_contact_info .contact_row .send_message .contact_box button {
-    color: #fefefe;
-    font: 400 14px/40px "Roboto", sans-serif;
-    background:#3178C6;
-    width: 140px;
-    color: #222222;
-    border: 0;
-    border-radius: 0;
-    text-transform: uppercase;
-  }
-  .all_contact_info .contact_row .send_message .contact_box button:hover, .all_contact_info .contact_row .send_message .contact_box button:focus {
-    color:#3178C6;;
-    background: #222222;
-  }
+  padding: 100px 0;
+}
+.all_contact_info .contact_row .contact_info h2 {
+  font: 700 26px/1 "Roboto", sans-serif;
+  color: #222222;
+  padding-bottom: 30px;
+  position: relative;
+}
+.all_contact_info .contact_row .contact_info h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #3178c6;
+  left: 0;
+  bottom: 0;
+}
+.all_contact_info .contact_row .contact_info p {
+  font: 400 14px/26px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 30px;
+}
+.all_contact_info .contact_row .contact_info .location {
+  padding-top: 55px;
+}
+.all_contact_info .contact_row .contact_info .location a {
+  font: 400 14px/28px "Roboto", sans-serif;
+  color: #555555;
+  display: block;
+  text-transform: uppercase;
+}
+.all_contact_info .contact_row .contact_info .location a:hover,
+.all_contact_info .contact_row .contact_info .location a:focus {
+  color: #3178c6;
+}
+.all_contact_info .contact_row .contact_info .location .f_location {
+  padding-bottom: 30px;
+}
+.all_contact_info .contact_row .contact_info .location .location_laft {
+  width: 98px;
+  float: left;
+}
+.all_contact_info .contact_row .contact_info .location .address a {
+  text-transform: none;
+}
+.all_contact_info .contact_row .send_message .contact_box {
+  padding-top: 30px;
+}
+.all_contact_info .contact_row .send_message .contact_box .input_box {
+  border: 1px solid #dfe3e4;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  height: 50px;
+  padding-left: 15px;
+  width: 100%;
+  color: #d3dadf;
+  margin-bottom: 20px;
+}
+.all_contact_info
+  .contact_row
+  .send_message
+  .contact_box
+  .input_box.placeholder {
+  color: #d3dadf;
+}
+.all_contact_info
+  .contact_row
+  .send_message
+  .contact_box
+  .input_box:-moz-placeholder {
+  color: #d3dadf;
+}
+.all_contact_info
+  .contact_row
+  .send_message
+  .contact_box
+  .input_box::-webkit-input-placeholder {
+  color: #d3dadf;
+}
+.all_contact_info .contact_row .send_message .contact_box textarea {
+  height: 120px !important;
+  resize: none;
+}
+.all_contact_info .contact_row .send_message .contact_box button {
+  color: #fefefe;
+  font: 400 14px/40px "Roboto", sans-serif;
+  background: #3178c6;
+  width: 140px;
+  color: #222222;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+.all_contact_info .contact_row .send_message .contact_box button:hover,
+.all_contact_info .contact_row .send_message .contact_box button:focus {
+  color: #3178c6;
+  background: #222222;
+}
 
-  #sendbtn {
-    font: 700 18px/59px "Roboto", sans-serif;
-    text-align: center;
-    /* background: #f6b60b; */
-    display: block;
-    margin-right: 10px;
-    border: 1px solid white;
-    color: white;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 2;
-    padding: 0;
-  }
-  #sendbtn:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background:black;
-    color: #3178C6;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    right: 0;
-    transform: scaleY(0);
-    transform-origin: 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-  }
-  #sendbtn:hover,
-  #sendbtn:focus {
-    color: #fff !important;
-  }
-  #sendbtn:hover:before,
-  #sendbtn:focus:before {
-    transform: scaleY(1);
-  }
-  
-  
-  /* End All contact Info Css */
+#sendbtn {
+  font: 700 18px/59px "Roboto", sans-serif;
+  text-align: center;
+  /* background: #f6b60b; */
+  display: block;
+  margin-right: 10px;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+#sendbtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  border: 1px solid #3178c6;
+  color: #3178c6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+#sendbtn:hover,
+#sendbtn:focus {
+  color: #3178c6 !important;
+}
+#sendbtn:hover:before,
+#sendbtn:focus:before {
+  transform: scaleY(1);
+}
+
+/* End All contact Info Css */
