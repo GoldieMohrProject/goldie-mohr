@@ -4,10 +4,10 @@ import './style.css'
 import Email from '../Footer/Email.png'
 import Phone from '../Footer/Phone.png'
 import Address from '../Footer/Address.png'
-import  { goToTop,removeHash } from 'react-scrollable-anchor'
+import { goToTop, removeHash } from 'react-scrollable-anchor'
 
 function Footer() {
-    function goTop(){
+    function goTop() {
         removeHash()
         goToTop()
     }
@@ -22,8 +22,9 @@ function Footer() {
                             <div className="footerText">We are a heavy civil construction company. Our services include earth moving, transportation, heavy equipment rental, winter maintenance and float services</div>
                             {/* <ul id="socialmedia"> */}
                             <li style={{ display: "inline-flex", marginRight: "10px" }}><a href="https://www.facebook.com/GoldieMohr" target="_blank" className="button_social"><i id="facebooklogo" class="fab fa-facebook-f fa-2x" aria-hidden="true"></i></a></li>
-                            <li style={{ display: "inline-flex", marginRight: "10px" }}><a href="https://www.facebook.com/GoldieMohr" target="_blank" className="button_social"><i id="twitterlogo" class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                            <li style={{ display: "inline-flex", paddingLeft:'100px'}}>
+                            <li style={{ display: "inline-flex", marginRight: "10px" }}><a href="https://twitter.com/goldiemohrltd" target="_blank" className="button_social"><i id="twitterlogo" class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                            <li style={{ display: "inline-flex", marginRight: "10px" }}><a href="https://www.linkedin.com/company/goldiemohrltd/" target="_blank" className="button_social"><i id="linkedinlogo" class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a></li>
+                            <li style={{ display: "inline-flex", paddingLeft: '100px' }}>
                                 <a href class='animated-arrow' onClick={goTop}>
                                     <span class='the-arrow -left'>
                                         <span class='shaft'></span>
@@ -38,7 +39,7 @@ function Footer() {
                                     </span>
                                 </a>
                             </li>
-                         
+
 
                         </div>
                         {/* end of about our company */}
