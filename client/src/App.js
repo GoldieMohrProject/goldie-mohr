@@ -34,11 +34,11 @@ function App() {
             <Modal.Body>
               <form>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" className="form-label">Email address</label>
+                  <label for="exampleInputEmail1" className="form-label" style={{ color: "black" }}>Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <label for="exampleInputPassword1" class="form-label" style={{ color: "black" }}>Password</label>
                   <input type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
               </form>
