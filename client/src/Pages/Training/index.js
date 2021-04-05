@@ -45,21 +45,15 @@ function Training() {
     const answer = (index, answer, correctId) => {
         console.log('clicked', correctId)
         console.log(index)
-        if (index === 0 && correctId === answer[2]) {
+        if (index === 0 && correctId === answer[2] || index === 1 && correctId === answer[1] || index === 2 && correctId === answer[0]
+           || index === 3 && correctId === answer[2] || index === 4 && correctId === answer[2] ) {
             setScore(score + 1)
+
            
         }
-        if (index === 1 && correctId === answer[1]) {
-            setScore(score + 1)
-        } if (index === 2 && correctId === answer[0]) {
-            setScore(score + 1)
-        } if (index === 3 && correctId === answer[2]) {
-            setScore(score + 1)
-        } if (index === 4 && correctId === answer[2]) {
-            setScore(score + 1)
-        }
-
     }
+
+    
 
     {
         if (click)
