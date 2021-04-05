@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-const db = require('./connection')('goldie_mohr', 'shivamysql1364')
+const db = require('./connection')('goldie_mohr', 'skotkalb')
 const bcrypt = require( 'bcrypt' )
 
 
@@ -101,10 +101,53 @@ async function userSession( userId ){
     }
 }
 
+async function userProfile( email ){
+    // eslint-disable-next-line quotes
+    const userData = await db.query(`SELECT * from user WHERE email = '${email}'`)
+    // const userData = await db.users.findOne({ _id: userId })
+    if( userData.length <1) {
+        return { status: false, message: 'Invalid session' }
+    }
+    return {
+        status: true,
+        message: '',
+        userData: {
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            last_name: userData[0].last_name,
+            email: userData[0].email,
+            phone_number: userData[0].phone_number,
+            picture: userData[0].picture
+        }
+    }
+}
+async function editUserProfile( user, email ){
+    console.log('userr pictureeeee', user)
+    // eslint-disable-next-line quotes
+    const userData = await db.query(`UPDATE user set first_name = '${user.first_name}' , phone_number = '${user.phone_number}', picture = '${user.picture}'  WHERE email = '${email}'`)
+    // const userData = await db.users.findOne({ _id: userId })
+    if( userData.length <1) {
+        return { status: false, message: 'Invalid session' }
+    }
+    return {
+        status: true,
+        message: '',
+        userData: {
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            last_name: userData[0].last_name,
+            email: userData[0].email,
+            phone_number: userData[0].phone_number,
+            picture: userData[0].picture
+        }
+    }
+}
 module.exports = {
     userRegister,
     userLogin,
     userSession,
+    userProfile,
+    editUserProfile
 }
 
 
