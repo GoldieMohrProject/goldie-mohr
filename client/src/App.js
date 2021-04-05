@@ -13,8 +13,8 @@ import Training from "./Pages/Training/index"
 import { Modal } from "react-bootstrap"
 import { Button } from "react-bootstrap"
 import Navbar from './Components/Navbar'
-
 import CardProfile from "./Pages/Profile/index"
+
 function App() {
   const [show, setShow] = useState(false);
 

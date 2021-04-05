@@ -2,6 +2,8 @@ import "./style.css"
 
 import React from 'react';
 import './style.css';
+import { Link } from "react-router-dom";
+
 
 // history photos
 import history1 from '../../assets/history1.jpg'
@@ -24,7 +26,7 @@ import WSIB from '../../assets/WSIB.png'
 
 
 function About() {
-  
+
 
 
   return (
@@ -218,8 +220,7 @@ function About() {
               Aside from our amazing staff, we take the time and care to make sure even the tiniest detail is managed, in every circumstance. There really is no other way. Contact us today and find out how we can help you. It is our pleasure!
             </p>
           </div>
-
-          <a href="#" className="contactbtn">Contact Now</a>
+          <Link to="/contact" type="button" className="contactbtn">Contact Now</Link>
           <br></br>
 
         </div>
@@ -231,12 +232,11 @@ function About() {
         <div className="book_now_aera">
           <div className="container">
             <div className="col-md-10">
-              <h4>Our community is important to us.</h4>
+              <h4 style={{ color: "white" }}>Our community is important to us.</h4>
 
               <p className="communityarea">
                 As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.
                 </p>
-
               <p className="communityarea">
                 Over the years GOLDIE MOHR LTD. has supported many local charity groups, charity events, sports teams, service clubs and organizations. As a team, we believe a place should be left better than found and we strive to make this possible through our community involvement.
                 </p>

@@ -81,7 +81,7 @@
 }
 .all_contact_info .contact_row .contact_info .location a:hover,
 .all_contact_info .contact_row .contact_info .location a:focus {
-  color: #3178c6;
+  /* color: #3178c6; */
 }
 .all_contact_info .contact_row .contact_info .location .f_location {
   padding-bottom: 30px;

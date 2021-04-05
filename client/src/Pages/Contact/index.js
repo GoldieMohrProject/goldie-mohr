@@ -10,7 +10,7 @@ function Contact() {
             {/* Banner area */}
             <section className="banner_area" data-stellar-background-ratio="0.5">
                 <h2>Contact Us</h2>
-              
+
             </section>
             {/* End Banner area */}
 
@@ -22,7 +22,7 @@ function Contact() {
                     <div className="row contact_row">
                         <div className="col-sm-6 contact_info">
                             <h2>Contact Info</h2>
-                           <p>
+                            <p>
                                 If you have any questions about any of our products and services, feel free to reach out to us! We woud love to hear from you!
                            </p>
                             <div className="location">
@@ -61,8 +61,8 @@ function Contact() {
             </section>
             {/* End All contact Info */}
 
-                        {/* Map */}
-                        <div className="contact_map">
+            {/* Map */}
+            <div className="contact_map">
                 <iframe src="https://www.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=3862+Moodie+Drive,+Ottawa,+ON&aq=0&oq=3862+Moodie+Drive&sll=45.250157,-75.800257&sspn=0.592656,1.295013&ie=UTF8&hq=&hnear=3862+Moodie+Dr,+Ottawa,+Ottawa+Division,+Ontario+K0A+2Z0&t=m&z=14&ll=45.217851,-75.772802&output=embed" />
             </div>
             {/* End Map */}
