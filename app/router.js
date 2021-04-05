@@ -68,6 +68,25 @@ function router( app){
         console.log( `.. login complete! session: ${session}` )
         res.send({ status, session, userData, message })
     })
+    app.get('/api/users/profile', async function(req, res) {
+        const { status, userData, message }= await orm.userProfile(req.headers.email)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // console.log( `.. login complete! session: ${session}` )
+        res.send({ status, userData, message })
+    })
+
+    app.post('/api/users/editProfile', async function(req, res) {
+        const { status, userData, message }= await orm.editUserProfile(req.body, req.headers.email)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // console.log( `.. login complete! session: ${session}` )
+        res.send({ status, userData, message })
+    })
 
     // all these endpoints require VALID session info
     app.get('/api/users/logout', authRequired, async function(req, res) {
