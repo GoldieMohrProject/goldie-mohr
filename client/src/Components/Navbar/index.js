@@ -49,7 +49,7 @@ function Navbar(props) {
         <li className="ms-auto" id="faUser"><a href="#"></a></li>
         {localStorage.session &&  <nav class="navbar navbar-expand-lg navbar-light bg-light">{localStorage.name}</nav>}
         <div class="dropdown">
-        <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
+        <button class="dropbtn" ><NavLink to="./Login"><i class="fas fa-user fa-lg userColor"></i></NavLink></button>
         <div class="dropdown-content">
           {!localStorage.session &&
           <>
@@ -93,8 +93,8 @@ function Navbar(props) {
         <li className="nav-item">
           <NavLink className="nav-link" to="./Career">Careers</NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link contactUs"  to="./Contact">Contact us</NavLink>
+        <li className="nav-item contactUs">
+          <NavLink className="nav-link "  to="./Contact">Contact us</NavLink>
         </li>
       </ul>
     </div>

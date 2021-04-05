@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080/",
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

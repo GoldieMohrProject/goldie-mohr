@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-const db = require('./connection')('goldie_mohr', 'skotkalb')
+const db = require('./connection')('goldie_mohr', 'shivamysql1364')
 const bcrypt = require( 'bcrypt' )
 
 
@@ -32,7 +32,7 @@ async function userRegister( userData ){
     if( showSaveUser.length<1 ){
         return { status: false, message: `Sorry failed creating entry for ${saveUser.name}: ` }
     }else{
-        const authorizing = await db.query(`UPDATE user set authId = 'true' where email = '${userData.email}'`)
+        const authorizing = await db.query(`UPDATE user set authId = true where email = '${userData.email}'`)
     }
 
 
