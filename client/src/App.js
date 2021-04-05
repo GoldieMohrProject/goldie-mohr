@@ -50,17 +50,20 @@ function App() {
               <Button variant="primary" onClick={handleClose} >
                 Login
           </Button>
+ 
+                    </Modal.Footer>
+                    <p style={{ textAlign: "center" }}>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
+            </Modal>
+        <Route exact path="/Contact" component={Contact} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Service" component={Service} />
+        <Route exact path="/Product" component={Product}/>
+        <Route exact path="/Career" component={Career} />
+        <Route exact path="/Training" component={Training} />
+        <Route exact path="/Register" component={Register} />
+        <Route exact path="/Login" component={Login} />
 
-            </Modal.Footer>
-            <p style={{ textAlign: "center" }}>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
-          </Modal>
-          <Route exact path="/Contact" component={Contact} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Service" component={Service} />
-          <Route exact path="/Product" component={Product} />
-          <Route exact path="/Career" component={Career} />
-          <Route exact path="/Training" component={Training} />
         </Wrapper>
         <Footer />
       </div>
