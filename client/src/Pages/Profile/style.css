@@ -1,0 +1,229 @@
+.card {
+    box-shadow: 2px 7px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  } 
+  .profileForm{
+    justify-content: center;
+  }
+  .editForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .field{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    }
+  input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+    cursor: pointer;
+    background: linear-gradient(270deg, #73c4e9, #799df1);
+    margin-bottom: 25px;
+  }
+  
+  .img-wrap{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+   
+  }
+  .img-upload:before{
+    content: "\f093";
+    font-size: 90px;
+    position: absolute;
+    padding-top: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3178C6;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+  }
+  .img-upload:hover:before{
+   opacity: 1;
+  }
+  .uploadImg {
+    width: auto;
+    height: 100%;
+  }
+  
+  /*span{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #676767;
+  }*/
+  
+  input{
+    border-radius: 15px;
+    border: 1px solid #b7b7b7;
+    padding: 5px 5px 5px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+  input:focus{
+    outline: none;
+    border: 1px solid  #73c4e9, #799df1;
+  }
+  input::placeholder{
+    color: #bebebe;
+  }
+  .name{ 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #676767;
+    max-width: 220px;
+    overflow-wrap: break-word;
+  }
+  .status{
+    text-align: center;
+    max-width: 220px;
+    overflow-wrap: break-word;
+  }
+  button{
+    position: relative;
+    color: #3178C6;
+    letter-spacing: 1px;
+    margin: 20px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    background: #3178C6;
+  }
+  .save{
+    color: #fff;
+    width: 100px;
+    margin:30px
+  }
+  .edit{
+    color: #fff;
+    width: 180px;
+  }
+
+  button:focus{
+    outline: none;
+  }
+
+  #myTabContent label{
+      color:black;
+      font-family: "Roboto", sans-serif;
+  }
+
+
+  .emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+    color:black;
+    font-size:20px;
+}
+.profile-tab p{
+  padding-top: 0%;
+    font-weight: 600;
+    color: #0062cc;
+}

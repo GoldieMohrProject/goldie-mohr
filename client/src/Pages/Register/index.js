@@ -38,7 +38,8 @@ class Register extends React.Component {
 
 
     handleSubmit = async (event) => {
-        event.preventDefault()
+        // event.preventDefault()
+        console.log(event)
         const userInfo = {
             first_name: this.state.firstname.trim(),
             last_name: this.state.lastname.trim(),
@@ -82,10 +83,7 @@ class Register extends React.Component {
     render() {
         return (
             <>
-                <div id="registerImage">
-                    {/* <div>{this.state.selectedFile}</div> */}
-                    <h1 id="registerTitle">REGISTER</h1>
-                </div>
+
                 <div style={{ marginTop: "55px" }}>
                     <div className="container">
                         <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-const db = require('./connection')('goldie_mohr', 'skotkalb')
+const db = require('./connection')('goldie_mohr', '12345')
 const bcrypt = require( 'bcrypt' )
 
 
@@ -31,7 +31,10 @@ async function userRegister( userData ){
     const showSaveUser = await db.query(`SELECT * from user where email = '${saveData.email}'`)
     if( showSaveUser.length<1 ){
         return { status: false, message: `Sorry failed creating entry for ${saveUser.name}: ` }
+    }else{
+        const authorizing = await db.query(`UPDATE user set authId = true where email = '${userData.email}'`)
     }
+
 
     return {
         status: true,
@@ -59,6 +62,8 @@ async function userLogin( email, password ) {
     // console.log( ` [loginUser] checking password (password: ${password} ) hash(${userData[0].password})`, isValidPassword )
     if( !isValidPassword ) {
         return { status: false, message: 'Invalid password' }
+    }else{
+        const authorizing = await db.query(`UPDATE user set authId = true where email = '${email}'`)
     }
 
     return {
@@ -66,6 +71,7 @@ async function userLogin( email, password ) {
         message: `Logging in as ${userData[0].first_name}...`,
         userData: {
             id: userData[0].userID,
+            authId: userData[0].authId,
             first_name: userData[0].first_name,
             last_name: userData[0].last_name,
             email: userData[0].email,
@@ -85,20 +91,63 @@ async function userSession( userId ){
         status: true,
         message: '',
         userData: {
-            id: userData.userID,
-            first_name: userData.first_name,
-            last_name: userData.last_name,
-            email: userData.email,
-            phone_number: userData.phone_number,
-            picture: userData.picture
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            last_name: userData[0].last_name,
+            email: userData[0].email,
+            phone_number: userData[0].phone_number,
+            picture: userData[0].picture
         }
     }
 }
 
+async function userProfile( email ){
+    // eslint-disable-next-line quotes
+    const userData = await db.query(`SELECT * from user WHERE email = '${email}'`)
+    // const userData = await db.users.findOne({ _id: userId })
+    if( userData.length <1) {
+        return { status: false, message: 'Invalid session' }
+    }
+    return {
+        status: true,
+        message: '',
+        userData: {
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            last_name: userData[0].last_name,
+            email: userData[0].email,
+            phone_number: userData[0].phone_number,
+            picture: userData[0].picture
+        }
+    }
+}
+async function editUserProfile( user, email ){
+    console.log('userr pictureeeee', user)
+    // eslint-disable-next-line quotes
+    const userData = await db.query(`UPDATE user set first_name = '${user.first_name}' , phone_number = '${user.phone_number}', picture = '${user.picture}'  WHERE email = '${email}'`)
+    // const userData = await db.users.findOne({ _id: userId })
+    if( userData.length <1) {
+        return { status: false, message: 'Invalid session' }
+    }
+    return {
+        status: true,
+        message: '',
+        userData: {
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            last_name: userData[0].last_name,
+            email: userData[0].email,
+            phone_number: userData[0].phone_number,
+            picture: userData[0].picture
+        }
+    }
+}
 module.exports = {
     userRegister,
     userLogin,
     userSession,
+    userProfile,
+    editUserProfile
 }
 
 

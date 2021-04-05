@@ -1,10 +1,8 @@
-  
 /*
     note how we wrap our api fetch in this function that allows us to do some
     additional error / message handling for all API calls...
 */
 function fetchJSON( url, method='get', data={} ){
-    method = method.toLowerCase()
     const fetchOptions = {
         method,
         headers: {
@@ -21,4 +19,4 @@ function fetchJSON( url, method='get', data={} ){
     return fetch( url,fetchOptions ).then( res=>res.json() )
 }
 
-export default fetchJSON;
+export default fetchJSON

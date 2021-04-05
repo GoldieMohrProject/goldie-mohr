@@ -6,6 +6,7 @@ const sessionManager = require( './session-manager' )
 async function authRequired(req, res, next){
     // check session set, and it's valid
     const sessionData = sessionManager.verifyAndLoad( req.headers.session )
+    console.log('sasadasda',req.headers.session)
     if( !sessionData ){
         console.log( `[${req.method} ${req.url}] .. [authRequired] invalid session, refusing (403)` )
         res.status(403).send({ status: false, message: 'Requires valid session. Please login again.' })
@@ -18,18 +19,18 @@ async function authRequired(req, res, next){
 }
 
 
-function router( app, API_URL ){
+function router( app){
     // OAUTH Authentication --------------------------------------------
-    async function createOAuthSession({ type, authId, first_name, last_name, picture } ){
-        console.log( `[createOAuthSession] called for ${first_name}` );
+    // async function createOAuthSession({ type, authId, first_name, last_name, picture } ){
+    //     console.log( `[createOAuthSession] called for ${first_name}` );
 
-        // register user in system (if they aren't there, and get the associated session)
-        const { status, message, userData } = await orm.userOAuthRegister({ type, authId, first_name, last_name, picture })
+    //     // register user in system (if they aren't there, and get the associated session)
+    //     const { status, message, userData } = await orm.userOAuthRegister({ type, authId, first_name, last_name, picture })
 
-        const session = sessionManager.create( userData.id )
-        // returns the logged-in user info to javascript
-        return { status, session, userData, message };
-    }
+    //     const session = sessionManager.create( userData.id )
+    //     // returns the logged-in user info to javascript
+    //     return { status, session, userData, message };
+    // }
 
     app.post('/api/users/register', async function(req, res) {
         console.log( '[POST /api/users/register] request body:', req.body )
@@ -64,15 +65,35 @@ function router( app, API_URL ){
             res.status(403).send({ status, message }); return
         }
 
-        // console.log( `.. login complete! session: ${session}` )
+        console.log( `.. login complete! session: ${session}` )
         res.send({ status, session, userData, message })
+    })
+    app.get('/api/users/profile', async function(req, res) {
+        const { status, userData, message }= await orm.userProfile(req.headers.email)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // console.log( `.. login complete! session: ${session}` )
+        res.send({ status, userData, message })
+    })
+
+    app.post('/api/users/editProfile', async function(req, res) {
+        const { status, userData, message }= await orm.editUserProfile(req.body, req.headers.email)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // console.log( `.. login complete! session: ${session}` )
+        res.send({ status, userData, message })
     })
 
     // all these endpoints require VALID session info
     app.get('/api/users/logout', authRequired, async function(req, res) {
-        sessionManager.remove( req.header.session )
-        console.log( ` .. removed session ${req.header.session}`)
-        res.send({ status: true, message: 'Logout complete' })
+        console.log('tryinggggggg to get req.header.session',req.headers.session)
+        sessionManager.remove( req.headers.session )
+        console.log( ` .. removed session ${req.headers.session}`)
+        res.send({ status: true, message: 'Logout complete', authOK: false })
     })
 
     // app.get('/api/products/:id?', authRequired, async function(req, res) {
