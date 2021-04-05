@@ -53,7 +53,7 @@ function Contact() {
                                 <input type="email" className="form-control input_box" name="email" placeholder="Your Email *" />
                                 <input type="text" className="form-control input_box" name="Subject" placeholder="Subject" />
                                 <textarea className="form-control input_box" placeholder="Message" defaultValue={""} />
-                                <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn">Send Message</button>
+                                <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn">Send</button>
                             </form>
                         </div>
                     </div>
