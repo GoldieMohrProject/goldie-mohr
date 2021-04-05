@@ -4,6 +4,7 @@ const uuid = require( 'uuid' )
 let userSessions = []
 
 function verifyAndLoad( requestSession ){
+    console.log('[userSessions]',userSessions)
     if( userSessions.length<1 || requestSession.length!==36 ) {
         return false
     }
@@ -21,6 +22,7 @@ function create( userId ){
 function remove( userSession ){
     // remove the current one
     userSessions = userSessions.filter( sessionData=>sessionData.session!==userSession )
+    console.log('userSessions after removing session',userSessions)
 }
 
 module.exports = { verifyAndLoad, create, remove }

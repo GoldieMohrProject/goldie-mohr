@@ -3,7 +3,39 @@ import { NavLink } from "react-router-dom"
 import './style.css'
 
 function Navbar(props) {
+  // async function loadUserSession(){
+  //   const { status, userData, message }= await fetch( `/api/users/session` ).then( res=>res.json())
+  //   console.log( `[NavBar] attempted to reload session, result(${status}) message(${message})` )
+  //   if( !status ){
+  //     // clear any session
+  //     delete localStorage.session
+  //     return
+  //   }
+  //   return userData
  
+  // }
+
+  async function logoutUser(){
+    const fetchOptions = {
+      method: 'get',
+      headers: {
+          'Content-Type': 'application/json',
+          'Session': localStorage.session || ''
+
+      },
+      // body : JSON.stringify( userInfo )
+  }
+
+    const result = await fetch( '/api/users/logout',fetchOptions).then( res=>res.json())
+    console.log ('resultttttt',result.authOK)
+    if(result.authOK === false){
+      delete localStorage.session
+      window.location.href = '/'
+      // return <><Redirect to='/home' /></>
+    }
+    // (result.authOk = false) ?  <Redirect to='/home' /> :  <Redirect to='/register'/>
+    // <h1>Please wait, logging out...</h1>
+  }
   return ( 
     <>
   <section className="top_header_area">
@@ -15,14 +47,22 @@ function Navbar(props) {
         <li><a target="_blank" href="https://www.facebook.com/GoldieMohr"><i class="fab fa-facebook-f"></i></a></li>
         <li><a target="_blank" href="https://twitter.com/goldiemohrltd"><i class="fab fa-twitter"></i></a></li>
         <li className="ms-auto" id="faUser"><a href="#"></a></li>
+        {localStorage.session &&  <nav class="navbar navbar-expand-lg navbar-light bg-light">{localStorage.name}</nav>}
         <div class="dropdown">
         <button class="dropbtn"><i class="fas fa-user fa-lg" ></i></button>
         <div class="dropdown-content">
-          {/* < Login /> */}
-          <a onClick={props.handleModal}>Login</a>
-          <a href="./Training">Training</a>
-          <a href="#">Profile</a>
-          <a href="#">Logout</a>
+          {!localStorage.session &&
+          <a onClick={props.handleModal}>Login</a>}
+          {localStorage.session && <>
+            <NavLink to="/" className="navbar-brand">Training</NavLink>
+            <NavLink to="/" className="navbar-brand">Profile</NavLink>
+            <a onClick={logoutUser}>Logout</a>
+            </>
+          }
+          {/* // <a href="./Training"></a>
+          // <a href="#">Profile</a> 
+          // <a onClick={logoutUser}>Logout</a> */}
+
         </div>
       </div>
       </ul>

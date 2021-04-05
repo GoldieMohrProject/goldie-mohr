@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.css'
-
+import {Redirect} from "react-router-dom"
 
 class Login extends React.Component {
 
     state = {
         email: "",
         password: "",
+        authOk: false
       }
 
     handleChange = event => {
@@ -26,10 +27,14 @@ class Login extends React.Component {
        localStorage.session = ''
     //    dispatch({ type: 'ALERT_MESSAGE', message })
        return
-    }      
+    }    
+    this.setState({authOk:true})
     localStorage.session = session
+    localStorage.name = userData.first_name
+    localStorage.email = userData.email
     console.log('trying to see the session',session)
     // dispatch({ type: 'USER_LOGIN', data: userData })
+    // window.location.href = '/'
  }
 
 
@@ -56,6 +61,8 @@ class Login extends React.Component {
 };
 render(){
     return (
+        <>
+          { this.state.authOk ? <Redirect to='/profile' /> : '' }
         <div>
             <div className="loginarea">
             <h3>Login</h3>
@@ -74,6 +81,7 @@ render(){
             <p>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
             </div>
         </div>
+        </>
     )}
 }
 
