@@ -19,3 +19,12 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+#indeedLink {
+  color: #3178c6;
+  font-weight: bold;
+}
+
+#indeedLink:hover {
+  text-decoration: none;
+}

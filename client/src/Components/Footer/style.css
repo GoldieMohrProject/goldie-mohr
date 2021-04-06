@@ -42,6 +42,14 @@
   color: white;
 }
 
+#linkedinlogo {
+  color: white;
+}
+
+#linkedinlogo:hover {
+  color: #3178c6;
+}
+
 #facebooklogo:hover {
   color: #3178c6;
 }
@@ -81,6 +89,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
+
 .button_social:hover,
 .button_social:focus {
   color: #fff !important;

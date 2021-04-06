@@ -1,11 +1,9 @@
-
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
 /*Color Variables*/
 ::selection {
-  background-color: #3178C6;
-  color: #FFFFFF;
+  background-color: #3178c6;
+  color: #ffffff;
 }
-
 
 p {
   font-family: "Roboto", sans-serif;
@@ -14,7 +12,6 @@ p {
   margin: 0;
   padding-top: 28px;
 }
-
 
 .title {
   text-align: center;
@@ -28,7 +25,6 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* Subtittle */
 .subtittle h2 {
@@ -58,7 +54,7 @@ p {
   font: 700 18px/59px "Roboto", sans-serif;
   width: 180px;
   text-align: center;
-  background: #3178C6;
+  background: #3178c6;
   display: block;
   border: 0;
   color: white;
@@ -71,11 +67,16 @@ p {
   margin-top: 15px;
 }
 
+.contactbtn:hover {
+  color: #3178c6;
+}
+
 .contactbtn:before {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #222222;
+  background: white;
+  border: 1px solid #3178c6;
   top: 0;
   bottom: 0;
   left: 0;
@@ -88,13 +89,15 @@ p {
   transition-timing-function: ease-out;
 }
 
-.contactbtn:hover, .button_all:focus {
-    color: #fff !important;
+.contactbtn:hover,
+.button_all:focus {
+  color: #3178c6 !important;
+  text-decoration-line: none;
 }
-.contactbtn:hover:before, .button_all:focus:before {
-    transform: scaleY(1);
+.contactbtn:hover:before,
+.button_all:focus:before {
+  transform: scaleY(1);
 }
-
 
 .about_us_area .about_row {
   padding-top: 70px;
@@ -126,7 +129,7 @@ p {
   margin-bottom: 40px;
 }
 .about_row .our_skill_inner .single_skill .progress .progress-bar {
-  background: #3178C6;
+  background: #3178c6;
   box-shadow: none;
 }
 h3 {
@@ -135,8 +138,13 @@ h3 {
   margin-right: auto;
 }
 
-
-.about_us_area .about_row .our_skill_inner .single_skill .progress .progress-bar .progress_parcent {
+.about_us_area
+  .about_row
+  .our_skill_inner
+  .single_skill
+  .progress
+  .progress-bar
+  .progress_parcent {
   font: 700 18px "Roboto", sans-serif;
   color: #222222;
   position: absolute;
@@ -147,14 +155,13 @@ h3 {
   padding-top: 90px;
 }
 
-
 .profile {
   font: 400 14px/26px "Roboto", sans-serif;
   color: #555555;
   padding-top: 28px;
 }
 
-.centering{
+.centering {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -174,7 +181,7 @@ h3 {
   padding-top: 28px;
 }
 
-.memberships{
+.memberships {
   font: 400 18px "Roboto", sans-serif;
   text-transform: uppercase;
   color: #555555;
@@ -197,7 +204,7 @@ h3 {
 .imgmemb {
   margin: 50px;
   box-shadow: 3px 7px 8px 3px #888888;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .imgmemb:hover {
   transform: scale(1.1);
@@ -207,7 +214,6 @@ h3 {
   margin-top: 50px;
   box-shadow: 3px 7px 8px 3px #888888;
 }
-
 
 /* Our Partners Area */
 .our_partners_area {
@@ -221,7 +227,7 @@ h3 {
   width: 100%;
 }
 .our_partners_area .book_now_aera {
-  background: #3178C6;
+  background: #3178c6;
   padding: 50px 0;
   color: white;
 }
@@ -270,7 +276,7 @@ h3 {
   max-width: 100%;
 }
 .our_team_area .team_row .team_membar .team_content {
-  background: #3178C6;
+  background: #3178c6;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -305,8 +311,9 @@ h3 {
   border: 1px solid #fff;
   display: block;
 }
-.our_team_area .team_row .team_membar .team_content ul li a:hover, .our_team_area .team_row .team_membar .team_content ul li a:focus {
-  color: #3178C6;
+.our_team_area .team_row .team_membar .team_content ul li a:hover,
+.our_team_area .team_row .team_membar .team_content ul li a:focus {
+  color: #3178c6;
   background: #fff;
 }
 .our_team_area .team_row .team_membar .team_content .name {
@@ -321,7 +328,8 @@ h3 {
   color: #fff;
   padding-top: 5px;
 }
-.our_team_area .team_row .team_membar:hover .team_content ul, .our_team_area .team_row .team_membar:focus .team_content ul {
+.our_team_area .team_row .team_membar:hover .team_content ul,
+.our_team_area .team_row .team_membar:focus .team_content ul {
   height: 50px;
 }
 
@@ -408,12 +416,12 @@ h3 {
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin-bottom: 75px;
 }
-.demo:hover{
+.demo:hover {
   transform: scale(1.2);
-  opacity: 100
+  opacity: 100;
 }
 
 .active,
