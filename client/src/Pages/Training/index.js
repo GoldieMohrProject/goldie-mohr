@@ -200,9 +200,9 @@ function Training() {
                 <>
                     <div className="container">
                         <div className="row">
-                            <div style={{ marginTop: "auto" }}>
+                            <div style={{ marginTop: "50px", textAlign: "center" }}>
 
-                                < h3 >{questions[counter].question}</h3>
+                                < h3 style={{ marginBottom: "30px" }}>{questions[counter].question}</h3>
 
                                 <div className="row">
                                     <div className="col">
@@ -216,9 +216,9 @@ function Training() {
                                     </div>
                                 </div>
 
-                                {showNext && <button className="btn btn-success" style={{ margin: "5px", width: "200px" }} onClick={() => getNextQuestion()}>Next</button>}
+                                {showNext && <button className="btn btn-success" style={{ marginTop: "30px", marginBottom: "30px", width: "200px" }} onClick={() => getNextQuestion()}>Next</button>}
 
-                                <h1 style={{ textAlign: "center" }}>Score: {score}</h1>
+                                <h1 style={{ textAlign: "center" }}>score: {score}</h1>
                                 {showSave &&
                                     <button className="btn btn-success" style={{ margin: "5px", width: "200px" }} onClick={() => Save()}>Save</button>
                                 }
