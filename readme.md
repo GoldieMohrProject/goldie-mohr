@@ -1,38 +1,49 @@
+`` CONTRIBUTORS `` 
+
+- Faisal Nour
+- Fatih Ay
+- Mischa Dabrowski
+- Said Mghabghab
+- Shiva Sabokdast
 
 
+``DESCRIPTION``
 
-                        FRONT END
-
-   Components
-                                Navbar(After Login)  (Profile) (Training)
-
-    Wrapper (Faisal) (DONE) -- Navbar(Shiva) (DONE)   --  Footer (Faisal) (DONE)  --   Job (DONE) -- Slider (DONE) -- Register(Faisal)
+This is a new and highly improved web page for the company Goldie Mohr Ltd. This web page features a home page, services & projects, product page, about us, careers and a contact page. This web page also includes a member log in, where employees are able to create a profile page for themselves and watch training videos and complete training quizzes. 
 
 
-   Pages 
+`` NPM PACKAGES ``
 
-   Home(Said) (DONE)  -- Contact (FINISHED)  -- About (mischa) (DONE) --  Services (Fatih)  --   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)  --  Projects (Fatih)
+- antd
+- bcrypt
+- bootstrap
+- fontawesome
+- dotenv
+- emailjs com
+- eslint
+- express
+- ifenv
+- morgan
+- react bootstrap
+- react count up
+- react image gallery
+- react minimal pie chart
+- react reveal
+- react router dom
+- react scrollable anchor
+- react visibility sensor
+- uuid
 
-   Member Login (Mischa)   --   Profile ()  ---  Career(DONE)   --
+`` SCREENSHOTS `` 
 
-   Register Page (Faisal) -- (Training)   
-
-
-   Email                   WSH Video
-   Password                WSH Quiz
-   Name                     
-   LastName
-   Phone Number
-   User Profile Picture
-
-                         BACK END   (mysql)
-
-
-1-) Membership relationship
-2-) Color code for icon of company (blue and yellow) High quality logo (PNG -AI)
-3-) Website major color
-4-) Pictures ( Home page HD, Professional Office Worker, Projects, Services and maschines pictures, Our History Photos(High Quality) )
-5-) Our Team section will be deleted 
-6-) Database structure and software app
-7-) Admin accsees 
-
+![Screenshot](screenshots/ss1.png?raw=true)
+![Screenshot](screenshots/ss2.png?raw=true)
+![Screenshot](screenshots/ss3.png?raw=true)
+![Screenshot](screenshots/ss4.png?raw=true)
+![Screenshot](screenshots/ss5.png?raw=true)
+![Screenshot](screenshots/ss6.png?raw=true)
+![Screenshot](screenshots/ss7.png?raw=true)
+![Screenshot](screenshots/ss8.png?raw=true)
+![Screenshot](screenshots/ss9.png?raw=true)
+![Screenshot](screenshots/ss10.png?raw=true)
+![Screenshot](screenshots/ss11.png?raw=true)
