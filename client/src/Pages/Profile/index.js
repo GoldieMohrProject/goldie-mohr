@@ -2,41 +2,56 @@ import React from 'react';
 import fetchJSON from "../../util/API"
 import './style.css'
 
-import { PieChart } from 'react-minimal-pie-chart';
+// var data = {
+//   datasets: [{
+//       data: [10, 20, 30]
+//   }],
 
+//   // These labels appear in the legend and in the tooltips when hovering different arcs
+//   labels: [
+//       'Red',
+//       'Yellow',
+//       'Blue'
+//   ]
+// };
 
-function addData(value) {
-  let number = Math.floor(Math.random() * value)
-  return (
-    data.push({title: 'One', value: value , color: `${color[number]}` })
-  )
+var ctx = document.getElementById('myChart');
 
-}
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
 
-let data = [
-  { title: 'One', value: 5, color: '#E033FF' },
-  { title: 'Two', value: 15, color: '#FF8D33' },
-  { title: 'Three', value: 20, color: '#FF3380' },
-]
-
-const color = [
-  "#003f5c",
-  "#2f4b7c",
-  "#665191",
-  "#a05195",
-  "#d45087",
-  "#f95d6a",
-  "#ff7c43",
-  "ffa600",
-  "#003f5c",
-  "#2f4b7c",
-  "#665191",
-  "#a05195",
-  "#d45087",
-  "#f95d6a",
-  "#ff7c43",
-  "ffa600"
-]
 
 
 const ImgUpload = ({
@@ -130,28 +145,8 @@ const Profile = ({
           </div>
         </div>
         <div class="row">
-          <div className="col-md-1"></div>
-          <div className="col-md-2">
-            <h2>Statistic</h2>
-            <PieChart
-
-              style={{
-
-                fontFamily:
-                  '"Nunito Sans", -apple-system, Helvetica, Arial, sans-serif',
-                fontSize: '10px',
-
-              }}
-              
-              lineWidth={60}
-              labelStyle={{
-                fill: '#fff',
-                pointerEvents: 'none',
-              }}
-              labelPosition={100 - 60 / 2}
-              data={data}
-              label={({ dataEntry }) => Math.round(dataEntry.percentage) + '%'}
-            />
+          <div className="col-md-4">
+            <canvas id="myChart" width="400" height="400"></canvas>
           </div>
 
           <div class="col-md-8 ">
@@ -242,11 +237,8 @@ class CardProfile extends React.Component {
 
     }
     let { userData } = await fetch('/api/users/profile', fetchOptions).then(res => res.json())
-    let {userScore } = await fetch ('/api/user/score',fetchOptions).then(res=>res.json())
-
     console.log(userData);
     this.setState({ name: userData.first_name, email: userData.email, last_name: userData.last_name, phone: userData.phone_number, file: userData.file })
-
   }
 
   async editData() {

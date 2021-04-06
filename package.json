@@ -31,11 +31,9 @@
   "homepage": "https://github.com/GoldieMohrProject/goldie-mohr#readme",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@reactchartjs/react-chart.js": "^1.0.0-rc.3",
     "antd": "^4.15.0",
     "bcrypt": "^5.0.1",
     "bootstrap": "^4.6.0",
-    "chart.js": "^3.0.2",
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.4",
     "eslint": "^7.23.0",
