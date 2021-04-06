@@ -2,11 +2,12 @@ import { useState, useRef } from 'react'
 import './style.css'
 import Emergency from '../../assets/Emergency.pdf'
 import Safety from '../../assets/Safety.pdf'
+import data from "./Quiz-questions/Skull-Crossbones-1.png"
 
 const questions = [
     {
-        question: "What is the World Population ?",
-        answers: ["4 billion", "6.5 Billion", "7.5 Billion"],
+        question: "Which symbol shows Biohazardous Infectious Materials  ?",
+        answers: ["./Quiz-questions/Skull-Crossbones-1.png", "6.5 Billion", "7.5 Billion"],
         correct: "7.5 Billion"
     },
     {
@@ -183,13 +184,14 @@ function Training() {
                             <>
 
                                 < h3 >{questions[counter].question}</h3>
+                     
                                 
                                 <div className="row">
                                     <div className="col">
-                                        <button ref={refAnswerButton1} className={style} onClick={() => answer(1, questions[counter], questions[counter].answers[0])} style={{ margin: "5px", width: "200px" }}>{questions[counter].answers[0]}</button>
+                                        <button ref={refAnswerButton1} className={style} onClick={() => answer(1, questions[counter], questions[counter].answers[0])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[0]} />  </button>
                                     </div>
                                     <div className="col">
-                                        <button ref={refAnswerButton2} className={style} onClick={() => answer(2, questions[counter], questions[counter].answers[1])} style={{ margin: "5px", width: "200px" }}>{questions[counter].answers[1]}</button>
+                                        <button ref={refAnswerButton2} className={style} onClick={() => answer(2, questions[counter], questions[counter].answers[1])} style={{ margin: "5px", width: "200px" }}>  {questions[counter].answers[1]}</button>
                                     </div>
                                     <div id="2" className="col">
                                         <button ref={refAnswerButton3} className={style} onClick={() => answer(3, questions[counter], questions[counter].answers[2])} style={{ margin: "5px", width: "200px" }}>{questions[counter].answers[2]}</button>
