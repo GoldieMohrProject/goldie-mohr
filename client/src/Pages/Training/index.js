@@ -256,7 +256,7 @@ function Training() {
                             {/* <p className="para">After watching the video, please click  to take the test</p> */}
                             <div className="row">
                                 <div class="d-grid gap-2 col-3 mx-auto mt-5 mb-5">
-                                    <button className="btn btn-primary" style={{ color: 'white', borderRadius: "0px", backgroundColor: "#3178c6" }} onClick={quiz}>Quiz</button>
+                                    <button id="btnQuiz" className="btn btn-primary" onClick={quiz}>Quiz</button>
 
                                 </div>
                             </div>
