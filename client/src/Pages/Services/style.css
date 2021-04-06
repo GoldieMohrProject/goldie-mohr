@@ -1,6 +1,15 @@
+.decoration {
+  color: #3178c6;
+}
+
+.nounderline:hover {
+  text-decoration-line: none;
+}
+
 /* Banner Area */
 .banner_area {
-  background: url('https://user-images.githubusercontent.com/77207167/113043685-ca358c80-916a-11eb-995b-a044297e9630.JPG') no-repeat fixed;
+  background: url("https://user-images.githubusercontent.com/77207167/113043685-ca358c80-916a-11eb-995b-a044297e9630.JPG")
+    no-repeat fixed;
   background-position: center;
   text-align: center;
   position: relative;
@@ -23,7 +32,6 @@
   font: 400 40px "Oswald", sans-serif;
   text-transform: uppercase;
   padding-top: 140px;
-
 }
 .banner_area .breadcrumb {
   background-color: transparent;
@@ -34,11 +42,10 @@
   color: #fefefe;
 }
 .banner_area .breadcrumb li a.active {
-  color: #3178C6;
+  color: #3178c6;
 }
 
 /* End Banner Area */
-
 
 .building_construction_area .building_construction_row {
   padding-top: 95px;
@@ -61,35 +68,67 @@
   display: block;
   padding-top: 25px;
 }
-.building_construction_area .building_construction_row .constructing_laft a:hover, .building_construction_area .building_construction_row .constructing_laft a:focus {
-  color: #3178C6;
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  a:hover,
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  a:focus {
+  color: #3178c6;
 }
 .building_construction_area .building_construction_row .constructing_laft p {
   font: 400 14px/26px "Roboto", sans-serif;
   color: #555555;
 }
-.building_construction_area .building_construction_row .constructing_laft .ipsum {
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  .ipsum {
   padding-left: 0;
   padding-top: 15px;
 }
-.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator {
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  .ipsum
+  .excavator {
   padding: 0;
   padding-top: 15px;
 }
-.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li {
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  .ipsum
+  .excavator
+  li {
   list-style: none;
   font: 400 14px/26px "Roboto", sans-serif;
   color: #555555;
 }
-.building_construction_area .building_construction_row .constructing_laft .ipsum .excavator li i {
-  color: #3178C6;
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  .ipsum
+  .excavator
+  li
+  i {
+  color: #3178c6;
   padding-right: 30px;
 }
-.building_construction_area .building_construction_row .constructing_laft .ipsum_img {
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  .ipsum_img {
   padding-top: 25px;
   padding-bottom: 16px;
 }
-.building_construction_area .building_construction_row .constructing_laft .ipsum_img img {
+.building_construction_area
+  .building_construction_row
+  .constructing_laft
+  .ipsum_img
+  img {
   max-width: 100%;
 }
 .building_construction_area .building_construction_row .constructing_right h2 {
@@ -98,50 +137,98 @@
   text-transform: uppercase;
   padding-bottom: 35px;
 }
-.building_construction_area .building_construction_row .constructing_right .painting {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting {
   padding: 0;
   padding-bottom: 40px;
 }
-.building_construction_area .building_construction_row .constructing_right .painting li {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting
+  li {
   list-style: none;
   padding-bottom: 10px;
 }
-.building_construction_area .building_construction_row .constructing_right .painting li a {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting
+  li
+  a {
   font: 700 14px/50px "Roboto", sans-serif;
   color: #555555;
   background: #f5f5f5;
   display: block;
   padding-left: 25px;
 }
-.building_construction_area .building_construction_row .constructing_right .painting li a i {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting
+  li
+  a
+  i {
   font-size: 18px;
   /* padding-right: 20px; */
 }
-.building_construction_area .building_construction_row .constructing_right .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
-  color: #3178C6;
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting
+  li
+  a:hover,
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting
+  li
+  a:focus {
+  color: #3178c6;
 }
-.building_construction_area .building_construction_row .constructing_right .contact_us {
-  background: #3178C6;
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .contact_us {
+  background: #3178c6;
   padding: 30px;
 }
-.building_construction_area .building_construction_row .constructing_right .contact_us h4 {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .contact_us
+  h4 {
   font: 400 14px/1 "Roboto", sans-serif;
   color: #fefefe;
   text-transform: uppercase;
   padding-bottom: 25px;
 }
-.building_construction_area .building_construction_row .constructing_right .contact_us .contac_namber {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .contact_us
+  .contac_namber {
   font: 700 18px/26px "Roboto", sans-serif;
   color: #fefefe;
   display: block;
 }
-.building_construction_area .building_construction_row .constructing_right .contact_us p {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .contact_us
+  p {
   font: 400 14px/26px "Roboto", sans-serif;
   color: #fefefe;
   padding-top: 20px;
   padding-bottom: 25px;
 }
-.building_construction_area .building_construction_row .constructing_right .contact_us .button_all {
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .contact_us
+  .button_all {
   width: 150px;
   border: 2px solid #fff;
   background-color: transparent;
@@ -155,7 +242,7 @@
   font: 700 18px/59px "Roboto", sans-serif;
   width: 180px;
   text-align: center;
-  background: #3178C6;
+  background: #3178c6;
   display: block;
   border: 0;
   color: #222222;
@@ -180,17 +267,19 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-.button_all:hover, .button_all:focus {
+.button_all:hover,
+.button_all:focus {
   color: #fff !important;
 }
-.button_all:hover:before, .button_all:focus:before {
+.button_all:hover:before,
+.button_all:focus:before {
   transform: scaleY(1);
 }
 
 /*--------------------------------------------------*/
 
 /*-----------featurec work-------------------*/
-.featured_works {
+.featured_works_one {
   /* background: url("../../../public/uploads/gl-2.jpg.jpg") no-repeat fixed; */
   background-position: center;
   text-align: center;
@@ -201,37 +290,38 @@
   overflow: hidden;
   padding-bottom: 100px;
 }
-.featured_works:after {
+.featured_works_one:after {
   content: "";
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  /* grey */
+  background-color: #f0eeee;
   left: 0;
   right: 0;
   bottom: 0;
   display: block;
   z-index: -1;
 }
-.featured_works .tittle h2 {
+.featured_works_one .tittle h2 {
   color: #fff;
 }
-.featured_works .tittle h4 {
+.featured_works_one .tittle h4 {
   color: #fefefe;
 }
-.featured_works .featured_gallery {
+.featured_works_one .featured_gallery {
   padding-top: 60px;
 }
-.featured_works .featured_gallery .gallery_iner {
+.featured_works_one .featured_gallery .gallery_iner {
   position: relative;
   overflow: hidden;
 }
-.featured_works .featured_gallery .gallery_iner img {
+.featured_works_one .featured_gallery .gallery_iner img {
   max-width: 100%;
 }
-.featured_works .featured_gallery .gallery_iner:after {
+.featured_works_one .featured_gallery .gallery_iner:after {
   content: "";
   position: absolute;
-  background-color: rgba(248, 184, 29, 0.7);
+  background-color: #3179c6b8;
   display: block;
   top: 0;
   left: 0;
@@ -241,7 +331,7 @@
   opacity: 0;
   transition: all 300ms linear 0s;
 }
-.featured_works .featured_gallery .gallery_iner .gallery_hover {
+.featured_works_one .featured_gallery .gallery_iner .gallery_hover {
   position: absolute;
   top: 45%;
   left: 0;
@@ -250,7 +340,7 @@
   text-align: center;
   z-index: 2;
 }
-.featured_works .featured_gallery .gallery_iner .gallery_hover h4 {
+.featured_works_one .featured_gallery .gallery_iner .gallery_hover h4 {
   color: #fff;
   font: 700 14px "Roboto", sans-serif;
   text-transform: uppercase;
@@ -259,7 +349,7 @@
   right: -100%;
   transition: all 300ms linear 0s;
 }
-.featured_works .featured_gallery .gallery_iner .gallery_hover a {
+.featured_works_one .featured_gallery .gallery_iner .gallery_hover a {
   width: 100px;
   font: 300 8px/60px "Roboto", sans-serif;
   text-align: center;
@@ -273,49 +363,50 @@
   text-transform: uppercase;
   margin: 0 auto;
 }
-.featured_works .featured_gallery .gallery_iner .gallery_hover a:hover, .featured_works .featured_gallery .gallery_iner .gallery_hover a:focus {
+.featured_works_one .featured_gallery .gallery_iner .gallery_hover a:hover,
+.featured_works_one .featured_gallery .gallery_iner .gallery_hover a:focus {
   background: #fff;
-  color: #3178C6;
+  color: #3178c6;
 }
-.featured_works .featured_gallery .gallery_iner:hover:after, .featured_works .featured_gallery .gallery_iner:focus:after {
+.featured_works_one .featured_gallery .gallery_iner:hover:after,
+.featured_works_one .featured_gallery .gallery_iner:focus:after {
   opacity: 1;
 }
-.featured_works .featured_gallery .gallery_iner:hover .gallery_hover h4, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover h4 {
+.featured_works_one .featured_gallery .gallery_iner:hover .gallery_hover h4,
+.featured_works_one .featured_gallery .gallery_iner:focus .gallery_hover h4 {
   right: 0;
 }
-.featured_works .featured_gallery .gallery_iner:hover .gallery_hover a, .featured_works .featured_gallery .gallery_iner:focus .gallery_hover a {
+.featured_works_one .featured_gallery .gallery_iner:hover .gallery_hover a,
+.featured_works_one .featured_gallery .gallery_iner:focus .gallery_hover a {
   left: 0;
 }
 
-#service{
-margin-bottom: 5%;
+#service {
+  margin-bottom: 5%;
 }
 
-
-@media (max-width: 750px){
-  .col-8{
+@media (max-width: 750px) {
+  .col-8 {
     width: 50% !important;
- 
   }
- 
 }
 
- @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .row {
     margin: auto !important;
   }
-} 
+}
 
 /* .color:hover{
   border: rgb(0, 26, 255) solid 2px;
   
 } */
 
-.ant-list-item:hover{
-  background-color:#3178C6;
+.ant-list-item:hover {
+  background-color: #3178c6;
 }
 
-#Services{
+#Services {
   margin-top: 5%;
 }
 
@@ -338,38 +429,38 @@ margin-bottom: 5%;
   font-size: 18px;
   padding-right: 20px;
 }
-.row .painting li a:hover, .building_construction_area .building_construction_row .constructing_right .painting li a:focus {
-  color: #3178C6;
+.row .painting li a:hover,
+.building_construction_area
+  .building_construction_row
+  .constructing_right
+  .painting
+  li
+  a:focus {
+  color: #3178c6;
 }
 
-@media (min-width:600){
-  .row .painting .col-6{
+@media (min-width: 600) {
+  .row .painting .col-6 {
     width: 50% !important;
   }
 }
 
 .ant-list-items li:hover {
-  
-  background-color: #3178C6 !important;
+  background-color: #3178c6 !important;
   color: white;
-
-  
 }
-.ant-list-items li{
-  font-size: larger !important
+.ant-list-items li {
+  font-size: larger !important;
 }
 
-.row .col-lg-3  {
+.row .col-lg-3 {
   list-style: none;
   font-weight: bold;
-
 }
 .row .col-lg-2 {
   list-style: none;
   font-weight: bold;
 }
-
-
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
@@ -378,6 +469,5 @@ margin-bottom: 5%;
     width: 100% !important;
   }
 } */
-
 
 /*--------------------------------------------------*/

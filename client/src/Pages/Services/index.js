@@ -111,7 +111,7 @@ function Services() {
 
       {/* Banner area */}
       <section className="banner_area" data-stellar-background-ratio="0.5">
-        <h2>Our Services / Projects</h2>
+        <h2>Our Services & Projects</h2>
 
       </section>
 
@@ -129,16 +129,16 @@ function Services() {
 
                 <ul class="row painting">
                   <div className="col-lg-6 col-md-6 col-xs-12 ">
-                    <li><a href="#Building Construction"><i class="fas fa-building" aria-hidden="true"></i>Building & Road Construction</a></li>
+                    <li><a className="nounderline" href="#Building Construction"><i class="fas fa-building" aria-hidden="true"></i>Building & Road Construction</a></li>
                   </div>
                   <div className="col-lg-5=6 col-md-6 col-xs-12 ">
-                    <li><a href="#Winter Meintenance"><i class="fa fa-road" aria-hidden="true"></i>Winter Maintenance</a></li>
+                    <li><a className="nounderline" href="#Winter Meintenance"><i class="fa fa-road" aria-hidden="true"></i>Winter Maintenance</a></li>
                   </div>
                   <div className="col-lg-6 col-md-6 col-xs-12 ">
-                    <li><a href="#Transportation"><i class="fa fa-truck" aria-hidden="true"></i>Transportation</a></li>
+                    <li><a className="nounderline" href="#Transportation"><i class="fa fa-truck" aria-hidden="true"></i>Transportation</a></li>
                   </div>
                   <div className="col-lg-6 col-md-6 col-xs-12 ">
-                    <li><a href="#Heavy Equipment Rental"><i class="fas fa-tools" aria-hidden="true"></i>Heavy Equipment Rental</a></li>
+                    <li><a className="nounderline" href="#Heavy Equipment Rental"><i class="fas fa-tools" aria-hidden="true"></i>Heavy Equipment Rental</a></li>
                   </div>
                 </ul>
               </div>
@@ -158,9 +158,13 @@ function Services() {
                 </div>
 
                 <div style={{ marginTop: '5%' }} className="row">
+                  <div className="col">
+                    <div style={{ fontSize: "25px", textAlign: "center" }}>
+                      GRAVEL <span className="fas fa-square fa-1x decoration"></span> GRADING <span className="fas fa-square fa-1x decoration" ></span> ROAD BUILD <span className="fas fa-square fa-1x decoration"></span> ASPHALT MAINTANENCE <span className="fas fa-square fa-1x decoration"></span> PARKING LOT
+                    </div>
+                  </div>
 
-
-                  <div className="col-lg-2 col-md-3 col-xs-12 ">
+                  {/* <div className="col-lg-2 col-md-3 col-xs-12 ">
 
 
                     <a>
@@ -209,6 +213,7 @@ function Services() {
                   </div>
 
 
+                </div> */}
                 </div>
               </div>
 
@@ -229,7 +234,13 @@ function Services() {
 
                 <div style={{ marginTop: '5%' }} className="row">
 
-                  <div className="col-lg-2 col-md-2 col-xs-12">
+                  <div className="col">
+                    <div style={{ fontSize: "25px", textAlign: "center" }}>
+                      TRACTORS <span className="fas fa-square fa-1x decoration"></span> TRAILERS <span className="fas fa-square fa-1x decoration" ></span> ROAD BUILD <span className="fas fa-square fa-1x decoration"></span> TANK TRAILERS <span className="fas fa-square fa-1x decoration"></span> TRI-AXLE
+                    </div>
+                  </div>
+
+                  {/* <div className="col-lg-2 col-md-2 col-xs-12">
                     <a>
                       <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
 
@@ -269,7 +280,7 @@ function Services() {
                         TRI-AXLE
                     </a>
 
-                  </div>
+                  </div> */}
 
                 </div>
               </div>
@@ -291,7 +302,13 @@ function Services() {
 
                 <div style={{ marginTop: '5%' }} className="row">
 
-                  <div className="col-lg-3 col-md-4 col-xs-12">
+                  <div className="col">
+                    <div style={{ fontSize: "25px", textAlign: "center" }}>
+                      TRACTORS <span className="fas fa-square fa-1x decoration"></span> REMOVING SNOW <span className="fas fa-square fa-1x decoration" ></span> CLEANING SIDEWALKS <span className="fas fa-square fa-1x decoration"></span> DE-ICING
+                    </div>
+                  </div>
+
+                  {/* <div className="col-lg-3 col-md-4 col-xs-12">
                     <a>
                       <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
 
@@ -315,7 +332,7 @@ function Services() {
                         DE-ICING
                     </a>
 
-                  </div>
+                  </div> */}
 
                 </div>
               </div>
@@ -337,7 +354,14 @@ function Services() {
                 </div>
                 <div style={{ marginTop: '5%' }} className="row">
 
-                  <div className="col-lg-3 col-md-4 col-xs-12">
+                  <div className="col">
+                    <div style={{ fontSize: "25px", textAlign: "center" }}>
+                      TRACTORS <span className="fas fa-square fa-1x decoration"></span> TRACKTOR <span className="fas fa-square fa-1x decoration" ></span> GREYDER <span className="fas fa-square fa-1x decoration"></span> TRUCK <span className="fas fa-square fa-1x decoration"></span> EXCAVATORS
+                    </div>
+                  </div>
+
+
+                  {/* <div className="col-lg-3 col-md-4 col-xs-12">
                     <a>
                       <ArrowRightOutlined style={{ fontSize: '25px', color: '#3178C6' }} />
 
@@ -371,7 +395,7 @@ function Services() {
                       EXCAVATORS
                     </a>
 
-                  </div>
+                  </div> */}
 
                 </div>
 
@@ -410,11 +434,11 @@ function Services() {
 
       {/* Our Featured Works Area */}
 
-      <section className="featured_works row" data-stellar-background-ratio="0.3">
+      <section className="featured_works_one row" data-stellar-background-ratio="0.3">
 
         <div className="tittle wow fadeInUp">
-          <h2>Our Featured Works</h2>
-          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+          <h2 style={{ color: "black" }}>Our Featured Works</h2>
+          <h4 style={{ color: "black" }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
         </div>
         <div className="featured_gallery">
 
