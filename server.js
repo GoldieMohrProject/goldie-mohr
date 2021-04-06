@@ -11,16 +11,11 @@ const PORT = process.env.PORT || 8080
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-// const API_URL = process.env.NODE_ENV === 'production' ?
-//     'https://everestcart.herokuapp.com' : `http://localhost:${PORT}`
 
-// const STATIC_PATH = process.env.NODE_ENV === 'production' ?
-//     path.join('client','build') : path.join('client','public')
-
-// if( !process.env.JAWSDB_URI || !process.env.SESSION_SECRET ){
-//     console.log( '*ERROR* You need a .env file (with JAWSDB_URI,SESSION_SECRET, and other oAuth entries...)' )
-//     process.exit()
-// }
+if( !process.env.JAWSDB_URI || !process.env.SESSION_SECRET ){
+    console.log( '*ERROR* You need a .env file (with JAWSDB_URI,SESSION_SECRET, and other oAuth entries...)' )
+    process.exit()
+}
 
 
 if (process.env.NODE_ENV === 'production') {
@@ -31,17 +26,9 @@ if (process.env.NODE_ENV === 'production') {
     app.use( express.static('public') )
 }
 
-const array = [{"qqweqe":"adasdsd"},"1231313",111111]
-
-app.get('/api/users/register', async (req,res)=>{
-    res.send(array)
-    console.log("connected back end")
-    console.log(array)
-})
-
 // for routes
 // static paths (ex. assets, js, images, etc) served automatically from:
-// app.use(express.static( STATIC_PATH ))
+app.use(express.static( STATIC_PATH ))
 
 // all our RESTful API routes come from
 apiRouter( app )
@@ -49,11 +36,11 @@ apiRouter( app )
 
 // **OPTIONAL** If your REACT routing allows non-standard paths (ex. fake paths for React-Router)
 // THEN you need to enable this for server-side serving to work
-// if (process.env.NODE_ENV === 'production') {
-//     app.get('*', (req, res) => {
-//         res.sendFile(path.join(__dirname, './client/build/index.html'));
-//     });
-// }
+if (process.env.NODE_ENV === 'production') {
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, './client/build/index.html'));
+    });
+}
 
 app.listen(PORT, () => {
     console.log(`==> 🌎  Listening on port ${PORT}. Visit http://localhost:${PORT} in your browser.`);

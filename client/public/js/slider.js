@@ -3,26 +3,22 @@
         {
           src:
             "images/goldie6.JPG",
-          title: "Slide 1",
-          copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
+       
         },
         {
           src:
             "images/goldie1.JPG",
-          title: "Slide 2",
-          copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
+        
         },
         {
           src:
             "images/goldie3.JPG",
-          title: "Slide 3",
-          copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
+       
         },
         {
           src:
             "images/goldie4.JPG",
-          title: "Slide 4",
-          copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
+       
         }
       ];
       let slides = [],
@@ -72,11 +68,11 @@
           default:
             break;
         }
-        caption.appendChild(slide_title);
-        caption.insertAdjacentHTML(
-          "beforeend",
-          '<div class="sld-caption-subhead"><span>dolor sit amet, consectetur adipiscing elit. </span></div>'
-        );
+        // caption.appendChild(slide_title);
+        // caption.insertAdjacentHTML(
+        //   "beforeend",
+        //   '<div class="sld-caption-subhead"><span>dolor sit amet, consectetur adipiscing elit. </span></div>'
+        // );
         slides.push(slide);
         captions.push(caption);
         leftSlider.appendChild(slide);

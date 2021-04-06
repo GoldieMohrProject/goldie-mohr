@@ -190,8 +190,8 @@ function Training() {
 
         let x = await fetch('/api/users/score', fetchOptions).then(res => res.json())
 
-        
-       
+
+
     }
 
     {
@@ -200,19 +200,19 @@ function Training() {
                 <>
                     <div className="container">
                         <div className="row">
-                            <div style={{marginTop:"auto"}}>
+                            <div style={{ marginTop: "auto" }}>
 
                                 < h3 >{questions[counter].question}</h3>
-                                
+
                                 <div className="row">
                                     <div className="col">
-                                        <button ref={refAnswerButton1} className={style} onClick={() => answer(1, questions[counter], questions[counter].answers[0])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[0]}/></button>
+                                        <button ref={refAnswerButton1} className={style} onClick={() => answer(1, questions[counter], questions[counter].answers[0])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[0]} /></button>
                                     </div>
                                     <div className="col">
-                                        <button ref={refAnswerButton2} className={style} onClick={() => answer(2, questions[counter], questions[counter].answers[1])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[1]}/></button>
+                                        <button ref={refAnswerButton2} className={style} onClick={() => answer(2, questions[counter], questions[counter].answers[1])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[1]} /></button>
                                     </div>
                                     <div id="2" className="col">
-                                        <button ref={refAnswerButton3} className={style} onClick={() => answer(3, questions[counter], questions[counter].answers[2])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[2]}/></button>
+                                        <button ref={refAnswerButton3} className={style} onClick={() => answer(3, questions[counter], questions[counter].answers[2])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[2]} /></button>
                                     </div>
                                 </div>
 
@@ -254,8 +254,8 @@ function Training() {
                             {/* <p className="para">After watching the video, please click  to take the test</p> */}
                             <div className="row">
                                 <div class="d-grid gap-2 col-3 mx-auto mt-5 mb-5">
-                                    <button className="btn btn-primary" style={{ color: 'white' }} onClick={quiz}>Quiz</button>
-                                 
+                                    <button className="btn btn-primary" style={{ color: 'white', borderRadius: "0px", backgroundColor: "#3178c6" }} onClick={quiz}>Quiz</button>
+
                                 </div>
                             </div>
 

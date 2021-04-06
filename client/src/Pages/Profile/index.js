@@ -199,12 +199,12 @@ const Profile = ({
     </div>
   );
 }
-
-const Edit = ({
+       
+const Edit =({
   onSubmit,
   children,
-}) => {
-  return (
+})=>{
+  return(
     <div className="card">
       <form onSubmit={onSubmit} class="editForm">
         <h1>Profile</h1>
@@ -218,64 +218,66 @@ const Edit = ({
 class CardProfile extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      file: '',
-      imagePreviewUrl: 'images/me.png',
-      name: 'shiva',
-      last_name: 'sabokdast',
-      email: 'shiva@gmail.com',
-      phone: '22222222',
-      active: 'edit'
+     this.state = {
+       file: 't',
+       imagePreviewUrl: 'images/me.png',
+       name:'t',
+       last_name:'t',
+       email:'t',
+       phone:'t',
+       active: '2'
     };
   }
 
-  componentDidMount() {
+  componentDidMount(){
     this.getData()
   }
 
-  async getData() {
+  async getData(){
     const fetchOptions = {
       method: 'get',
       headers: {
-        'Content-Type': 'application/json',
-        'email': localStorage.email || ''
+          'Content-Type': 'application/json',
+          'email': localStorage.email || ''
 
       },
 
-    }
-    let { userData } = await fetch('/api/users/profile', fetchOptions).then(res => res.json())
-    let {userScore } = await fetch ('/api/user/score',fetchOptions).then(res=>res.json())
+  }
+    let {userData} = await fetch( '/api/users/profile',fetchOptions).then( res=>res.json())
     console.log(userData);
-    this.setState({ name: userData.first_name, email: userData.email, last_name: userData.last_name, phone: userData.phone_number, file: userData.file })
+    
+    userData && this.setState({name:userData.first_name,email:userData.email, last_name:userData.last_name,phone:userData.phone_number,file:userData.file  })
+    let { userScore } = await fetch('/api/user/score', fetchOptions).then(res => res.json())
+
   }
 
-  async editData() {
+  async editData(){
     const userInfo = {
-      picture: this.state.file,
-      first_name: this.state.name,
-      last_name: this.state.last_name,
-      phone_number: this.state.phone,
+       picture: this.state.imagePreviewUrl,
+       first_name:this.state.name,
+       last_name:this.state.last_name,
+       phone_number:this.state.phone,
 
-    }
+  }
     const fetchOptions = {
       method: 'post',
       headers: {
-        'Content-Type': 'application/json',
-        'email': localStorage.email || ''
+          'Content-Type': 'application/json',
+          'email': localStorage.email || ''
 
       },
-      body: JSON.stringify(userInfo)
-    }
-    let { userData } = await fetch('/api/users/editProfile', fetchOptions).then(res => res.json())
+      body : JSON.stringify( userInfo )
+  }
+  let { userData  } = await fetch( '/api/users/editProfile',fetchOptions).then( res=>res.json())
 
   }
 
-  async photoUpload(e) {
+  async photoUpload (e) {
     e.preventDefault();
     const reader = new FileReader();
     const file = e.target.files[0];
     console.log('fileeeeeeeeeeeeeeee', file)
-
+   
     reader.onloadend = () => {
       this.setState({
         file: file,
@@ -284,24 +286,30 @@ class CardProfile extends React.Component {
     }
     reader.readAsDataURL(file);
   }
-  editName(e) {
+  editName (e) {
     const name = e.target.value;
     this.setState({
       name,
     });
   }
-  editEmail(e) {
+  editLastName (e) {
+    const last_name = e.target.value;
+    this.setState({
+      last_name,
+    });
+  }
+  editEmail (e) {
     const email = e.target.value;
     this.setState({
       email,
     });
   }
-  editPhone(e) {
-    const phone = e.target.value;
-    this.setState({
-      phone,
-    });
-  }
+  editPhone (e) {
+      const phone = e.target.value;
+      this.setState({
+        phone,
+      });
+    }
   handleSubmit(e) {
     e.preventDefault();
     this.editData()
@@ -310,24 +318,24 @@ class CardProfile extends React.Component {
       active: activeP,
     })
   }
-
+  
   render() {
-    const { imagePreviewUrl,
-      name,
-      last_name,
-      phone,
-      active } = this.state;
+    const {imagePreviewUrl, 
+           name, 
+           last_name,
+           phone, 
+           active} = this.state;
     return (
       <div>
-        {(active === 'profile')
-          ? <Edit onSubmit={(e) => this.handleSubmit(e)}>
-            <ImgUpload onChange={(e) => this.photoUpload(e)} src={imagePreviewUrl} />
-            <Name onChange={(e) => this.editName(e)} value={name} />
-            <LastName onChange={(e) => this.editEmail(e)} value={last_name} />
-            <PhoneNumber onChange={(e) => this.editPhone(e)} value={phone} />
-          </Edit>
-          : <Profile onSubmit={(e) => this.handleSubmit(e)} src={imagePreviewUrl} name={name} last_name={last_name} phone={phone} />}
-
+        {(active === 'profile')  
+          ?<Edit onSubmit={(e)=>this.handleSubmit(e)}>
+              <ImgUpload onChange={(e)=>this.photoUpload(e)} src={imagePreviewUrl}/>
+              <Name onChange={(e)=>this.editName(e)} value={name}/>
+              <LastName onChange={(e)=>this.editLastName(e)} value={last_name}/>
+              <PhoneNumber onChange={(e)=>this.editPhone(e)} value={phone}/>
+            </Edit>
+          :<Profile onSubmit={(e)=>this.handleSubmit(e)} src={imagePreviewUrl} name={name} last_name={last_name} phone={phone}/>}
+        
       </div>
     )
   }
