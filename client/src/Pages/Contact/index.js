@@ -37,7 +37,7 @@ class Contact extends React.Component {
                         <div className="row contact_row">
                             <div className="col-sm-6 contact_info">
                                 <h2>Contact Info</h2>
-                                <p>
+                                <p style={{ color: "black" }}>
                                     If you have any questions about any of our products and services, feel free to reach out to us! We woud love to hear from you!
                            </p>
                                 <div className="location">

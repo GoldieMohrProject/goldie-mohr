@@ -75,7 +75,7 @@
 }
 .all_contact_info .contact_row .contact_info .location a {
   font: 400 14px/28px "Roboto", sans-serif;
-  color: #555555;
+  color: black;
   display: block;
   text-transform: uppercase;
 }
