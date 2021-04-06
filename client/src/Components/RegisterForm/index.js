@@ -1,8 +1,10 @@
 import React from 'react'
+import { Redirect } from 'react-router';
 
 function RegisterForm(props) {
     return (
         <>
+        {props.something == true ? <Redirect to="/Profile" />: ''}
             <form >
                 <div className="mb-3" style={{ backgroundColor: "#F2F2F2" }}>
                     <label style={{ color: "black", marginLeft: "12px" }} for="firstNameInput" className="form-label">First Name</label>

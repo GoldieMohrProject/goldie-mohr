@@ -12,8 +12,9 @@ email varchar(30),
 password varchar (100),
 first_name varchar (30),
 last_name varchar (30),
-phone_number varchar (20),
-picture BLOB
+phone_number varchar (15),
+picture BLOB,
+token varchar(60)
 
 );
 
