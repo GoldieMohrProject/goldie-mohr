@@ -200,7 +200,7 @@ function Training() {
                 <>
                     <div className="container">
                         <div className="row">
-                            <>
+                            <div style={{marginTop:"auto"}}>
 
                                 < h3 >{questions[counter].question}</h3>
                                 
@@ -223,7 +223,7 @@ function Training() {
                                     <button className="btn btn-success" style={{ margin: "5px", width: "200px" }} onClick={() => Save()}>Save</button>
                                 }
 
-                            </>
+                            </div>
 
 
                         </div>
