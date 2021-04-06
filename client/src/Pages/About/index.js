@@ -235,7 +235,7 @@ function About() {
         <div className="book_now_aera">
           <div className="container">
             <div className="col-md-10">
-              <h4 style={{ color: "white" }}>Our community is important to us.</h4>
+              <h4 style={{ color: "white" }}>Our community is important to us</h4>
 
               <p className="communityarea">
                 As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.

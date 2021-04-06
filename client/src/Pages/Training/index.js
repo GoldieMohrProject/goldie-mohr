@@ -245,10 +245,10 @@ function Training() {
                             {/* <h1 className="trainingtitle">Training</h1> */}
                             <p className="para">Please review the topics below</p>
                             <p className="para">
-                                <a href={Emergency} className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
+                                <a href={Emergency} target="_blank" className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
                             </p>
                             <p className="para">
-                                <a href={Safety} className="pdf">CLICK HERE TO VIEW GML SAFETY INFORMATION</a>
+                                <a href={Safety} target="_blank" className="pdf">CLICK HERE TO VIEW GML SAFETY INFORMATION</a>
                             </p>
 
                             <p className="para">After reviewing the topics above, please watch the video below</p>

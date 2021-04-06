@@ -51,6 +51,7 @@ function Navbar(props) {
                         <li><a href="#"><i className="fa fa-clock" />Mon - Sat 07:00 - 18:00</a></li>
                         <li><a target="_blank" href="https://www.facebook.com/GoldieMohr"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a target="_blank" href="https://twitter.com/goldiemohrltd"><i class="fab fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/goldiemohrltd/"><i class="fab fa-linkedin-in"></i></a></li>
                         <li className="ms-auto" id="faUser"><a href="#"></a></li>
                         {localStorage.session && <nav class="navbar navbar-expand-lg navbar-light bg-light">{localStorage.name}</nav>}
                         <div class="dropdown">
