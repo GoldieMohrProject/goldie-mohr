@@ -5,6 +5,8 @@
   color: #ffffff;
 }
 
+
+/* TOP BANNER */
 .aboutbanner {
   background: url("../../assets/goldie8.jpg")
     no-repeat fixed;
@@ -45,6 +47,8 @@
 .aboutbanner .breadcrumb li a.active {
   color: #3178c6;
 }
+/* end banner */
+
 
 p {
   font-family: "Roboto", sans-serif;
@@ -253,6 +257,7 @@ h3 {
 .imgmemb:hover {
   transform: scale(1.1);
 }
+
 
 .teampic {
   margin-top: 50px;
