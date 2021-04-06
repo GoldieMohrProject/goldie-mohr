@@ -9,7 +9,7 @@ function Job(props) {
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">{props.description}</p>
                 <div style={{ textAlign: "right", marginTop: "5px" }}>
-                    <a id="indeedLogo" href={props.link} target="_blank" rel="noreferrer" title="Apply on Indeed"><img width="40px" height="30px" src={Indeed} alt="Indeed Job Opportunity" /></a>
+                    <a id="indeedLogo" href={props.link} target="_blank" rel="noreferrer" title="Apply on Indeed"><img class="img-fluid" width="80px" src={Indeed} alt="Indeed Job Opportunity" /></a>
                 </div>
             </div>
         </div>
