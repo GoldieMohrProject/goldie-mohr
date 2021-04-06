@@ -21,24 +21,24 @@ const construction = [
     thumbnail: 'Construction/road1.jpg',
   },
   {
-    original: 'Construction/truck.jpg',
-    thumbnail: 'Construction/truck.jpg',
+    original: 'Construction/truck.JPG',
+    thumbnail: 'Construction/truck.JPG',
   },
   {
     original: 'Construction/pipe.jpg',
     thumbnail: 'Construction/pipe.jpg',
   },
   {
-    original: 'Construction/pipe2.jpg',
-    thumbnail: 'Construction/pipe2.jpg',
+    original: 'Construction/pipe2.JPG',
+    thumbnail: 'Construction/pipe2.JPG',
   },
   {
     original: 'Construction/pipe3.jpg',
     thumbnail: 'Construction/pipe3.jpg',
   },
   {
-    original: 'Construction/ground.jpg',
-    thumbnail: 'Construction/ground.jpg',
+    original: 'Construction/ground.JPG',
+    thumbnail: 'Construction/ground.JPG',
   },
   {
     original: 'Construction/gravel.jpg',
@@ -159,8 +159,8 @@ function Services() {
 
                 <div style={{ marginTop: '5%' }} className="row">
                   <div className="col">
-                    <div style={{ fontSize: "25px", textAlign: "center" }}>
-                      GRAVEL <span className="fas fa-square fa-1x decoration"></span> GRADING <span className="fas fa-square fa-1x decoration" ></span> ROAD BUILD <span className="fas fa-square fa-1x decoration"></span> ASPHALT MAINTANENCE <span className="fas fa-square fa-1x decoration"></span> PARKING LOT
+                    <div style={{ textAlign: "center" }}>
+                      <p style={{ fontSize: "25px" }}>  GRAVEL <span className="fas fa-square fa-1x decoration"></span> GRADING <span className="fas fa-square fa-1x decoration" ></span> ROAD BUILD <span className="fas fa-square fa-1x decoration"></span> ASPHALT MAINTANENCE <span className="fas fa-square fa-1x decoration"></span> PARKING LOT  </p>
                     </div>
                   </div>
 
@@ -236,7 +236,8 @@ function Services() {
 
                   <div className="col">
                     <div style={{ fontSize: "25px", textAlign: "center" }}>
-                      TRACTORS <span className="fas fa-square fa-1x decoration"></span> TRAILERS <span className="fas fa-square fa-1x decoration" ></span> ROAD BUILD <span className="fas fa-square fa-1x decoration"></span> TANK TRAILERS <span className="fas fa-square fa-1x decoration"></span> TRI-AXLE
+                      <p style={{ fontSize: "25px" }}> TRACTORS <span className="fas fa-square fa-1x decoration"></span> TRAILERS <span className="fas fa-square fa-1x decoration" ></span> ROAD BUILD <span className="fas fa-square fa-1x decoration"></span> TANK TRAILERS <span className="fas fa-square fa-1x decoration"></span> TRI-AXLE
+                    </p>
                     </div>
                   </div>
 
@@ -304,7 +305,8 @@ function Services() {
 
                   <div className="col">
                     <div style={{ fontSize: "25px", textAlign: "center" }}>
-                      TRACTORS <span className="fas fa-square fa-1x decoration"></span> REMOVING SNOW <span className="fas fa-square fa-1x decoration" ></span> CLEANING SIDEWALKS <span className="fas fa-square fa-1x decoration"></span> DE-ICING
+                      <p style={{ fontSize: "25px" }}>  TRACTORS <span className="fas fa-square fa-1x decoration"></span> REMOVING SNOW <span className="fas fa-square fa-1x decoration" ></span> CLEANING SIDEWALKS <span className="fas fa-square fa-1x decoration"></span> DE-ICING
+                    </p>
                     </div>
                   </div>
 
@@ -356,7 +358,8 @@ function Services() {
 
                   <div className="col">
                     <div style={{ fontSize: "25px", textAlign: "center" }}>
-                      TRACTORS <span className="fas fa-square fa-1x decoration"></span> TRACKTOR <span className="fas fa-square fa-1x decoration" ></span> GREYDER <span className="fas fa-square fa-1x decoration"></span> TRUCK <span className="fas fa-square fa-1x decoration"></span> EXCAVATORS
+                      <p style={{ fontSize: "25px" }}>  TRACTORS <span className="fas fa-square fa-1x decoration"></span> TRACKTOR <span className="fas fa-square fa-1x decoration" ></span> GRADER <span className="fas fa-square fa-1x decoration"></span> TRUCK <span className="fas fa-square fa-1x decoration"></span> EXCAVATORS
+                    </p>
                     </div>
                   </div>
 
@@ -438,7 +441,7 @@ function Services() {
 
         <div className="tittle wow fadeInUp">
           <h2 style={{ color: "black" }}>Our Featured Works</h2>
-          <h4 style={{ color: "black" }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+          <h4 style={{ color: "black", lineHeight: "200%" }}>As our core service, Goldie Mohr Ltd has the ability to mobilize and execute large earth excavation projects with precision. Our large fleet of trucks and dedicated construction professionals will ensure the timely delivery of your site to the next trade on grade and on time. Please use the links below to have a look at some of the future projects.</h4>
         </div>
         <div className="featured_gallery">
 

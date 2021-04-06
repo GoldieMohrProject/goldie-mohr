@@ -200,9 +200,9 @@ function Training() {
                 <>
                     <div className="container">
                         <div className="row">
-                            <div style={{ marginTop: "auto" }}>
+                            <div style={{ marginTop: "50px", textAlign: "center" }}>
 
-                                < h3 >{questions[counter].question}</h3>
+                                < h3 style={{ marginBottom: "30px" }}>{questions[counter].question}</h3>
 
                                 <div className="row">
                                     <div className="col">
@@ -216,9 +216,9 @@ function Training() {
                                     </div>
                                 </div>
 
-                                {showNext && <button className="btn btn-success" style={{ margin: "5px", width: "200px" }} onClick={() => getNextQuestion()}>Next</button>}
+                                {showNext && <button className="btn btn-success" style={{ marginTop: "30px", marginBottom: "30px", width: "200px" }} onClick={() => getNextQuestion()}>Next</button>}
 
-                                <h1 style={{ textAlign: "center" }}>Score: {score}</h1>
+                                <h1 style={{ textAlign: "center" }}>score: {score}</h1>
                                 {showSave &&
                                     <button className="btn btn-success" style={{ margin: "5px", width: "200px" }} onClick={() => Save()}>Save</button>
                                 }
@@ -236,17 +236,19 @@ function Training() {
 
         return (
             <>
+                <h1 className="trainingtitle" style={{ textAlign: "center" }}>Training</h1>
+
                 <div className="container">
                     <div className="row">
 
                         <div className="trainingarea">
-                            <h1 className="trainingtitle">Training</h1>
+                            {/* <h1 className="trainingtitle">Training</h1> */}
                             <p className="para">Please review the topics below</p>
                             <p className="para">
-                                <a href={Emergency} className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
+                                <a href={Emergency} target="_blank" className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
                             </p>
                             <p className="para">
-                                <a href={Safety} className="pdf">CLICK HERE TO VIEW GML SAFETY INFORMATION</a>
+                                <a href={Safety} target="_blank" className="pdf">CLICK HERE TO VIEW GML SAFETY INFORMATION</a>
                             </p>
 
                             <p className="para">After reviewing the topics above, please watch the video below</p>
@@ -254,7 +256,7 @@ function Training() {
                             {/* <p className="para">After watching the video, please click  to take the test</p> */}
                             <div className="row">
                                 <div class="d-grid gap-2 col-3 mx-auto mt-5 mb-5">
-                                    <button className="btn btn-primary" style={{ color: 'white', borderRadius: "0px", backgroundColor: "#3178c6" }} onClick={quiz}>Quiz</button>
+                                    <button id="btnQuiz" className="btn btn-primary" onClick={quiz}>Quiz</button>
 
                                 </div>
                             </div>

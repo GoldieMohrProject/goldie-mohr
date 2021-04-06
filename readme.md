@@ -36,3 +36,14 @@
 6-) Database structure and software app
 7-) Admin accsees 
 
+
+picture (Fatih) + deploy  + color (card for quiz)  +  
+
+navbar (Shiva)
+
+if finish score chart (Said) by 3 oclock do  password reset  + employee (Navbar)
+
+any style and front-end debugger (Faisal)
+
+presentation picture (Mischa)
+

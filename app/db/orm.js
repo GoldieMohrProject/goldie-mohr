@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-const db = require('./connection')('goldie_mohr', '12345')
+const db = require('./connection')('goldie_mohr', 'skotkalb')
 const bcrypt = require( 'bcrypt' )
 
 

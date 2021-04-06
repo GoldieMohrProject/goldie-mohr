@@ -1,22 +1,43 @@
 #products {
-    background: url('https://user-images.githubusercontent.com/77207167/113043685-ca358c80-916a-11eb-995b-a044297e9630.JPG') no-repeat fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 400px;
-    /* height: 100vh; */
-    width: auto;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  #productTitle {
-    color: white;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  
+  background: url("https://user-images.githubusercontent.com/77207167/113043685-ca358c80-916a-11eb-995b-a044297e9630.JPG")
+    no-repeat fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  /* height: 100vh; */
+  width: auto;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+#products:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+  opacity: 80%;
+}
+
+#productTitle {
+  color: white;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+  color: black;
+  margin: 0;
+  padding-top: 28px;
+}

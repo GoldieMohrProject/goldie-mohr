@@ -2,17 +2,17 @@ import emailjs from 'emailjs-com';
 import React from 'react';
 import './style.css'
 
-class  Contact  extends React.Component  {
-       
+class Contact extends React.Component {
+
     sendEmail(e) {
         e.preventDefault();
 
         emailjs.sendForm('service_59tkng9', 'template_3i27x59', e.target, 'user_znYxcuxXFuqUmoJFIoGRN')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
         e.target.reset();
     }
 
@@ -37,7 +37,7 @@ class  Contact  extends React.Component  {
                         <div className="row contact_row">
                             <div className="col-sm-6 contact_info">
                                 <h2>Contact Info</h2>
-                                <p>
+                                <p style={{ color: "black" }}>
                                     If you have any questions about any of our products and services, feel free to reach out to us! We woud love to hear from you!
                            </p>
                                 <div className="location">
@@ -59,17 +59,22 @@ class  Contact  extends React.Component  {
 
                                     </div>
                                 </div>
-                                </div>
-                        <div className="col-sm-6 contact_info send_message">
-                            <h2>Send Us a Message</h2>
-                            <form  method="post" className="form-inline contact_box"  onSubmit={this.sendEmail}>
-                                <input type="text" className="form-control input_box"   name="name" placeholder="First Name *" required/>
-                                <input type="text" className="form-control input_box"   name="lastName" placeholder="Last Name *" required/>
-                                <input type="email" className="form-control input_box" name="email"   placeholder="Your Email *" required/>
-                                <input type="text" className="form-control input_box" name="subject"    placeholder="Subject" required/>
-                                <textarea className="form-control input_box" placeholder="message"  name="message"  defaultValue={""} required/>
-                                <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send</button>
-                            </form>
+                            </div>
+                            <div className="col-sm-6 contact_info send_message">
+                                <h2>Send Us a Message</h2>
+                                <form method="post" className="form-inline contact_box" onSubmit={this.sendEmail}>
+                                    <label style={{ color: "black", marginBottom: "5px" }} for="name" className="form-label">First Name</label>
+                                    <input type="text" className="form-control input_box" name="name" placeholder="First Name *" required />
+                                    <label style={{ color: "black", marginBottom: "5px" }} for="lastName" className="form-label">Last Name</label>
+                                    <input type="text" className="form-control input_box" name="lastName" placeholder="Last Name *" required />
+                                    <label style={{ color: "black", marginBottom: "5px" }} for="email" className="form-label">Email</label>
+                                    <input type="email" className="form-control input_box" name="email" placeholder="Your Email *" required />
+                                    <label style={{ color: "black", marginBottom: "5px" }} for="subject" className="form-label">Subject</label>
+                                    <input type="text" className="form-control input_box" name="subject" placeholder="Subject" required />
+                                    <label style={{ color: "black", marginBottom: "5px" }} for="message" className="form-label">Message</label>
+                                    <textarea className="form-control input_box" placeholder="message" name="message" defaultValue={""} required />
+                                    <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send</button>
+                                </form>
                             </div>
                         </div>
                     </div>

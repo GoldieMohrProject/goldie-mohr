@@ -8,13 +8,15 @@
 
 /* Banner Area */
 .banner_area {
-  background: url("https://user-images.githubusercontent.com/77207167/113043685-ca358c80-916a-11eb-995b-a044297e9630.JPG")
+  background: url("../../assets/goldie5.JPG")
     no-repeat fixed;
   background-position: center;
   text-align: center;
   position: relative;
   z-index: 1;
   padding-bottom: 180px;
+  background-size: cover;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .banner_area:after {
   content: "";
@@ -26,6 +28,7 @@
   bottom: 0;
   display: block;
   z-index: -1;
+  opacity: 80%;
 }
 .banner_area h2 {
   color: #fff;
