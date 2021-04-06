@@ -5,6 +5,47 @@
   color: #ffffff;
 }
 
+.aboutbanner {
+  background: url("../../assets/goldie8.jpg")
+    no-repeat fixed;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 180px;
+  background-size: cover;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.aboutbanner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+  opacity: 80%;
+}
+.aboutbanner h2 {
+  color: #fff;
+  font: 400 40px "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-top: 140px;
+}
+.aboutbanner .breadcrumb {
+  background-color: transparent;
+  padding-top: 15px;
+}
+.aboutbanner .breadcrumb li a {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fefefe;
+}
+.aboutbanner .breadcrumb li a.active {
+  color: #3178c6;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   line-height: 26px;
