@@ -3,35 +3,6 @@ import React from 'react';
 import './style.css'
 
 class  Contact  extends React.Component  {
-
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            username: '',
-            lastName: '',
-            email:'',
-            subject:'',
-            message:'' };
-      }
-
-      nameHandler = (event) => {
-        this.setState({username: event.target.value});
-      }
-
-      lastNameHandler =(event) =>{
-        this.setState({lastName: event.target.value});
-      }
-
-      emailHandler =(event) =>{
-        this.setState({email: event.target.value});
-      }
-      subjectHandler =(event) =>{
-        this.setState({subject: event.target.value});
-      }
-     messageHandler =(event) =>{
-        this.setState({message: event.target.value});
-      }
        
       sendEmail(e) {
         e.preventDefault();
@@ -42,11 +13,9 @@ class  Contact  extends React.Component  {
           }, (error) => {
               console.log(error.text);
           });
+          e.target.reset();
 
       }
-    
-
-
 
       render() {
     return (
@@ -92,11 +61,11 @@ class  Contact  extends React.Component  {
                         <div className="col-sm-6 contact_info send_message">
                             <h2>Send Us a Message</h2>
                             <form  method="post" className="form-inline contact_box"  onSubmit={this.sendEmail}>
-                                <input type="text" onChange={this.nameHandler} className="form-control input_box" name="name" placeholder="First Name *" required/>
-                                <input type="text" className="form-control input_box" onChange={this.lastNameHandler} name="lastName" placeholder="Last Name *" required/>
-                                <input type="email" className="form-control input_box" name="email"  onChange={this.emailHandler}placeholder="Your Email *" required/>
-                                <input type="text" className="form-control input_box" name="subject"    onChange={this.subjectHandler} placeholder="Subject" required/>
-                                <textarea className="form-control input_box" placeholder="message"  name="message" onChange={this.messageHandler} defaultValue={""} required/>
+                                <input type="text" className="form-control input_box"   name="name" placeholder="First Name *" required/>
+                                <input type="text" className="form-control input_box"   name="lastName" placeholder="Last Name *" required/>
+                                <input type="email" className="form-control input_box" name="email"   placeholder="Your Email *" required/>
+                                <input type="text" className="form-control input_box" name="subject"    placeholder="Subject" required/>
+                                <textarea className="form-control input_box" placeholder="message"  name="message"  defaultValue={""} required/>
                                 <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send Message</button>
                             </form>
                         </div>
