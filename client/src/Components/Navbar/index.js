@@ -20,7 +20,8 @@ function Navbar(props) {
       method: 'get',
       headers: {
           'Content-Type': 'application/json',
-          'Session': localStorage.session || ''
+          'Session': localStorage.session || '',
+          'email': localStorage.email || '',
 
       },
       // body : JSON.stringify( userInfo )
@@ -30,6 +31,10 @@ function Navbar(props) {
     console.log ('resultttttt',result.authOK)
     if(result.authOK === false){
       delete localStorage.session
+      delete localStorage.email
+      delete localStorage.name
+      delete localStorage.isAdmin
+
       window.location.href = '/'
       // return <><Redirect to='/home' /></>
     }
@@ -53,11 +58,11 @@ function Navbar(props) {
         <div class="dropdown-content">
           {!localStorage.session &&
           <>
-          <a onClick={props.handleModal}>Login</a>
-          <NavLink to="/register" className="navbar-brand">Register</NavLink> </>         }
+          <a onClick={props.handleModal}>Login</a> </>         }
           {localStorage.session && <>
-            <NavLink to="/Training" className="navbar-brand">Training</NavLink>
-            <NavLink to="/Profile" className="navbar-brand">Profile</NavLink>
+            <NavLink to="/training" className="navbar-brand">Training</NavLink>
+            <NavLink to="/profile" className="navbar-brand">Profile</NavLink>
+            {localStorage.isAdmin == 1 &&<NavLink to="/register" className="navbar-brand ">Register</NavLink>}
             <a onClick={logoutUser}>Logout</a>
             </>
           }

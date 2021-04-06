@@ -12,6 +12,7 @@ import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import Login from "./Pages/Login"
 import Reset from "./Pages/Reset"
+import Employees from "./Pages/Employees"
 
 import CardProfile from "./Pages/Profile/index"
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Profile" component={CardProfile} />
           <Route exact path="/Reset" component={Reset} />
+          <Route exact path="/Employees" component={Employees} />
+
 
         </Wrapper>
         <Footer />
