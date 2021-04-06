@@ -54,7 +54,6 @@
     border-radius: 50%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #fff;
   }
   .img-upload:hover:before{
    opacity: 1;
