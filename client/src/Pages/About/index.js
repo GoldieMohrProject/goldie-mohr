@@ -259,7 +259,6 @@ function About() {
               <p>At Goldie Mohr Limited, we believe that our people are our greatest asset!</p>
               <img src={team} alt="team photo" className="teampic" />
             </div>
-
           </div>
         </div>
       </section>

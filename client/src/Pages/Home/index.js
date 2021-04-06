@@ -13,7 +13,7 @@ function Home() {
         <Wrapper>
             <Slider />
             <div >
-                <a href="#About-Us" class="container hideArrow" style={{ zIndex:'10',position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
+                <a href="#About-Us" class="container hideArrow" style={{ zIndex: '10', position: 'absolute', paddingLeft: '47%', bottom: '5%' }}>
                     <div class="content">
                         <svg id="more-arrows">
                             <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
@@ -68,7 +68,7 @@ function Home() {
 
                                 <div class="tittle wow fadeInUp" >
                                     <h2>Our Achievements</h2>
-                                    <h4 style={{padding:'5%'}}>the signature blue trucks with the golden horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western Quebec.</h4>
+                                    <h4 style={{ padding: '5%' }}>the signature blue trucks with the golden horseshoe on the door are now quite familiar sights throughout eastern Ontario and Western Quebec.</h4>
                                 </div>
                                 <div class="achievments_row row">
                                     <div class="col-md-3 col-sm-6 p0 completed">
@@ -76,7 +76,7 @@ function Home() {
                                         <CountUp end={800} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span style={{color:'white'}}  class="counter" ref={countUpRef} />
+                                                    <span style={{ color: 'white' }} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -84,10 +84,10 @@ function Home() {
                                     </div>
                                     <div class="col-md-3 col-sm-6 p0 completed">
                                         <i class="fa fa-home" aria-hidden="true"></i>
-                                        <CountUp  end={229} redraw={true}>
+                                        <CountUp end={229} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span style={{color:'white'}} class="counter" ref={countUpRef} />
+                                                    <span style={{ color: 'white' }} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -98,7 +98,7 @@ function Home() {
                                         <CountUp end={100} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span style={{color:'white'}} class="counter" ref={countUpRef} />
+                                                    <span style={{ color: 'white' }} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -109,7 +109,7 @@ function Home() {
                                         <CountUp end={25} redraw={true}>
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <span style={{color:'white'}}  class="counter" ref={countUpRef} />
+                                                    <span style={{ color: 'white' }} class="counter" ref={countUpRef} />
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
@@ -158,7 +158,7 @@ function Home() {
                                         </h6>
                                     </div>
                                     <div class="media-body">
-                                        <h6 style={{fontWeight:'bold'}}>QUALIFIED EXPERTS</h6>
+                                        <h6 style={{ fontWeight: 'bold' }}>QUALIFIED EXPERTS</h6>
                                         <p>You want results? Contact us today !There really is no other way. </p>
                                     </div>
                                 </div>
@@ -173,12 +173,12 @@ function Home() {
             <section class="row featured_works " data-stellar-background-ratio="0.3" style={{ backgroundPosition: ' 50% -0.36px', marginTop: '5%', marginBottom: '0.11%' }}>
                 <div class="tittle wow fadeInUp">
                     <h2 >Safety</h2>
-                    <h5 style={{ paddingLeft: '10%', paddingRight: '10%', marginTop: '4%',  textTransform: 'none' , color: 'white'}}>
+                    <div style={{ paddingLeft: '10%', paddingRight: '10%', marginTop: '4%', marginBottom: "4%", textTransform: 'none', color: 'white' }}>
                         As a member of the W.S.I.B Safety Group, Goldie Mohr Ltd. is able to reduce workplace injuries and ensure
-                    safety at all job sites. The main focus of the Goldie Mohr Ltd. safety department is to create the safest
-                    environment possible, for all stakeholders (the public, employees, sub-contractors and customers) by
-                    maintaining the policies and standards influenced by W.S.I.B. Safety Group.  Accident prevention is what
-                          Goldie Mohr Ltd. strives for through this program.</h5>
+                        safety at all job sites. The main focus of the Goldie Mohr Ltd. safety department is to create the safest
+                        environment possible, for all stakeholders (the public, employees, sub-contractors and customers) by
+                        maintaining the policies and standards influenced by W.S.I.B. Safety Group.  Accident prevention is what
+                          Goldie Mohr Ltd. strives for through this program.</div>
                 </div>
             </section>
 
