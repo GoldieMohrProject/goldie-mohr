@@ -21,24 +21,24 @@ const construction = [
     thumbnail: 'Construction/road1.jpg',
   },
   {
-    original: 'Construction/truck.jpg',
-    thumbnail: 'Construction/truck.jpg',
+    original: 'Construction/truck.JPG',
+    thumbnail: 'Construction/truck.JPG',
   },
   {
     original: 'Construction/pipe.jpg',
     thumbnail: 'Construction/pipe.jpg',
   },
   {
-    original: 'Construction/pipe2.jpg',
-    thumbnail: 'Construction/pipe2.jpg',
+    original: 'Construction/pipe2.JPG',
+    thumbnail: 'Construction/pipe2.JPG',
   },
   {
     original: 'Construction/pipe3.jpg',
     thumbnail: 'Construction/pipe3.jpg',
   },
   {
-    original: 'Construction/ground.jpg',
-    thumbnail: 'Construction/ground.jpg',
+    original: 'Construction/ground.JPG',
+    thumbnail: 'Construction/ground.JPG',
   },
   {
     original: 'Construction/gravel.jpg',
