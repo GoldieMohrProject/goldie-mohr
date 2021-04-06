@@ -2,6 +2,9 @@ import React from 'react';
 import fetchJSON from "../../util/API"
 import './style.css'
 
+import { PieChart } from 'react-minimal-pie-chart';
+
+
 function addData(value) {
   let number = Math.floor(Math.random() * value)
   return (
