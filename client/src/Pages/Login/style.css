@@ -74,3 +74,25 @@ label {
 .qs{
     text-align: center;
 }
+
+.displayed{
+  display:block
+}
+
+.notDisplayed{
+  display:none
+}
+
+@keyframes FadeAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.animate {
+  animation: FadeAnimation 4s ease-in .1s forwards;
+}

@@ -2,48 +2,18 @@ import emailjs from 'emailjs-com';
 import React from 'react';
 import './style.css'
 
-class Contact extends React.Component {
-
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            username: '',
-            lastName: '',
-            email: '',
-            subject: '',
-            message: ''
-        };
-    }
-
-    nameHandler = (event) => {
-        this.setState({ username: event.target.value });
-    }
-
-    lastNameHandler = (event) => {
-        this.setState({ lastName: event.target.value });
-    }
-
-    emailHandler = (event) => {
-        this.setState({ email: event.target.value });
-    }
-    subjectHandler = (event) => {
-        this.setState({ subject: event.target.value });
-    }
-    messageHandler = (event) => {
-        this.setState({ message: event.target.value });
-    }
-
+class  Contact  extends React.Component  {
+       
     sendEmail(e) {
         e.preventDefault();
 
         emailjs.sendForm('service_59tkng9', 'template_3i27x59', e.target, 'user_znYxcuxXFuqUmoJFIoGRN')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
     }
 
 
@@ -89,17 +59,17 @@ class Contact extends React.Component {
 
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-sm-6 contact_info send_message">
-                                <h2>Send Us a Message</h2>
-                                <form method="post" className="form-inline contact_box" onSubmit={this.sendEmail}>
-                                    <input type="text" onChange={this.nameHandler} className="form-control input_box" name="name" placeholder="First Name *" required />
-                                    <input type="text" className="form-control input_box" onChange={this.lastNameHandler} name="lastName" placeholder="Last Name *" required />
-                                    <input type="email" className="form-control input_box" name="email" onChange={this.emailHandler} placeholder="Your Email *" required />
-                                    <input type="text" className="form-control input_box" name="subject" onChange={this.subjectHandler} placeholder="Subject" required />
-                                    <textarea className="form-control input_box" placeholder="message" name="message" onChange={this.messageHandler} defaultValue={""} required />
-                                    <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send</button>
-                                </form>
+                                </div>
+                        <div className="col-sm-6 contact_info send_message">
+                            <h2>Send Us a Message</h2>
+                            <form  method="post" className="form-inline contact_box"  onSubmit={this.sendEmail}>
+                                <input type="text" className="form-control input_box"   name="name" placeholder="First Name *" required/>
+                                <input type="text" className="form-control input_box"   name="lastName" placeholder="Last Name *" required/>
+                                <input type="email" className="form-control input_box" name="email"   placeholder="Your Email *" required/>
+                                <input type="text" className="form-control input_box" name="subject"    placeholder="Subject" required/>
+                                <textarea className="form-control input_box" placeholder="message"  name="message"  defaultValue={""} required/>
+                                <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send</button>
+                            </form>
                             </div>
                         </div>
                     </div>
