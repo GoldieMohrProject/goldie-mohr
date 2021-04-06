@@ -2,25 +2,25 @@
     let slide_data = [
         {
           src:
-            "images/2.JPG",
+            "images/goldie6.JPG",
           title: "Slide 1",
           copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
         },
         {
           src:
-            "images/3.jpg",
+            "images/goldie1.JPG",
           title: "Slide 2",
           copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
         },
         {
           src:
-            "https://images.unsplash.com/photo-1504271863819-d279190bf871?ixlib=rb-0.3.5&s=7a2b986d405a04b3f9be2e56b2be40dc&auto=format&fit=crop&w=334&q=80",
+            "images/goldie3.JPG",
           title: "Slide 3",
           copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
         },
         {
           src:
-            "https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixlib=rb-0.3.5&s=87131a6b538ed72b25d9e0fc4bf8df5b&auto=format&fit=crop&w=1050&q=80",
+            "images/goldie4.JPG",
           title: "Slide 4",
           copy: "DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT."
         }

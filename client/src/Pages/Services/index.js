@@ -90,12 +90,12 @@ const services = [
 
 ]
 
-const winter = [
-  {
-    original: 'Winter-Meintenance/winter.mp4',
-    thumbnail: 'Winter-Meintenance/winter.mp4',
-  }
-]
+// const winter = [
+//   {
+//     original: 'Winter-Meintenance/winter.mp4',
+//     thumbnail: 'Winter-Meintenance/winter.mp4',
+//   }
+// ]
 
 
 

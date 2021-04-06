@@ -34,7 +34,15 @@ const ImgUpload =({
       </div>
     );
   }
-
+  const LastName =({onChange,value})=>{return(
+    <div className="field">
+      <span>
+        last name:
+      </span>
+      <input type="text" onChange={onChange} maxlength="35" value={value} required/> 
+    </div>
+  );
+}
   const PhoneNumber =({onChange,value})=>{return(
     <div className="field">
       <span>
@@ -48,6 +56,7 @@ const ImgUpload =({
     onSubmit,
     src,
     name,
+    last_name,
     email,
     phone,
   })=>{
@@ -58,7 +67,7 @@ const ImgUpload =({
             <div class="col-md-4 ">
             <label className="custom-file-upload fas">
             <div className="img-wrap" >
-                <img className="uploadImg" for="photo-upload" src={src}/>
+                  <img className="uploadImg" for="photo-upload" src={src}/>
             </div>
              </label>
             </div>
@@ -86,7 +95,7 @@ const ImgUpload =({
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="row">
                                     <div class="col-md-3 offset-md-4">
-                                        <label>User Id</label>
+                                        <label>First Name</label>
                                     </div>
                                     <div class="col-md-3 ">
                                         <p>{name}</p>
@@ -94,10 +103,10 @@ const ImgUpload =({
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3 offset-md-4">
-                                        <label>Name</label>
+                                        <label>Last Name</label>
                                     </div>
                                     <div class="col-md-3">
-                                        <p>{name}</p>
+                                        <p>{last_name}</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -105,7 +114,7 @@ const ImgUpload =({
                                         <label>Email</label>
                                     </div>
                                     <div class="col-md-3 ">
-                                        <p>{email}</p>
+                                        <p>{localStorage.email}</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -147,17 +156,58 @@ const ImgUpload =({
          file: '',
          imagePreviewUrl: 'images/me.png',
          name:'shiva',
+         last_name:'sabokdast',
          email:'shiva@gmail.com',
          phone:'22222222',
          active: 'edit'
       };
     }
 
+    componentDidMount(){
+      this.getData()
+    }
+
+    async getData(){
+      const fetchOptions = {
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json',
+            'email': localStorage.email || ''
+
+        },
+
+    }
+      let { userData  } = await fetch( '/api/users/profile',fetchOptions).then( res=>res.json())
+      console.log(userData);
+      this.setState({name:userData.first_name,email:userData.email, last_name:userData.last_name,phone:userData.phone_number,file:userData.file  })
+    }
+
+    async editData(){
+      const userInfo = {
+         picture: this.state.file,
+         first_name:this.state.name,
+         last_name:this.state.last_name,
+         phone_number:this.state.phone,
+
+    }
+      const fetchOptions = {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json',
+            'email': localStorage.email || ''
+
+        },
+        body : JSON.stringify( userInfo )
+    }
+    let { userData  } = await fetch( '/api/users/editProfile',fetchOptions).then( res=>res.json())
+
+    }
 
     async photoUpload (e) {
       e.preventDefault();
       const reader = new FileReader();
       const file = e.target.files[0];
+      console.log('fileeeeeeeeeeeeeeee', file)
      
       reader.onloadend = () => {
         this.setState({
@@ -187,6 +237,7 @@ const ImgUpload =({
       }
     handleSubmit(e) {
       e.preventDefault();
+      this.editData()
       let activeP = this.state.active === 'edit' ? 'profile' : 'edit';
       this.setState({
         active: activeP,
@@ -196,7 +247,7 @@ const ImgUpload =({
     render() {
       const {imagePreviewUrl, 
              name, 
-             email,
+             last_name,
              phone, 
              active} = this.state;
       return (
@@ -205,10 +256,10 @@ const ImgUpload =({
             ?<Edit onSubmit={(e)=>this.handleSubmit(e)}>
                 <ImgUpload onChange={(e)=>this.photoUpload(e)} src={imagePreviewUrl}/>
                 <Name onChange={(e)=>this.editName(e)} value={name}/>
-                <Email onChange={(e)=>this.editEmail(e)} value={email}/>
+                <LastName onChange={(e)=>this.editEmail(e)} value={last_name}/>
                 <PhoneNumber onChange={(e)=>this.editPhone(e)} value={phone}/>
               </Edit>
-            :<Profile onSubmit={(e)=>this.handleSubmit(e)} src={imagePreviewUrl} name={name} email={email} phone={phone}/>}
+            :<Profile onSubmit={(e)=>this.handleSubmit(e)} src={imagePreviewUrl} name={name} last_name={last_name} phone={phone}/>}
           
         </div>
       )

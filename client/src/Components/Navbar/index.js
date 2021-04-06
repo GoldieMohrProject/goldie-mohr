@@ -56,8 +56,8 @@ function Navbar(props) {
           <a onClick={props.handleModal}>Login</a>
           <NavLink to="/register" className="navbar-brand">Register</NavLink> </>         }
           {localStorage.session && <>
-            <NavLink to="/" className="navbar-brand">Training</NavLink>
-            <NavLink to="/" className="navbar-brand">Profile</NavLink>
+            <NavLink to="/Training" className="navbar-brand">Training</NavLink>
+            <NavLink to="/Profile" className="navbar-brand">Profile</NavLink>
             <a onClick={logoutUser}>Logout</a>
             </>
           }

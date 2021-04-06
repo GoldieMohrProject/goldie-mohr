@@ -222,6 +222,7 @@
     font-size:20px;
 }
 .profile-tab p{
+  padding-top: 0%;
     font-weight: 600;
     color: #0062cc;
 }
