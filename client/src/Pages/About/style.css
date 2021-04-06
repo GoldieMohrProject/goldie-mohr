@@ -21,6 +21,7 @@ p {
 }
 
 .titleline {
+  color: black;
   width: 5%;
   margin-left: auto;
   margin-right: auto;
