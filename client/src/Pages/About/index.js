@@ -31,11 +31,11 @@ function About() {
 
   return (
     <>
-          <section className="aboutbanner" data-stellar-background-ratio="0.5">
-           <h2>ABOUT US</h2>
+      <section className="aboutbanner" data-stellar-background-ratio="0.5">
+        <h2>ABOUT US</h2>
       </section>
 
-      <hr className="titleline"></hr>
+      {/* <hr className="titleline"></hr> */}
 
       <section className="about_us_area about_us_2 row">
         <div className="container">
