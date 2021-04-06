@@ -5,19 +5,6 @@ import './style.css'
 import { PieChart } from 'react-minimal-pie-chart';
 
 
-function addData(value) {
-  let number = Math.floor(Math.random() * value)
-  return (
-    data.push({ title: 'One', value: value, color: `${color[number]}` })
-  )
-
-}
-
-let data = [
-  { title: 'One', value: 5, color: '#E033FF' },
-  { title: 'Two', value: 15, color: '#FF8D33' },
-  { title: 'Three', value: 20, color: '#FF3380' },
-]
 
 const color = [
   "#003f5c",
@@ -98,6 +85,8 @@ const Profile = ({
   last_name,
   email,
   phone,
+  data,
+  score
 }) => {
   return (
     <div class="container emp-profile card">
@@ -132,32 +121,9 @@ const Profile = ({
 
 
           <div className="col-md-1"></div>
-          <div className="col-md-2">
-            <h2>Statistic</h2>
-            <PieChart
+          
 
-              style={{
-
-                fontFamily:
-                  '"Nunito Sans", -apple-system, Helvetica, Arial, sans-serif',
-                fontSize: '10px',
-
-              }}
-
-              lineWidth={60}
-              labelStyle={{
-                fill: '#fff',
-                pointerEvents: 'none',
-              }}
-              labelPosition={100 - 60 / 2}
-              data={data}
-              label={({ dataEntry }) => Math.round(dataEntry.percentage) + '%'}
-            />
-
-
-          </div>
-
-          <div class="col-md-8 ">
+          <div class="col-md-7 ">
             <div class="tab-content profile-tab" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row">
@@ -195,6 +161,30 @@ const Profile = ({
               </div>
             </div>
           </div>
+          <div className="col-md-3">
+            <h4>Highest Result</h4>
+            <PieChart
+
+              style={{
+
+                fontFamily:
+                  '"Nunito Sans", -apple-system, Helvetica, Arial, sans-serif',
+                fontSize: '10px',
+
+              }}
+
+              lineWidth={80}
+              labelStyle={{
+                fill: '#fff',
+                pointerEvents: 'none',
+              }}
+              labelPosition={100 - 80 / 2}
+              data={data}
+              label={({ dataEntry }) => Math.round(dataEntry.percentage) + '/100'}
+            />
+
+
+          </div>
         </div>
       </form>
     </div>
@@ -220,18 +210,37 @@ class CardProfile extends React.Component {
   constructor(props) {
     super(props);
      this.state = {
-       file: 't',
+       file: '',
        imagePreviewUrl: 'images/me.png',
-       name:'t',
-       last_name:'t',
-       email:'t',
-       phone:'t',
-       active: '2'
+       name:'',
+       last_name:'',
+       email:'',
+       phone:'',
+       active: '2',
+       score:'',
+       othersScore:'',
+       data:[]
     };
   }
-
+   addData =(value1,value2) => {
+     console.log('typeeeeee')
+    let number1 = Math.floor(Math.random() * value2)
+    let number2 = Math.floor(Math.random() * value1)
+    return (
+      // this.state.data.push({ title: 'four', value: value, color: `${color[number]}` })
+      this.setState({data:[...this.state.data ,{title: "Wrong Answers", value: value2, color: `${color[number1]}`},{title: 'Highest Score', value: value1, color: `${color[number2]}`}]})
+    )
+  
+  }
+  
+  // let data = [
+    
+  // ]
+  
   componentDidMount(){
-    this.getData()
+    setTimeout(()=>{this.getData()},100)
+    // setTimeout(()=>{this.addData(this.state.score); console.log('scocreeeeeeee',this.state.score)},100)
+
   }
 
   async getData(){
@@ -244,12 +253,20 @@ class CardProfile extends React.Component {
       },
 
   }
+  console.log('localStorage.email',localStorage.email)
     let {userData} = await fetch( '/api/users/profile',fetchOptions).then( res=>res.json())
-    console.log(userData);
-    
-    userData && this.setState({name:userData.first_name,email:userData.email, last_name:userData.last_name,phone:userData.phone_number,file:userData.file  })
-    let { userScore } = await fetch('/api/user/score', fetchOptions).then(res => res.json())
+    console.log('userData',userData);
+    // this.setState({...userData})
+    this.setState({name:userData.first_name,email:userData.email, last_name:userData.last_name,phone:userData.phone_number,file:userData.file  })
+    let userScore = await fetch('/api/user/score', fetchOptions).then(res => res.json())
+    // console.log('[userScore]',userScore)
+    this.setState({score:userScore.score,othersScore:userScore.otherScore})
 
+    console.log('score is ', this.state.score)
+    console.log('Others score is ', this.state.othersScore)
+    let x= this.state.score
+    console.log(10-x)
+    this.addData(this.state.score,(10-x))
   }
 
   async editData(){
@@ -325,7 +342,10 @@ class CardProfile extends React.Component {
            name, 
            last_name,
            phone, 
-           active} = this.state;
+           active,
+          score,
+        othersScore,
+      data} = this.state;
     return (
       <div>
         {(active === 'profile')  
@@ -334,8 +354,9 @@ class CardProfile extends React.Component {
               <Name onChange={(e)=>this.editName(e)} value={name}/>
               <LastName onChange={(e)=>this.editLastName(e)} value={last_name}/>
               <PhoneNumber onChange={(e)=>this.editPhone(e)} value={phone}/>
+          
             </Edit>
-          :<Profile onSubmit={(e)=>this.handleSubmit(e)} src={imagePreviewUrl} name={name} last_name={last_name} phone={phone}/>}
+          :<Profile onSubmit={(e)=>this.handleSubmit(e)} src={imagePreviewUrl} name={name} last_name={last_name} data={data} phone={phone} score={score} othersScore={othersScore} others/>}
         
       </div>
     )

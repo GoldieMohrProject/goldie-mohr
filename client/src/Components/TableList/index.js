@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import { Container, Table, Image } from 'react-bootstrap';
 
 function TableList(props) {
-
-  async function propshandleCheckBoxChange(event) {
+  let [list , setList]= useState([])
+  async function propshandleCheckBoxChange(event,index) {
+    // update our list
+    // setList([ ...list, list[index].isAdmin = !event.target.checked ])
+    list[index].isAdmin = event.target.checked
+    setList([ ...list ])
+    // props.result[index].isAdmin = !event.target.checked
     console.log('im a hereeeeeeeee',event.target.checked)
     const dataChange = {email :event.target.name, checked: event.target.checked}
     const fetchOptions = {
@@ -14,10 +19,13 @@ function TableList(props) {
       },
       body : JSON.stringify( dataChange )
   }
+
    const result = await fetch('/api/users/makeAdmin',fetchOptions).then( res=>res.json())
    console.log('it is donee , updated admin')
   }
-
+  useEffect( function(){
+    setList( props.result )
+ }, [props.result] )
   return (
     <Container fluid >
       {console.log('props2', props.result)}
@@ -39,7 +47,7 @@ function TableList(props) {
           </tr>
         </thead>
         <tbody>
-          {props.result.map((employee) =>
+          {list.map((employee,index) =>
           // <tr>
              <tr key={employee.userID}>
               {/* <td>
@@ -53,7 +61,7 @@ function TableList(props) {
             name={employee.email}
             type="checkbox"
             checked={employee.isAdmin}
-            onChange={(event)=>{propshandleCheckBoxChange(event)}} 
+            onChange={(event)=>{propshandleCheckBoxChange(event,index)}} 
             /></td>
               <td>{employee.authId ===1 ? 'Online': 'Offline'}</td>
 

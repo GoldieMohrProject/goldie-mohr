@@ -62,7 +62,8 @@ function Navbar(props) {
           {localStorage.session && <>
             <NavLink to="/training" className="navbar-brand">Training</NavLink>
             <NavLink to="/profile" className="navbar-brand">Profile</NavLink>
-            {localStorage.isAdmin == 1 &&<NavLink to="/register" className="navbar-brand ">Register</NavLink>}
+            {localStorage.isAdmin == 1 &&<NavLink to="/Employees" className="navbar-brand ">Employees</NavLink>}
+            {localStorage.isAdmin == 1 &&<NavLink to="/Register" className="navbar-brand ">Register</NavLink>}
             <a onClick={logoutUser}>Logout</a>
             </>
           }
