@@ -56,12 +56,12 @@ const transportation = [
     thumbnail: 'Transportation/transportation.jpg',
   },
   {
-    original: 'Transportation/transportation2.jpg',
-    thumbnail: 'Transportation/transportation2.jpg',
+    original: 'Transportation/transportation-2.jpg',
+    thumbnail: 'Transportation/transportation-2.jpg',
   },
   {
-    original: 'Transportation/transportation3.jpg',
-    thumbnail: 'Transportation/transportation3.jpg',
+    original: 'Transportation/transportation-3.jpg',
+    thumbnail: 'Transportation/transportation-3.jpg',
   },
   {
     original: 'Transportation/transportation4.jpg',
@@ -72,20 +72,20 @@ const transportation = [
 
 const services = [
   {
-    original: 'Rental-Equipment/rental1.jpg',
-    thumbnail: 'Rental-Equipment/rental1.jpg'
+    original: 'Rental-Equipment/rental-1.jpg',
+    thumbnail: 'Rental-Equipment/rental-1.jpg'
   },
   {
-    original: "Rental-Equipment/rental2.jpg",
-    thumbnail: "Rental-Equipment/rental2.jpg"
+    original: "Rental-Equipment/rental-2.jpg",
+    thumbnail: "Rental-Equipment/rental-2.jpg"
   },
   {
-    original: 'Transportation/transportation2.jpg',
-    thumbnail: 'Transportation/transportation2.jpg',
+    original: 'Transportation/transportation-2.jpg',
+    thumbnail: 'Transportation/transportation-2.jpg',
   },
   {
-    original: 'Transportation/transportation3.jpg',
-    thumbnail: 'Transportation/transportation3.jpg',
+    original: 'Transportation/transportation-3.jpg',
+    thumbnail: 'Transportation/transportation-3.jpg',
   }
 
 ]
@@ -447,45 +447,45 @@ function Services() {
 
           <div className="row" >
             <div id="service" className="col-lg-4 col-md-6 col-xs-12 col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
+              <img src="Transportation/transportation-3.jpg" alt=".." />
               <div className="gallery_hover">
                 <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+                <a href="Transportation/transportation-3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
               </div>
             </div>
             <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
+              <img src="Transportation/transportation-3.jpg" alt=".." />
               <div className="gallery_hover">
                 <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+                <a href="Transportation/transportation-3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
               </div>
             </div>
             <div id="service" className="col-lg-4 col-md-6 col-xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
+              <img src="Transportation/transportation-3.jpg" alt=".." />
               <div className="gallery_hover">
                 <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+                <a href="Transportation/transportation-3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
               </div>
             </div>
             <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
+              <img src="Transportation/transportation-3.jpg" alt=".." />
               <div className="gallery_hover">
                 <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+                <a href="Transportation/transportation-3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
               </div>
             </div>
             <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt="..." />
+              <img src="Transportation/transportation-3.jpg" alt="..." />
               <div className="gallery_hover">
                 <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+                <a href="Transportation/transportation-3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
               </div>
             </div>
             <div id="service" className="col-lg-4 col-md-6 col-xs-12xs-12  col-6 gallery_iner p0">
-              <img src="Transportation/transportation3.jpg" alt=".." />
+              <img src="Transportation/transportation-3.jpg" alt=".." />
               <div className="gallery_hover">
                 <h4>2021 Project</h4>
-                <a href="Transportation/transportation3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
+                <a href="Transportation/transportation-3.jpg" data-lightbox="image-1">VIEW PROJECT</a>
               </div>
             </div>
 
