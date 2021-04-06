@@ -2,7 +2,7 @@
     let slide_data = [
         {
           src:
-            "images/goldie6.JPG",
+            "images/goldie6.jpg",
        
         },
         {
@@ -17,7 +17,7 @@
         },
         {
           src:
-            "images/goldie4.JPG",
+            "images/goldie4.jpg",
        
         }
       ];
