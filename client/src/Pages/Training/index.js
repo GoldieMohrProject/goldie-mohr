@@ -245,10 +245,10 @@ function Training() {
                             {/* <h1 className="trainingtitle">Training</h1> */}
                             <p className="para">Please review the topics below</p>
                             <p className="para">
-                                <a href={Emergency} className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
+                                <a href={Emergency} target="_blank" className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
                             </p>
                             <p className="para">
-                                <a href={Safety} className="pdf">CLICK HERE TO VIEW GML SAFETY INFORMATION</a>
+                                <a href={Safety} target="_blank" className="pdf">CLICK HERE TO VIEW GML SAFETY INFORMATION</a>
                             </p>
 
                             <p className="para">After reviewing the topics above, please watch the video below</p>
@@ -256,7 +256,7 @@ function Training() {
                             {/* <p className="para">After watching the video, please click  to take the test</p> */}
                             <div className="row">
                                 <div class="d-grid gap-2 col-3 mx-auto mt-5 mb-5">
-                                    <button className="btn btn-primary" style={{ color: 'white', borderRadius: "0px", backgroundColor: "#3178c6" }} onClick={quiz}>Quiz</button>
+                                    <button id="btnQuiz" className="btn btn-primary" onClick={quiz}>Quiz</button>
 
                                 </div>
                             </div>

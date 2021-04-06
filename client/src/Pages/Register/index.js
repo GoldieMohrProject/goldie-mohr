@@ -87,7 +87,7 @@ class Register extends React.Component {
                 <div style={{ marginTop: "55px" }}>
                     <div className="container">
                         <div style={{ marginLeft: "100px", marginRight: "100px" }}>
-                            <h3 style={{ color: "black", marginBottom: "30px" }}>Adding new employee</h3>
+                            <h3 style={{ color: "black", marginBottom: "30px" }}>Add new employee</h3>
 
                             <RegisterForm firstname={this.state.firstname}
                                 lastname={this.state.lastname} email={this.state.email}

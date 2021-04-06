@@ -31,11 +31,11 @@ function About() {
 
   return (
     <>
-          <section className="aboutbanner" data-stellar-background-ratio="0.5">
-           <h2>ABOUT US</h2>
+      <section className="aboutbanner" data-stellar-background-ratio="0.5">
+        <h2>ABOUT US</h2>
       </section>
 
-      <hr className="titleline"></hr>
+      {/* <hr className="titleline"></hr> */}
 
       <section className="about_us_area about_us_2 row">
         <div className="container">
@@ -235,7 +235,7 @@ function About() {
         <div className="book_now_aera">
           <div className="container">
             <div className="col-md-10">
-              <h4 style={{ color: "white" }}>Our community is important to us.</h4>
+              <h4 style={{ color: "white" }}>Our community is important to us</h4>
 
               <p className="communityarea">
                 As a company we truly believe that we have a genuine responsibility to help better the communities we do business in.
