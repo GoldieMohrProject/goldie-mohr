@@ -78,6 +78,17 @@ function router( app){
         res.send({ status, userData, message })
     })
 
+    app.post('/api/users/makeAdmin', async function(req, res) {
+        console.log('whats inside it', req.body)
+        const { status, userData, message }= await orm.makeAsAdmin(req.body.email, req.body.checked)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // console.log( `.. login complete! session: ${session}` )
+        res.send({ status, userData, message })
+    })
+
     app.post('/api/users/editProfile', async function(req, res) {
         const { status, userData, message }= await orm.editUserProfile(req.body, req.headers.email)
         if( !status ){
@@ -88,10 +99,19 @@ function router( app){
         res.send({ status, userData, message })
     })
 
+    app.get('/api/users/employees', async function(req,res){
+        const { status, userData, message }= await orm.getEmployees(req.headers.email)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // console.log( `.. login complete! session: ${session}` )
+        res.send({ status, userData, message })
+    })
     // all these endpoints require VALID session info
     app.get('/api/users/logout', authRequired, async function(req, res) {
-        console.log('tryinggggggg to get req.header.session',req.headers.session)
         sessionManager.remove( req.headers.session )
+        const result = await orm.deleteEmployees(req.headers.email)
         console.log( ` .. removed session ${req.headers.session}`)
         res.send({ status: true, message: 'Logout complete', authOK: false })
     })

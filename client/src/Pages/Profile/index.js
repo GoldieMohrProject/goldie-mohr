@@ -153,13 +153,13 @@ const ImgUpload =({
     constructor(props) {
       super(props);
        this.state = {
-         file: '',
+         file: 't',
          imagePreviewUrl: 'images/me.png',
-         name:'shiva',
-         last_name:'sabokdast',
-         email:'shiva@gmail.com',
-         phone:'22222222',
-         active: 'edit'
+         name:'t',
+         last_name:'t',
+         email:'t',
+         phone:'t',
+         active: '2'
       };
     }
 
@@ -177,14 +177,15 @@ const ImgUpload =({
         },
 
     }
-      let { userData  } = await fetch( '/api/users/profile',fetchOptions).then( res=>res.json())
+      let {userData} = await fetch( '/api/users/profile',fetchOptions).then( res=>res.json())
       console.log(userData);
-      this.setState({name:userData.first_name,email:userData.email, last_name:userData.last_name,phone:userData.phone_number,file:userData.file  })
+      
+      userData && this.setState({name:userData.first_name,email:userData.email, last_name:userData.last_name,phone:userData.phone_number,file:userData.file  })
     }
 
     async editData(){
       const userInfo = {
-         picture: this.state.file,
+         picture: this.state.imagePreviewUrl,
          first_name:this.state.name,
          last_name:this.state.last_name,
          phone_number:this.state.phone,
@@ -223,6 +224,12 @@ const ImgUpload =({
         name,
       });
     }
+    editLastName (e) {
+      const last_name = e.target.value;
+      this.setState({
+        last_name,
+      });
+    }
     editEmail (e) {
       const email = e.target.value;
       this.setState({
@@ -256,7 +263,7 @@ const ImgUpload =({
             ?<Edit onSubmit={(e)=>this.handleSubmit(e)}>
                 <ImgUpload onChange={(e)=>this.photoUpload(e)} src={imagePreviewUrl}/>
                 <Name onChange={(e)=>this.editName(e)} value={name}/>
-                <LastName onChange={(e)=>this.editEmail(e)} value={last_name}/>
+                <LastName onChange={(e)=>this.editLastName(e)} value={last_name}/>
                 <PhoneNumber onChange={(e)=>this.editPhone(e)} value={phone}/>
               </Edit>
             :<Profile onSubmit={(e)=>this.handleSubmit(e)} src={imagePreviewUrl} name={name} last_name={last_name} phone={phone}/>}

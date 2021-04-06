@@ -11,6 +11,7 @@ import Register from "./Pages/Register"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import Login from "./Pages/Login"
+import Employees from "./Pages/Employees"
 
 import CardProfile from "./Pages/Profile/index"
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Profile" component={CardProfile} />
+          <Route exact path="/Employees" component={Employees} />
+
 
         </Wrapper>
         <Footer />

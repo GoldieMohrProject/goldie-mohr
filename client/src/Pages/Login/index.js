@@ -46,6 +46,7 @@ function userLoginSave({ status, session, userData, message }){
     localStorage.session = session
     localStorage.name = userData.first_name
     localStorage.email = userData.email
+    localStorage.isAdmin= userData.isAdmin
     console.log('trying to see the session',session)
     handleClose()
     // dispatch({ type: 'USER_LOGIN', data: userData })
@@ -118,7 +119,7 @@ function userLoginSave({ status, session, userData, message }){
 
             <Modal.Footer>
               <Button variant="secondary" onClick={handleClose} >
-                Cancel
+                Cancssssel
           </Button>
               <Button variant="primary"  onClick={userLogin} >
                 Login

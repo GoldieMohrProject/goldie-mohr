@@ -77,6 +77,7 @@ async function userLogin( email, password ) {
             email: userData[0].email,
             phone_number: userData[0].phone_number,
             picture: userData[0].picture,
+            isAdmin:userData[0].isAdmin,
         }
     }
 }
@@ -121,10 +122,42 @@ async function userProfile( email ){
         }
     }
 }
+async function makeAsAdmin( email, checked ){
+    // eslint-disable-next-line quotes
+    const userData = await db.query(`UPDATE user set isAdmin = ${checked} where email = '${email}'`)
+    // const userData = await db.users.findOne({ _id: userId })
+    if( userData.length <1) {
+        return { status: false, message: 'Invalid session' }
+    }
+    return {
+        status: true,
+        message: 'Updated as admin',
+    }
+}
+
+async function deleteEmployees(email){
+    const userData = await db.query(`UPDATE user set authId = false where email = '${email}'`)
+    return
+}
+
+async function getEmployees(email){
+    console.log('getting employees from database')
+    const userData = await db.query(`SELECT * from user WHERE email != '${email}'`)
+    if( userData.length <1) {
+        return { status: false, message: 'Invalid session' }
+    }
+    console.log('Employessss',userData)
+    return {
+        status: true,
+        message: '',
+        userData
+    }
+
+}
 async function editUserProfile( user, email ){
     console.log('userr pictureeeee', user)
     // eslint-disable-next-line quotes
-    const userData = await db.query(`UPDATE user set first_name = '${user.first_name}' , phone_number = '${user.phone_number}', picture = '${user.picture}'  WHERE email = '${email}'`)
+    const userData = await db.query(`UPDATE user set first_name = '${user.first_name}' , phone_number = '${user.phone_number}',last_name = '${user.last_name}', picture = '${user.picture}'  WHERE email = '${email}'`)
     // const userData = await db.users.findOne({ _id: userId })
     if( userData.length <1) {
         return { status: false, message: 'Invalid session' }
@@ -147,7 +180,10 @@ module.exports = {
     userLogin,
     userSession,
     userProfile,
-    editUserProfile
+    editUserProfile,
+    getEmployees,
+    deleteEmployees,
+    makeAsAdmin
 }
 
 
