@@ -14,6 +14,7 @@ class Register extends React.Component {
         phone: "",
         selectedFile: null,
 
+        something : false
     }
 
     onFileChange = event => {
@@ -38,7 +39,7 @@ class Register extends React.Component {
 
 
     handleSubmit = async (event) => {
-        // event.preventDefault()
+        event.preventDefault()
         console.log(event)
         const userInfo = {
             first_name: this.state.firstname.trim(),
@@ -68,15 +69,14 @@ class Register extends React.Component {
         // }
         console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
         let x = await fetch('/api/users/register', fetchOptions).then(res => res.json())
-        return console.log(x)
+        return    this.setState({something:true})
+
         // const { status, message } = await fetchJSON('/api/users/register', 'post', userInfo)
         // const name = event.target.name;
         // const value = event.target.value;
         // this.setState({
         //     [name]: value
         // });
-
-
         // console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
     };
 
@@ -90,6 +90,7 @@ class Register extends React.Component {
                             <h3 style={{ color: "black", marginBottom: "30px" }}>Add new employee</h3>
 
                             <RegisterForm firstname={this.state.firstname}
+                                something = {this.state.something}
                                 lastname={this.state.lastname} email={this.state.email}
                                 phone={this.state.phone} password={this.state.password}
                                 handleSubmit={this.handleSubmit}

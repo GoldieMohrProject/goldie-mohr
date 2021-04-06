@@ -31,14 +31,6 @@ if (process.env.NODE_ENV === 'production') {
     app.use( express.static('public') )
 }
 
-const array = [{"qqweqe":"adasdsd"},"1231313",111111]
-
-app.get('/api/users/register', async (req,res)=>{
-    res.send(array)
-    console.log("connected back end")
-    console.log(array)
-})
-
 // for routes
 // static paths (ex. assets, js, images, etc) served automatically from:
 // app.use(express.static( STATIC_PATH ))
