@@ -4,18 +4,19 @@ import './style.css'
 
 class  Contact  extends React.Component  {
        
-      sendEmail(e) {
+    sendEmail(e) {
         e.preventDefault();
 
         emailjs.sendForm('service_59tkng9', 'template_3i27x59', e.target, 'user_znYxcuxXFuqUmoJFIoGRN')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    }
 
-      }
+
 
 
     render() {
@@ -58,8 +59,7 @@ class  Contact  extends React.Component  {
 
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                </div>
                         <div className="col-sm-6 contact_info send_message">
                             <h2>Send Us a Message</h2>
                             <form  method="post" className="form-inline contact_box"  onSubmit={this.sendEmail}>
@@ -68,8 +68,9 @@ class  Contact  extends React.Component  {
                                 <input type="email" className="form-control input_box" name="email"   placeholder="Your Email *" required/>
                                 <input type="text" className="form-control input_box" name="subject"    placeholder="Subject" required/>
                                 <textarea className="form-control input_box" placeholder="message"  name="message"  defaultValue={""} required/>
-                                <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send Message</button>
+                                <button type="submit" name="submit" value="Send" className="btn btn-default" id="sendbtn" onclick={this.sendEmail}>Send</button>
                             </form>
+                            </div>
                         </div>
                     </div>
                 </section>
