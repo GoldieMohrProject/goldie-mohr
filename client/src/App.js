@@ -11,14 +11,15 @@ import Register from "./Pages/Register"
 import Product from "./Pages/Products/index"
 import Training from "./Pages/Training/index"
 import Login from "./Pages/Login"
+import Reset from "./Pages/Reset"
 
 import CardProfile from "./Pages/Profile/index"
 function App() {
   return (
     <Router>
       <div>
-      <Wrapper>
-          <Login/>
+        <Wrapper>
+          <Login />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/About" component={About} />
           <Route exact path="/" component={Home} />
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/Register" component={Register} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Profile" component={CardProfile} />
+          <Route exact path="/Reset" component={Reset} />
 
         </Wrapper>
         <Footer />

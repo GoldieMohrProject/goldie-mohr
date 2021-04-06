@@ -4,33 +4,34 @@ import {Redirect} from "react-router-dom"
 import { Modal } from "react-bootstrap"
 import { Button } from "react-bootstrap"
 import Navbar from "../../Components/Navbar"
+import emailjs from 'emailjs-com';
 
 function Login(){
 
+
+  
+const sendEmail= (e)=> {
+  e.preventDefault();
+  setAnimated(true)
+  emailjs.sendForm('service_wx1sxp3', 'template_yvrz2qg', e.target, 'user_izFYZTC0McdbOeazrlOp2')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+}
+    const [alert, setAlert] =useState({display: 'none'})
     const [email, setEmail] = useState('');
+    const [animated, setAnimated] = useState(false)
     const [password, setPassword] = useState('');
     const [authOk, setAuthOk] = useState(false);
     const [show, setShow] = useState(false);
     const inputEmail = useRef()
     const inputPassword = useRef()
-    // const inputRememberMe = useRef()
-    // state = {
-    //     email: "",
-    //     password: "",
-    //     authOk: false,
-    //     show: false,
-    //   }
-
-   const handleClose = () => setShow(false);
-   const handleShow = () => setShow(true);
+   const handleClose = () =>{ setShow(false);setAnimated(false)}
+   const handleShow = () => {setShow(true); setAnimated(false)}
     
-//     handleChange = event => {
-//         const name = event.target.name;
-//         const value = event.target.value;
-//         this.setState({
-//             [name]: value
-//         });
-//     };
+
 
      
 function userLoginSave({ status, session, userData, message }){ 
@@ -74,28 +75,11 @@ function userLoginSave({ status, session, userData, message }){
         let { status, session, userData, message } = await fetch( '/api/users/login',fetchOptions).then( res=>res.json())
         userLoginSave({ status, session, userData, message })
 };
-// render(){
+
+
+
     return (
         <>
-          {/* { this.state.authOk ? <Redirect to='/profile' /> : '' }
-        <div>
-            <div className="loginarea">
-            <h3>Login</h3>
-            <br></br>
-            <form method='POST' action='/api/users/login'>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Email address</label>
-                    <input onChange={this.handleChange} name='email' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input name ='password' type="password" onChange={this.handleChange} className="form-control" id="exampleInputPassword1" />
-                </div>
-                <button type="submit" className="loginbtn" onClick={this.handleSubmit}>Login</button>
-            </form>
-            <p>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
-            </div>
-        </div> */}
         { authOk ? <Redirect to='/profile' /> : '' }
          <Navbar handleModal={handleShow} />
           <Modal show={show} onHide={handleClose} >
@@ -104,25 +88,29 @@ function userLoginSave({ status, session, userData, message }){
             </Modal.Header>
 
             <Modal.Body>
-              <form>
+              <form onSubmit={sendEmail}>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" className="form-label" style={{ color: "black" }}>Email address</label>
-                  <input ref={inputEmail} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                  <label for="exampleInputEmail1"  className="form-label" style={{ color: "black" }}>Email address</label>
+                  <input ref={inputEmail} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label" style={{ color: "black" }}>Password</label>
                   <input  ref={inputPassword} type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
+                <div class={`alert  ${animated ?'alert-success animate displayed':'notDisplayed '} `} idrole="alert">
+                  You recived reset password email succesfully.
+                </div>
+                <button type="submit" name="submit" value="Send" className="btn btn-default" onclick={sendEmail}>Reset Password</button>
               </form>
             </Modal.Body>
 
             <Modal.Footer>
               <Button variant="secondary" onClick={handleClose} >
                 Cancel
-          </Button>
+              </Button>
               <Button variant="primary"  onClick={userLogin} >
                 Login
-          </Button>
+              </Button>
 
             </Modal.Footer>
             <p style={{ textAlign: "center" }}>Haven't registered yet? Click <a href="./Register">here</a> to register</p>
