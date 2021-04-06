@@ -5,28 +5,48 @@ import Safety from '../../assets/Safety.pdf'
 
 const questions = [
     {
-        question: "What is the World Population ?",
-        answers: ["4 billion", "6.5 Billion", "7.5 Billion"],
+        question: "Which icon shows Biohazardous Infectious Materials ?",
+        answers: ["Quiz-questions/Skull-Crossbones-1.png", "Quiz-questions/Bio-Small.png", "Quiz-questions/Fire-Over-Circle-1.png"],
         correct: "7.5 Billion"
     },
     {
-        question: "How many countries are there in the world? ",
-        answers: ["175", "195", "205"],
+        question: "Which icon shows Corrosion ? ",
+        answers: ["Quiz-questions/Corrosive-1.png", "Quiz-questions/Compressed-Gas-Cylinder-1.png", "Quiz-questions/Environment-1.png"],
         correct: "195"
     },
     {
-        question: "How many official languages are spoken in the world?",
-        answers: ["6500", "4000", "5000"],
+        question: "Which icon shows Skull & Crossbones ?",
+        answers: ["Quiz-questions/Health-Hazard-1.png", "Quiz-questions/Skull-Crossbones-1.png", "Quiz-questions/Exclamation-Mark-1.png"],
         correct: "6500"
     },
     {
-        question: "How many continents are there in the world?",
-        answers: ["5", "6", "7"],
+        question: "Which icon shows Environment ?",
+        answers: ["Quiz-questions/Fire-Over-Circle-1.png", "Quiz-questions/Environment-1.png", "Quiz-questions/Bio-Small.png"],
         correct: "7"
     },
     {
-        question: "What is the population of Canada 2020?",
-        answers: ["33.5 Millions", "35.5 Millions", "37.5 Millions"],
+        question: "Which icon shows Health Hazard ?",
+        answers: ["Quiz-questions/Exploding-Bomb-1.png", "Quiz-questions/Health-Hazard-1.png", "Quiz-questions/Skull-Crossbones-1.png"],
+        correct: "37.5 Millions"
+    },
+    {
+        question: "Which icon shows Exclamation Mark ?",
+        answers: ["Quiz-questions/Compressed-Gas-Cylinder-1.png", "Quiz-questions/Exclamation-Mark-1.png", "Quiz-questions/Corrosive-1.png"],
+        correct: "37.5 Millions"
+    },
+    {
+        question: "Which icon shows Flame over Circle ?",
+        answers: ["Quiz-questions/Flame-1.png", "Quiz-questions/Health-Hazard-1.png", "Quiz-questions/Fire-Over-Circle-1.png"],
+        correct: "37.5 Millions"
+    },
+    {
+        question: "Which icon shows Gas Cylinder ?",
+        answers: ["Quiz-questions/Corrosive-1.png", "Quiz-questions/Exclamation-Mark-1.png", "Quiz-questions/Compressed-Gas-Cylinder-1.png"],
+        correct: "37.5 Millions"
+    },
+    {
+        question: "Which icon shows Exploding Bomb ?",
+        answers: ["Quiz-questions/Environment-1.png", "Quiz-questions/Fire-Over-Circle-1.png", "Quiz-questions/Exploding-Bomb-1.png"],
         correct: "37.5 Millions"
     }
 ]
@@ -73,7 +93,7 @@ function Training() {
                 setIsNextClicked(false);
             }
             setGivenAnswer(true);
-            if (click >= 5) {
+            if (click >= 9) {
                 setShowSave(true)
                 setShowNext(false)
             }
@@ -180,19 +200,19 @@ function Training() {
                 <>
                     <div className="container">
                         <div className="row">
-                            <>
+                            <div style={{marginTop:"auto"}}>
 
                                 < h3 >{questions[counter].question}</h3>
                                 
                                 <div className="row">
                                     <div className="col">
-                                        <button ref={refAnswerButton1} className={style} onClick={() => answer(1, questions[counter], questions[counter].answers[0])} style={{ margin: "5px", width: "200px" }}>{questions[counter].answers[0]}</button>
+                                        <button ref={refAnswerButton1} className={style} onClick={() => answer(1, questions[counter], questions[counter].answers[0])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[0]}/></button>
                                     </div>
                                     <div className="col">
-                                        <button ref={refAnswerButton2} className={style} onClick={() => answer(2, questions[counter], questions[counter].answers[1])} style={{ margin: "5px", width: "200px" }}>{questions[counter].answers[1]}</button>
+                                        <button ref={refAnswerButton2} className={style} onClick={() => answer(2, questions[counter], questions[counter].answers[1])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[1]}/></button>
                                     </div>
                                     <div id="2" className="col">
-                                        <button ref={refAnswerButton3} className={style} onClick={() => answer(3, questions[counter], questions[counter].answers[2])} style={{ margin: "5px", width: "200px" }}>{questions[counter].answers[2]}</button>
+                                        <button ref={refAnswerButton3} className={style} onClick={() => answer(3, questions[counter], questions[counter].answers[2])} style={{ margin: "5px", width: "200px" }}> <img src={questions[counter].answers[2]}/></button>
                                     </div>
                                 </div>
 
@@ -203,7 +223,7 @@ function Training() {
                                     <button className="btn btn-success" style={{ margin: "5px", width: "200px" }} onClick={() => Save()}>Save</button>
                                 }
 
-                            </>
+                            </div>
 
 
                         </div>
