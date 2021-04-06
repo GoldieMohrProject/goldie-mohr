@@ -7,47 +7,47 @@ const questions = [
     {
         question: "Which icon shows Biohazardous Infectious Materials ?",
         answers: ["Quiz-questions/Skull-Crossbones-1.png", "Quiz-questions/Bio-Small.png", "Quiz-questions/Fire-Over-Circle-1.png"],
-        correct: "7.5 Billion"
+        correct: "Quiz-questions/Bio-Small.png"
     },
     {
         question: "Which icon shows Corrosion ? ",
         answers: ["Quiz-questions/Corrosive-1.png", "Quiz-questions/Compressed-Gas-Cylinder-1.png", "Quiz-questions/Environment-1.png"],
-        correct: "195"
+        correct: "Quiz-questions/Corrosive-1.png"
     },
     {
         question: "Which icon shows Skull & Crossbones ?",
         answers: ["Quiz-questions/Health-Hazard-1.png", "Quiz-questions/Skull-Crossbones-1.png", "Quiz-questions/Exclamation-Mark-1.png"],
-        correct: "6500"
+        correct: "Quiz-questions/Skull-Crossbones-1.png"
     },
     {
         question: "Which icon shows Environment ?",
         answers: ["Quiz-questions/Fire-Over-Circle-1.png", "Quiz-questions/Environment-1.png", "Quiz-questions/Bio-Small.png"],
-        correct: "7"
+        correct: "Quiz-questions/Environment-1.png"
     },
     {
         question: "Which icon shows Health Hazard ?",
         answers: ["Quiz-questions/Exploding-Bomb-1.png", "Quiz-questions/Health-Hazard-1.png", "Quiz-questions/Skull-Crossbones-1.png"],
-        correct: "37.5 Millions"
+        correct: "Quiz-questions/Health-Hazard-1.png"
     },
     {
         question: "Which icon shows Exclamation Mark ?",
         answers: ["Quiz-questions/Compressed-Gas-Cylinder-1.png", "Quiz-questions/Exclamation-Mark-1.png", "Quiz-questions/Corrosive-1.png"],
-        correct: "37.5 Millions"
+        correct: "Quiz-questions/Exclamation-Mark-1.png"
     },
     {
         question: "Which icon shows Flame over Circle ?",
         answers: ["Quiz-questions/Flame-1.png", "Quiz-questions/Health-Hazard-1.png", "Quiz-questions/Fire-Over-Circle-1.png"],
-        correct: "37.5 Millions"
+        correct: "Quiz-questions/Fire-Over-Circle-1.png"
     },
     {
         question: "Which icon shows Gas Cylinder ?",
         answers: ["Quiz-questions/Corrosive-1.png", "Quiz-questions/Exclamation-Mark-1.png", "Quiz-questions/Compressed-Gas-Cylinder-1.png"],
-        correct: "37.5 Millions"
+        correct: "Quiz-questions/Compressed-Gas-Cylinder-1.png"
     },
     {
         question: "Which icon shows Exploding Bomb ?",
         answers: ["Quiz-questions/Environment-1.png", "Quiz-questions/Fire-Over-Circle-1.png", "Quiz-questions/Exploding-Bomb-1.png"],
-        correct: "37.5 Millions"
+        correct: "Quiz-questions/Exploding-Bomb-1.png"
     }
 ]
 
