@@ -236,11 +236,13 @@ function Training() {
 
         return (
             <>
+                <h1 className="trainingtitle" style={{ textAlign: "center" }}>Training</h1>
+
                 <div className="container">
                     <div className="row">
 
                         <div className="trainingarea">
-                            <h1 className="trainingtitle">Training</h1>
+                            {/* <h1 className="trainingtitle">Training</h1> */}
                             <p className="para">Please review the topics below</p>
                             <p className="para">
                                 <a href={Emergency} className="pdf">CLICK HERE TO VIEW EMERGENCY PROCEDURES</a>
