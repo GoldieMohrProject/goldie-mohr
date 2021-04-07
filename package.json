@@ -28,7 +28,7 @@
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7"
   },
-  "homepage": "https://github.com/GoldieMohrProject/goldie-mohr#readme",
+  "homepage": "https://github.com/GoldieMohrProject/goldie-mohr",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^8.2.0",
