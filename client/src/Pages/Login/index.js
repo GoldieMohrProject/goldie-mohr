@@ -119,7 +119,7 @@ function userLoginSave({ status, session, userData, message }){
                   <input name="token" type="text" value= {token} className="form-control" id="exampleInputPassword1" />
                 </div>
                 <div class={`alert  ${animated ?'alert-success animate displayed':'notDisplayed '} `} idrole="alert">
-                  You recived reset password email succesfully.
+                  Please check your email to reset your password
                 </div>
                 <button type="submit" name="submit" value="Send" className="btn btn-default" onclick={sendEmail}>Reset Password</button>
               </form>

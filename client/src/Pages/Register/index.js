@@ -60,13 +60,7 @@ class Register extends React.Component {
             },
             body: JSON.stringify(userInfo)
         }
-        // only attach the body for put/post
-        // if( method === 'post' || method === 'put' ) {
-        //     fetchOptions.body = JSON.stringify( data )
-        // }
-
-        // return fetch( url,fetchOptions ).then( res=>res.json() )
-        // }
+     
         console.log(this.state.firstname, this.state.lastname, this.state.email, this.state.phone, this.state.password, this.state.selectedFile)
         let x = await fetch('/api/users/register', fetchOptions).then(res => res.json())
         return    this.setState({something:true})

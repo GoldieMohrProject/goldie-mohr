@@ -35,7 +35,7 @@ function Navbar(props) {
           <ul className="nav navbar-expand-lg navbar-light top_nav">
             <li><a href="#"><i className="fa fa-phone" />+1 (613) 838 5042</a></li>
             <li><a href="mailto:info@goldiemohrltd.ca" target="_blank" rel="noreferrer"><i className="fa fa-envelope" />info@goldiemohrltd.ca</a></li>
-            <li><a href="#"><i className="fa fa-clock" />Mon - Sat 07:00 - 18:00</a></li>
+            <li><a href="#"><i className="fa fa-clock" />Mon - Fri 07:00 - 18:00</a></li>
             <li><a target="_blank" href="https://www.facebook.com/GoldieMohr"><i class="fab fa-facebook-f"></i></a></li>
             <li><a target="_blank" href="https://twitter.com/goldiemohrltd"><i class="fab fa-twitter"></i></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/company/goldiemohrltd/"><i class="fab fa-linkedin-in"></i></a></li>
