@@ -10,7 +10,9 @@ function Login(){
 
 
   
-const sendEmail= (e)=> {
+const sendEmail= async(e)=> {
+  // const tokenn = '123'
+  console.log('token',token)
   e.preventDefault();
   setAnimated(true)
   emailjs.sendForm('service_wx1sxp3', 'template_yvrz2qg', e.target, 'user_izFYZTC0McdbOeazrlOp2')
@@ -19,6 +21,19 @@ const sendEmail= (e)=> {
     }, (error) => {
         console.log(error.text);
     });
+
+    // console.log('[e.target]',e.target.email.value)
+    const fetchOptions = {
+      method: 'post',
+      headers: {
+          'Content-Type': 'application/json',
+          'email': e.target.email.value,
+          'token': e.target.token.value
+
+      },
+      body: JSON.stringify()
+  }
+  let result = await fetch('/api/users/sendToken', fetchOptions).then(res => res.json())
 }
     const [alert, setAlert] =useState({display: 'none'})
     const [email, setEmail] = useState('');
@@ -26,6 +41,7 @@ const sendEmail= (e)=> {
     const [password, setPassword] = useState('');
     const [authOk, setAuthOk] = useState(false);
     const [show, setShow] = useState(false);
+    const [token,setToken] = useState(Math.floor(Math.random() * 10000000000000))
     const inputEmail = useRef()
     const inputPassword = useRef()
    const handleClose = () =>{ setShow(false);setAnimated(false)}
@@ -96,7 +112,11 @@ function userLoginSave({ status, session, userData, message }){
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label" style={{ color: "black" }}>Password</label>
-                  <input  ref={inputPassword} type="password" className="form-control" id="exampleInputPassword1" />
+                  <input ref={inputPassword} type="password" className="form-control" id="exampleInputPassword1" />
+                </div>
+                <div class="mb-3" style={{display:'none'}}>
+                  <label for="exampleInputPassword1" class="form-label" style={{ color: "black" }}>Password</label>
+                  <input name="token" type="text" value= {token} className="form-control" id="exampleInputPassword1" />
                 </div>
                 <div class={`alert  ${animated ?'alert-success animate displayed':'notDisplayed '} `} idrole="alert">
                   You recived reset password email succesfully.

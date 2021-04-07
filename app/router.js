@@ -48,6 +48,39 @@ function router( app){
         res.send({ status, session, userData, message })
     })
 
+
+    app.post('/api/users/sendToken', async function(req, res) {
+        // const token = '35112'
+        const email = req.headers.email
+        const token = req.headers.token
+        // const email = 'saidmghabghab@gmail.com'
+        // const password = req.body.password
+        // console.log('[email,[password',token,password)
+        const { status, userData, message }= await orm.sendToken( token, email)
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // generate a session-key
+
+        res.send({ status, userData, message })
+    })
+
+    app.post('/api/users/resetPassword', async function(req, res) {
+        const token = req.headers.token
+        // const email = 'saidmghabghab@gmail.com'
+        const password = req.body.password
+        console.log('[email,[password',token,password)
+        const { status, userData, message }= await orm.resetPassword( token, password )
+        if( !status ){
+            res.status(403).send({ status, message }); return
+        }
+
+        // generate a session-key
+
+        res.send({ status, userData, message })
+    })
+
     app.post('/api/users/login', async function(req, res) {
         console.log( '[POST /api/users/login] req.body:', req.body )
         const { status, userData, message }= await orm.userLogin( req.body.email, req.body.password )
@@ -69,6 +102,15 @@ function router( app){
 
     })
 
+    app.get('/api/user/score', async function (req, res) {
+        const email = req.headers.email
+
+        const {userData } = await orm.findScoreByEmail(email)
+        console.log('[userData on router]',userData)
+        res.send(userData)
+
+    })
+
     app.post('/api/users/score', async function (req,res){
         let userId = req.body.userID
         let userScore = req.body.score
@@ -87,6 +129,7 @@ function router( app){
         res.send({ status, session, userData, message })
     })
     app.get('/api/users/profile', async function(req, res) {
+        console.log('[req.headers.email]',req.headers.email)
         const { status, userData, message }= await orm.userProfile(req.headers.email)
         if( !status ){
             res.status(403).send({ status, message }); return

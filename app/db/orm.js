@@ -50,6 +50,29 @@ async function userRegister( userData ){
     }
 }
 
+async function sendToken(token,email){
+    console.log(token)
+    // const tokenNumber = await bcrypt.hash(token, 10)
+    // console.log('[orm password]',passwordHash)
+    console.log('[email]',email)
+    const reset = await db.query(`UPDATE user set token = '${token}' where email = '${email}'`)
+    return{
+        status: true,
+        message: 'Sent Token Successfully',
+    }
+}
+
+async function resetPassword(token, password){
+    const passwordHash = await bcrypt.hash(password, 10)
+    console.log('[orm password]',passwordHash)
+    console.log('[token]',token)
+    const reset = await db.query(`UPDATE user set password = '${passwordHash}' where token = '${token}'`)
+    return{
+        status: true,
+        message: 'Password changed Successfully',
+    }
+}
+
 async function userLogin( email, password ) {
     const userData = await db.query(`SELECT * from user WHERE email = '${email}'`)
 
@@ -176,6 +199,23 @@ async function editUserProfile( user, email ){
     }
 }
 
+async function findScoreByEmail(email) {
+    const userData = await db.query(`SELECT  user.userID,first_name,email,MAX(score) 'Average' FROM user LEFT JOIN user_scores ON user.userID = user_scores.userID WHERE email = '${email}';
+    `)
+    // console.table(data)
+    const otherUserData = await db.query(`SELECT * FROM user LEFT JOIN user_scores ON user.userID = user_scores.userID WHERE email != '${email}'`)
+    return {
+        status: true,
+        message: '',
+        userData: {
+            id: userData[0].userID,
+            first_name: userData[0].first_name,
+            email: userData[0].email,
+            score: userData[0].Average,
+            otherScore: otherUserData[0].score ? otherUserData[0].score : 0
+        }
+    }
+}
 async function findByEmail(email) {
     const userData = await db.query(`SELECT * from user where email = '${email}'`)
     // console.table(data)
@@ -199,14 +239,6 @@ async function SaveScore(userId,userScore) {
     return {
         status: true,
         message: '',
-        userData: {
-            id: userData[0].userID,
-            first_name: userData[0].first_name,
-            last_name: userData[0].last_name,
-            email: userData[0].email,
-            phone_number: userData[0].phone_number,
-            picture: userData[0].picture
-        }
     }
 }
 
@@ -221,7 +253,10 @@ module.exports = {
     SaveScore,
     getEmployees,
     deleteEmployees,
-    makeAsAdmin
+    makeAsAdmin,
+    findScoreByEmail,
+    resetPassword,
+    sendToken
 }
 
 
