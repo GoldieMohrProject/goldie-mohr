@@ -22,5 +22,5 @@ create table user_scores(
     id INTEGER AUTO_INCREMENT not NULL PRIMARY KEY,
     score INTEGER (2),
     userID INTEGER,
-    FOREIGN KEY(userID) REFERENCES user(userID),
+    FOREIGN KEY(userID) REFERENCES user(userID)
 )
