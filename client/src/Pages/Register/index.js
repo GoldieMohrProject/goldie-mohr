@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import RegisterForm from '../../Components/RegisterForm'
-// import fetchJSON from "../../util/API.js"
+
 
 
 class Register extends React.Component {

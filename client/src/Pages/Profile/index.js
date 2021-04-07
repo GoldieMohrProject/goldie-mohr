@@ -1,5 +1,4 @@
 import React from 'react';
-import fetchJSON from "../../util/API"
 import './style.css'
 
 import { PieChart } from 'react-minimal-pie-chart';

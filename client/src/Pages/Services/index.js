@@ -2,11 +2,8 @@ import React from 'react';
 
 import "./style.css"
 
-import 'antd/dist/antd.css';
 
 import ImageGallery from 'react-image-gallery';
-
-import { ArrowRightOutlined } from '@ant-design/icons';
 
 
 
