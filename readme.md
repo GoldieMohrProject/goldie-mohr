@@ -18,16 +18,13 @@ This is a new and highly improved web page for the company Goldie Mohr Ltd. This
 
 `` NPM PACKAGES ``
 
-- antd
 - bcrypt
 - bootstrap
-- fontawesome
 - dotenv
 - emailjs com
 - eslint
 - express
 - ifenv
-- morgan
 - react bootstrap
 - react count up
 - react image gallery
